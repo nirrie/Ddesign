@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\controllers\StaticController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [StaticController::class, 'index'])->name('home.index');
+Route::get('/error', [StaticController::class, 'error'])->name('home.error');
+// Route::get('/login', [StaticController::class, 'login']);
