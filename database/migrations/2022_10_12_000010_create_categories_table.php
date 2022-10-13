@@ -3,13 +3,9 @@ namespace Database\Migrations;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
-class CreateCategoryTable extends Migration
+return new class extends Migration
 {
-    /**
-     * Schema table name to migrate
-     * @var string
-     */
-    public $tableName = 'category';
+
     /**
      * Run the migrations.
      * @table category
@@ -18,12 +14,14 @@ class CreateCategoryTable extends Migration
      */
     public function up()
     {
-        Schema::create($this->tableName, function (Blueprint $table) {
+        Schema::create('categories', function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->bigIncrements('id');
-            $table->bigInteger('parentId')->nullable()->default(null);
+            $table->foreignId('product_id')->constrained('products');
+            // $table->bigInteger('parentId')->nullable()->default(null);
             $table->string('title', 75);
-            $table->text('content')->nullable()->default(null);
+            $table->text('content')->nullable();
+            $table->timestamps();
         });
     }
 
@@ -34,6 +32,6 @@ class CreateCategoryTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists($this->tableName);
+        Schema::dropIfExists('categories');
     }
-}
+};

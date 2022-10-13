@@ -3,13 +3,10 @@ namespace Database\Migrations;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
-class CreateProductTable extends Migration
+
+
+return new class extends Migration
 {
-    /**
-     * Schema table name to migrate
-     * @var string
-     */
-    public $tableName = 'product';
     /**
      * Run the migrations.
      * @table product
@@ -18,10 +15,11 @@ class CreateProductTable extends Migration
      */
     public function up()
     {
-        Schema::create($this->tableName, function (Blueprint $table) {
+        Schema::create('products', function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->bigIncrements('id');
-            $table->bigInteger('userId');
+            $table->foreignId('user_id')->constrained('users');
+            // $table->bigInteger('userId');
             $table->string('title', 75);
             $table->text('summary')->nullable()->default(null);
             $table->smallInteger('type')->default('0');
@@ -36,13 +34,13 @@ class CreateProductTable extends Migration
             $table->dateTime('endsAt')->nullable()->default(null);
             $table->text('content')->nullable()->default(null);
 
-            $table->index(["userId"], 'idx_product_user');
+            // $table->index(["userId"], 'idx_product_user');
 
 
-            $table->foreign('userId', 'idx_product_user')
-                ->references('id')->on('user')
-                ->onDelete('no action')
-                ->onUpdate('no action');
+            // $table->foreign('userId', 'idx_product_user')
+            //     ->references('id')->on('user')
+            //     ->onDelete('no action')
+            //     ->onUpdate('no action');
         });
     }
 
@@ -53,6 +51,6 @@ class CreateProductTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists($this->tableName);
+        Schema::dropIfExists('products');
     }
-}
+};
