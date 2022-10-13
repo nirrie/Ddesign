@@ -21,18 +21,19 @@ return new class extends Migration
             $table->foreignId('user_id')->constrained('users');
             // $table->bigInteger('userId');
             $table->string('title', 75);
-            $table->text('summary')->nullable()->default(null);
+            $table->text('summary')->nullable();
             $table->smallInteger('type')->default('0');
             $table->string('sku', 100);
             $table->float('price')->default('0');
             $table->smallInteger('quantity')->default('0');
             $table->tinyInteger('shop')->default('0');
             $table->dateTime('createdAt');
-            $table->dateTime('updatedAt')->nullable()->default(null);
-            $table->dateTime('publishedAt')->nullable()->default(null);
-            $table->dateTime('startsAt')->nullable()->default(null);
-            $table->dateTime('endsAt')->nullable()->default(null);
-            $table->text('content')->nullable()->default(null);
+            $table->dateTime('updatedAt')->nullable();
+            $table->dateTime('publishedAt')->nullable();
+            $table->dateTime('startsAt')->nullable();
+            $table->dateTime('endsAt')->nullable();
+            $table->text('content')->nullable();
+            $table->timestamps();
 
             // $table->index(["userId"], 'idx_product_user');
 
