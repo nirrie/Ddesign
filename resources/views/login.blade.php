@@ -349,40 +349,96 @@
         </div>
     </div>
 </div>
-<div class="main-content main-content-404 right-sidebar">
-    <div class="container">
-        <div class="row">
-            <div class="content-area content-404 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="site-main">
-                    <section class="error-404 not-found">
-                        <div class="images">
-                            <img src="/images/404.png" alt="img">
-                        </div>
-                        <div class="text-404">
-                            <h1 class="page-title">
-                                Fout 404 niet gevonden
-                            </h1>
-                            <p class="page-content">
-                                Het spijt ons, maar de pagina die u zoekt bestaat niet. <br/>
-                                Je zou kunnen terugkeren naar
-                                <a href="{{ route('home.index') }}" class="hightlight"> Home pagina</a>
-                                of gebruik
-                                <span class="hightlight toggle-hightlight">
-                                    zoekmachine!
-									</span>
-                            </p>
-                            <form role="search" method="get" class="search-form">
-                                <input type="search" class="search-field" placeholder="Uw zoekopdracht hier">
-                                <button>Zoek</button>
-                            </form>
-                        </div>
-                    </section>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<!-- End-Head-->
 
+	<div class="main-content main-content-login">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="breadcrumb-trail breadcrumbs">
+						<ul class="trail-items breadcrumb">
+							<li class="trail-item trail-begin">
+								<a href="{{ route('home.index') }}">Home</a>
+							</li>
+							<li class="trail-item trail-end active">
+							Authenticatie
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="content-area col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="site-main">
+						<h3 class="custom_blog_title">
+						Authenticatie
+						</h3>
+						<div class="customer_login">
+							<div class="row">
+								<div class="col-lg-6 col-md-6 col-sm-12">
+									<div class="login-item">
+										<h5 class="title-login">Log in op uw account</h5>
+										<form class="login">
+										
+											<p class="form-row form-row-wide">
+												<label class="text">Gebruikersnaam</label>
+												<input title="username" type="text" class="input-text">
+											</p>
+											<p class="form-row form-row-wide">
+												<label class="text">Wachtwoord</label>
+												<input title="password" type="password" class="input-text">
+											</p>
+											<p class="lost_password">
+												<span class="inline">
+													<input type="checkbox" id="cb1">
+													<br>
+													<label for="cb1" class="label-text">Onthoud mij</label>
+												</span>
+												<a href="#" class="forgot-pw">Wachtwoord vergeten?</a>
+											</p>
+											<br><br><br>
+											<p class="form-row">
+												<input type="submit" class="button-submit" value="Login">
+											</p>
+										</form>
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-12">
+									<div class="login-item">
+										<h5 class="title-login">Registreer nu</h5>
+										<form class="register">
+											<p class="form-row form-row-wide">
+												<label class="text">Uw email</label>
+												<input title="email" type="email" class="input-text">
+											</p>
+											<p class="form-row form-row-wide">
+												<label class="text">Gebruikersnaam</label>
+												<input title="name" type="text" class="input-text">
+											</p>
+											<p class="form-row form-row-wide">
+												<label class="text">Wachtwoord</label>
+												<input title="pass" type="password" class="input-text">
+											</p>
+											<p class="form-row">
+												<span class="inline">
+													<input type="checkbox" id="cb2">
+													<label for="cb2" class="label-text">Ik ga akkoord met <span>algemene voorwaarden</span></label>
+												</span>
+											</p>
+											<p class="">
+												<input type="submit" class="button-submit" value="Registreer nu">
+											</p>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
 <footer class="footer style7">
     <div class="container">
         <div class="container-wapper">

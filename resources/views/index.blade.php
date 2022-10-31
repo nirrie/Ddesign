@@ -55,7 +55,7 @@
                 </div>
                 <ul class="header-user-links">
                     <li>
-                        <a href="{{ route('home.error') }}">Login of Registreer</a>
+                        <a href="{{ route('home.login') }}">Login of Registreer</a>
                     </li>
                 </ul>
             </div>
@@ -223,7 +223,7 @@
                                 <span class="toggle-submenu"></span>
 
                             <li class="menu-item">
-                                <a href="gridproducts.html" class="cleric-menu-item-title" >Winkel</a>
+                                <a href="{{ route('home.gridproducts') }}" class="cleric-menu-item-title" >Winkel</a>
                                 <span class="toggle-submenu"></span>
                             </li>
                             <li class="menu-item  menu-item-has-children item-megamenu">
@@ -248,7 +248,7 @@
                                                         <a href="{{ route('home.error') }}">404</a>
                                                     </li>
                                                     <li class="menu-item">
-                                                        <a href="{{ route('home.error') }}">Inloggen/Registreren</a>
+                                                        <a href="{{ route('home.login') }}">Inloggen/Registreren</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -1915,7 +1915,7 @@
             </a>
         </div>
         <div class="footer-device-mobile-item device-home device-user">
-            <a href="{{ route('home.error') }}">
+            <a href="{{ route('home.login') }}">
 					<span class="icon">
 						<i class="fa fa-user" aria-hidden="true"></i>
 					</span>
