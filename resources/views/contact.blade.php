@@ -178,7 +178,7 @@
 							<span></span>
 							<span></span>
 						</span>
-                        <span class="text">All Categories</span>
+                        <span class="text">ALLE CATEGORIEËN</span>
                     </div>
                     <div class="block-content verticalmenu-content">
                         <ul class="cleric-nav-vertical vertical-menu cleric-clone-mobile-menu">
@@ -242,7 +242,7 @@
                                                         <a href="{{ route('home.checkout') }}">Uitchecken</a>
                                                     </li>
                                                     <li class="menu-item">
-                                                        <a href="contact.html">Contact</a>
+                                                        <a href="{{ route('home.contact') }}">Contact</a>
                                                     </li>
                                                     <li class="menu-item">
                                                         <a href="{{ route('home.error') }}">404</a>
@@ -262,7 +262,7 @@
                                 </div>
                             </li>
                             <li class="menu-item">
-                                <a href="about.html" class="cleric-menu-item-title">Over ons</a>
+                                <a href="{{ route('home.about') }}" class="cleric-menu-item-title">Over ons</a>
                             </li>
                         </ul>
                     </div>
@@ -317,21 +317,14 @@
                             <li class="active">
                                 <a href="#">
 											<span>
+												Nederland (EUR)
+											</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+											<span>
 												English (USD)
-											</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-											<span>
-												French (EUR)
-											</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-											<span>
-												Japanese (JPY)
 											</span>
                                 </a>
                             </li>
@@ -349,40 +342,166 @@
         </div>
     </div>
 </div>
-<div class="main-content main-content-404 right-sidebar">
+
+<!-- End Header -->
+
+<div class="main-content main-content-contact">
     <div class="container">
         <div class="row">
-            <div class="content-area content-404 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="col-lg-12">
+                <div class="breadcrumb-trail breadcrumbs">
+                    <ul class="trail-items breadcrumb">
+                        <li class="trail-item trail-begin">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="trail-item trail-end active">
+                            Contact ons
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="content-area content-contact col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="site-main">
-                    <section class="error-404 not-found">
-                        <div class="images">
-                            <img src="/images/404.png" alt="img">
+                    <h3 class="custom_blog_title">Contact ons</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-main-content">
+        <div class="google-map">
+                <iframe width="100%" height="500" id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.678369909291!2d6.082173752010763!3d52.521159479715344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c7df34b9a32335%3A0xaabbb8d575d9fccb!2sDeltion%20College!5e0!3m2!1sen!2snl!4v1668425104002!5m2!1sen!2snl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-contact">
+                        <div class="col-lg-8 no-padding">
+                            <div class="form-message">
+                                <h2 class="title">
+                                ZEND ONS EEN BERICHT!
+                                </h2>
+                                <form action="#" class="cleric-contact-fom">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <p>
+                                                <span class="form-label">Uw naam *</span>
+                                                <span class="form-control-wrap your-name">
+														<input title="your-name" type="text" name="your-name" size="40"
+                                                               class="form-control form-control-name">
+													</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p>
+													<span class="form-label">
+														Uw Email *
+													</span>
+                                                <span class="form-control-wrap your-email">
+														<input title="your-email" type="email" name="your-email" size="40"
+                                                               class="form-control form-control-email">
+													</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <p>
+                                                <span class="form-label">Telefoon</span>
+                                                <span class="form-control-wrap your-phone">
+														<input title="your-phone" type="text" name="your-phone"
+                                                               class="form-control form-control-phone">
+													</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p>
+													<span class="form-label">
+                                                    Bedrijf
+													</span>
+                                                <span class="form-control-wrap your-company">
+														<input title="your-company" type="text" name="your-company"
+                                                               class="form-control your-company">
+													</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p>
+											<span class="form-label">
+                                              Uw bericht
+											</span>
+                                        <span class="wpcf7-form-control-wrap your-message">
+												<textarea title="your-message" name="your-message" cols="40" rows="9"
+                                                          class="form-control your-textarea"></textarea>
+											</span>
+                                    </p>
+                                    <p>
+                                        <input type="submit" value="BERICHT VERSTUREN"
+                                               class="form-control-submit button-submit">
+                                    </p>
+                                </form>
+                            </div>
                         </div>
-                        <div class="text-404">
-                            <h1 class="page-title">
-                                Fout 404 niet gevonden
-                            </h1>
-                            <p class="page-content">
-                                Het spijt ons, maar de pagina die u zoekt bestaat niet. <br/>
-                                Je zou kunnen terugkeren naar
-                                <a href="{{ route('home.index') }}" class="hightlight"> Home pagina</a>
-                                of gebruik
-                                <span class="hightlight toggle-hightlight">
-                                    zoekmachine!
-									</span>
-                            </p>
-                            <form role="search" method="get" class="search-form">
-                                <input type="search" class="search-field" placeholder="Uw zoekopdracht hier">
-                                <button>Zoek</button>
-                            </form>
+                        <div class="col-lg-4 no-padding">
+                            <div class="form-contact-information">
+                                <form action="#" class="cleric-contact-info">
+                                    <h2 class="title">
+                                      Contactgegevens
+                                    </h2>
+                                    <div class="info">
+                                        <div class="item address">
+												<span class="icon">
+													
+												</span>
+                                            <span class="text">
+                                               Mozartlaan 15, 8031 AA Zwolle
+												</span>
+                                        </div>
+                                        <div class="item phone">
+												<span class="icon">
+													
+												</span>
+                                            <span class="text">
+													(+31) 123 456 7890
+												</span>
+                                        </div>
+                                        <div class="item email">
+												<span class="icon">
+													
+												</span>
+                                            <span class="text">
+													info@deskdesign.nl
+												</span>
+                                        </div>
+                                    </div>
+                                    <div class="socials">
+                                        <a href="#" class="social-item" target="_blank">
+												<span class="icon fa fa-facebook">
+													
+												</span>
+                                        </a>
+                                        <a href="#" class="social-item" target="_blank">
+												<span class="icon fa fa-twitter-square">
+													
+												</span>
+                                        </a>
+                                        <a href="#" class="social-item" target="_blank">
+												<span class="icon fa fa-instagram">
+													
+												</span>
+                                        </a>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
-                    </section>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
+<!-- Footer -->
 <footer class="footer style7">
     <div class="container">
         <div class="container-wapper">
@@ -447,7 +566,7 @@
                                 <a href="#">Levering</a>
                             </li>
                             <li class="menu-item">
-                                <a href="#">Contact Ons</a>
+                                <a href="{{ route('home.contact') }}">Contact Ons</a>
                             </li>
                             <li class="menu-item">
                                 <a href="#">Return</a>

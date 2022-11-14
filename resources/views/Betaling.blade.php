@@ -178,7 +178,7 @@
 							<span></span>
 							<span></span>
 						</span>
-                        <span class="text">All Categories</span>
+                        <span class="text">ALLE CATEGORIEËN</span>
                     </div>
                     <div class="block-content verticalmenu-content">
                         <ul class="cleric-nav-vertical vertical-menu cleric-clone-mobile-menu">
@@ -233,16 +233,16 @@
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 menu-page-item">
                                             <div class="cleric-custommenu default">
-                                                <h2 class="widgettitle">Winkelpagina's</h2>
+                                                <h2 class="{{ route('home.shoppingcart') }}">Winkelpagina's</h2>
                                                 <ul class="menu">
                                                     <li class="menu-item">
-                                                        <a href="shoppingcart.html">Winkelwagen</a>
+                                                        <a href="{{ route('home.shoppingcart') }}">Winkelwagen</a>
                                                     </li>
                                                     <li class="menu-item">
                                                         <a href="{{ route('home.checkout') }}">Uitchecken</a>
                                                     </li>
                                                     <li class="menu-item">
-                                                        <a href="contact.html">Contact</a>
+                                                        <a href="{{ route('home.contact') }}">Contact</a>
                                                     </li>
                                                     <li class="menu-item">
                                                         <a href="{{ route('home.error') }}">404</a>
@@ -262,7 +262,7 @@
                                 </div>
                             </li>
                             <li class="menu-item">
-                                <a href="about.html" class="cleric-menu-item-title">Over ons</a>
+                                <a href="{{ route('home.about') }}" class="cleric-menu-item-title">Over ons</a>
                             </li>
                         </ul>
                     </div>
@@ -317,21 +317,14 @@
                             <li class="active">
                                 <a href="#">
 											<span>
+												Nederland (EUR)
+											</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+											<span>
 												English (USD)
-											</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-											<span>
-												French (EUR)
-											</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-											<span>
-												Japanese (JPY)
 											</span>
                                 </a>
                             </li>
@@ -349,40 +342,167 @@
         </div>
     </div>
 </div>
-<div class="main-content main-content-404 right-sidebar">
+
+<!-- End Header -->
+
+
+<div class="main-content main-content-checkout">
     <div class="container">
         <div class="row">
-            <div class="content-area content-404 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="site-main">
-                    <section class="error-404 not-found">
-                        <div class="images">
-                            <img src="/images/404.png" alt="img">
-                        </div>
-                        <div class="text-404">
-                            <h1 class="page-title">
-                                Fout 404 niet gevonden
-                            </h1>
-                            <p class="page-content">
-                                Het spijt ons, maar de pagina die u zoekt bestaat niet. <br/>
-                                Je zou kunnen terugkeren naar
-                                <a href="{{ route('home.index') }}" class="hightlight"> Home pagina</a>
-                                of gebruik
-                                <span class="hightlight toggle-hightlight">
-                                    zoekmachine!
-									</span>
+            <div class="col-lg-12">
+                <div class="breadcrumb-trail breadcrumbs">
+                    <ul class="trail-items breadcrumb">
+                        <li class="trail-item trail-begin">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="trail-item trail-end active">
+                        Betalingswijze
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <h3 class="custom_blog_title">
+        Betalingswijze
+        </h3>
+
+            <div class="main-content main-content-checkout">
+             <a href="#" class="button btn-credit-card">Kredietkaart</a>
+             <a href="#" class="button btn-paypal">paypal</a>
+            </div>
+            <p class="checkout-wrapp">
+                <label class="text">Kaartnummer</label>
+                <input type="text" class="input-text" placeholder="xxx - xxx - xxx - xxx">
+            </p>
+            <p class="form-row forn-row-col forn-row-col-1">
+             <label class="text">Maand</label>
+            <select title="month" data-placeholder="01" class="chosen-select" tabindex="1">
+                                    <option value="thang01">01</option>
+                                    <option value="thang02">02</option>
+                                    <option value="thang03">03</option>
+                                    <option value="thang04">04</option>
+                                    <option value="thang05">05</option>
+                                    <option value="thang06">06</option>
+                                    <option value="thang07">07</option>
+                                    <option value="thang08">08</option>
+                                    <option value="thang09">09</option>
+                                    <option value="thang10">10</option>
+                                    <option value="thang11">11</option>
+                                    <option value="thang12">12</option>
+             </select>
                             </p>
-                            <form role="search" method="get" class="search-form">
-                                <input type="search" class="search-field" placeholder="Uw zoekopdracht hier">
-                                <button>Zoek</button>
-                            </form>
+                            <p class="form-row forn-row-col forn-row-col-2">
+                                <label class="text">Jaar</label>
+                                <select title="Year" data-placeholder="2017" class="chosen-select" tabindex="1">
+                                    <option value="nam2020">2020</option>
+                                    <option value="nam2020">2021</option>
+                                    <option value="nam2020">2022</option>
+                                    <option value="nam2020">2023</option>
+                                    <option value="nam2020">2024</option>
+                                    <option value="nam2020">2025</option>
+                                    <option value="nam2020">2026</option>
+                                    <option value="nam2020">2027</option>
+                                    <option value="nam2020">2028</option>
+                                    <option value="nam2020">2029</option>
+                                    <option value="nam2020">2030</option>
+
+
+                                </select>
+                            </p>
+                            <p class="form-row forn-row-col forn-row-col-3">
+                                <label class="text">CVV</label>
+                                <input title="address" type="text" class="input-text">
+
+                            </p>
                         </div>
-                    </section>
+                    </div>
+                    <div class="main-content main-content-checkout">
+                        <div class="container">
+                            <h3 class="title-form">
+                                Your Order
+                            </h3>
+                            <ul class="list-product-order">
+                                <li class="product-item-order">
+                                    <div class="product-thumb">
+                                        <a href="#">
+                                            <img src="/images/item-order1.jpg" alt="img">
+                                        </a>
+                                    </div>
+                                    <div class="product-order-inner">
+                                        <h5 class="product-name">
+                                            <a href="#">Voorbeed 1</a>
+                                        </h5>
+                                        <span class="attributes-select attributes-color">Blauw,</span>
+                                        <span class="attributes-select attributes-size">XXL</span>
+                                        <div class="price">
+                                            €45
+                                            <span class="count">x1</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="product-item-order">
+                                    <div class="product-thumb">
+                                        <a href="#">
+                                            <img src="/images/item-order2.jpg" alt="img">
+                                        </a>
+                                    </div>
+                                    <div class="product-order-inner">
+                                        <h5 class="product-name">
+                                            <a href="#">Voorbeeld 2</a>
+                                        </h5>
+                                        <span class="attributes-select attributes-color">Wit,</span>
+                                        <span class="attributes-select attributes-size">XXL</span>
+                                        <div class="price">
+                                            €45
+                                            <span class="count">x1</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="product-item-order">
+                                    <div class="product-thumb">
+                                        <a href="#">
+                                            <img src="/images/item-order2.jpg" alt="img">
+                                        </a>
+                                    </div>
+                                    <div class="product-order-inner">
+                                        <h5 class="product-name">
+                                            <a href="#">Voorbeeld 3</a>
+                                        </h5>
+                                        <span class="attributes-select attributes-color">Zwart,</span>
+                                        <span class="attributes-select attributes-size">XXL</span>
+                                        <div class="price">
+                                            €45
+                                            <span class="count">x1</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="order-total">
+									<span class="title">
+                                     Totale prijs:
+									</span>
+                                <span class="total-price">
+										€95
+									</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class= "container">
+                    <a href="{{ route('home.gridproducts') }}" class="button btn-back-to-shipping">Terug naar winkel</a>
+                    <a href="{{ route('betaling.verwerkt') }}" class="button btn-pay-now">Betalen</a>
+                    <br><br>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
+
+
+
+
+<!-- Footer -->
 <footer class="footer style7">
     <div class="container">
         <div class="container-wapper">
@@ -447,7 +567,7 @@
                                 <a href="#">Levering</a>
                             </li>
                             <li class="menu-item">
-                                <a href="#">Contact Ons</a>
+                                <a href="{{ route('home.contact') }}">Contact Ons</a>
                             </li>
                             <li class="menu-item">
                                 <a href="#">Return</a>
