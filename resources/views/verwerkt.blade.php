@@ -178,7 +178,7 @@
 							<span></span>
 							<span></span>
 						</span>
-                        <span class="text">All Categories</span>
+                        <span class="text">ALLE CATEGORIEËN</span>
                     </div>
                     <div class="block-content verticalmenu-content">
                         <ul class="cleric-nav-vertical vertical-menu cleric-clone-mobile-menu">
@@ -233,16 +233,16 @@
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 menu-page-item">
                                             <div class="cleric-custommenu default">
-                                                <h2 class="widgettitle">Winkelpagina's</h2>
+                                                <h2 class="{{ route('home.shoppingcart') }}">Winkelpagina's</h2>
                                                 <ul class="menu">
                                                     <li class="menu-item">
-                                                        <a href="shoppingcart.html">Winkelwagen</a>
+                                                        <a href="{{ route('home.shoppingcart') }}">Winkelwagen</a>
                                                     </li>
                                                     <li class="menu-item">
                                                         <a href="{{ route('home.checkout') }}">Uitchecken</a>
                                                     </li>
                                                     <li class="menu-item">
-                                                        <a href="contact.html">Contact</a>
+                                                        <a href="{{ route('home.contact') }}">Contact</a>
                                                     </li>
                                                     <li class="menu-item">
                                                         <a href="{{ route('home.error') }}">404</a>
@@ -262,7 +262,7 @@
                                 </div>
                             </li>
                             <li class="menu-item">
-                                <a href="about.html" class="cleric-menu-item-title">Over ons</a>
+                                <a href="{{ route('home.about') }}" class="cleric-menu-item-title">Over ons</a>
                             </li>
                         </ul>
                     </div>
@@ -317,21 +317,14 @@
                             <li class="active">
                                 <a href="#">
 											<span>
+												Nederland (EUR)
+											</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+											<span>
 												English (USD)
-											</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-											<span>
-												French (EUR)
-											</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-											<span>
-												Japanese (JPY)
 											</span>
                                 </a>
                             </li>
@@ -349,40 +342,30 @@
         </div>
     </div>
 </div>
-<div class="main-content main-content-404 right-sidebar">
-    <div class="container">
-        <div class="row">
-            <div class="content-area content-404 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="site-main">
-                    <section class="error-404 not-found">
-                        <div class="images">
-                            <img src="/images/404.png" alt="img">
-                        </div>
-                        <div class="text-404">
-                            <h1 class="page-title">
-                                Fout 404 niet gevonden
-                            </h1>
-                            <p class="page-content">
-                                Het spijt ons, maar de pagina die u zoekt bestaat niet. <br/>
-                                Je zou kunnen terugkeren naar
-                                <a href="{{ route('home.index') }}" class="hightlight"> Home pagina</a>
-                                of gebruik
-                                <span class="hightlight toggle-hightlight">
-                                    zoekmachine!
-									</span>
-                            </p>
-                            <form role="search" method="get" class="search-form">
-                                <input type="search" class="search-field" placeholder="Uw zoekopdracht hier">
-                                <button>Zoek</button>
-                            </form>
-                        </div>
-                    </section>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
+<!-- End Header -->
+
+
+
+
+
+ <div class="end-checkout-wrapp">
+                <div class="end-checkout checkout-form">
+                    <div class="icon">
+                    </div>
+                    <h3 class="title-checkend">
+                     Gefeliciteerd! Uw bestelling is verwerkt.
+                    </h3>
+                    <div class="sub-title">
+                        <!-- Aenean dui mi, tempus non volutpat eget, molestie a orci.
+                        Nullam eget sem et eros laoreet rutrum.
+                        Quisque sem ante, feugiat quis lorem in. -->
+                    </div>
+                    <a href="{{ route('home.index') }}" class="button btn-return">Return to Store</a>
+                </div>
+</div>
+            
+<!-- Footer -->
 <footer class="footer style7">
     <div class="container">
         <div class="container-wapper">
@@ -447,7 +430,7 @@
                                 <a href="#">Levering</a>
                             </li>
                             <li class="menu-item">
-                                <a href="#">Contact Ons</a>
+                                <a href="{{ route('home.contact') }}">Contact Ons</a>
                             </li>
                             <li class="menu-item">
                                 <a href="#">Return</a>

@@ -178,7 +178,7 @@
 							<span></span>
 							<span></span>
 						</span>
-                        <span class="text">All Categories</span>
+                        <span class="text">ALLE CATEGORIEËN</span>
                     </div>
                     <div class="block-content verticalmenu-content">
                         <ul class="cleric-nav-vertical vertical-menu cleric-clone-mobile-menu">
@@ -242,7 +242,7 @@
                                                         <a href="{{ route('home.checkout') }}">Uitchecken</a>
                                                     </li>
                                                     <li class="menu-item">
-                                                        <a href="contact.html">Contact</a>
+                                                        <a href="{{ route('home.contact') }}">Contact</a>
                                                     </li>
                                                     <li class="menu-item">
                                                         <a href="{{ route('home.error') }}">404</a>
@@ -262,7 +262,7 @@
                                 </div>
                             </li>
                             <li class="menu-item">
-                                <a href="about.html" class="cleric-menu-item-title">Over ons</a>
+                                <a href="{{ route('home.about') }}" class="cleric-menu-item-title">Over ons</a>
                             </li>
                         </ul>
                     </div>
@@ -317,21 +317,14 @@
                             <li class="active">
                                 <a href="#">
 											<span>
+												Nederland (EUR)
+											</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+											<span>
 												English (USD)
-											</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-											<span>
-												French (EUR)
-											</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-											<span>
-												Japanese (JPY)
 											</span>
                                 </a>
                             </li>
@@ -349,40 +342,702 @@
         </div>
     </div>
 </div>
-<div class="main-content main-content-404 right-sidebar">
-    <div class="container">
-        <div class="row">
-            <div class="content-area content-404 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="site-main">
-                    <section class="error-404 not-found">
-                        <div class="images">
-                            <img src="/images/404.png" alt="img">
-                        </div>
-                        <div class="text-404">
-                            <h1 class="page-title">
-                                Fout 404 niet gevonden
-                            </h1>
-                            <p class="page-content">
-                                Het spijt ons, maar de pagina die u zoekt bestaat niet. <br/>
-                                Je zou kunnen terugkeren naar
-                                <a href="{{ route('home.index') }}" class="hightlight"> Home pagina</a>
-                                of gebruik
-                                <span class="hightlight toggle-hightlight">
-                                    zoekmachine!
-									</span>
-                            </p>
-                            <form role="search" method="get" class="search-form">
-                                <input type="search" class="search-field" placeholder="Uw zoekopdracht hier">
-                                <button>Zoek</button>
-                            </form>
-                        </div>
-                    </section>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
+<!-- End Header -->
+
+	<div class="main-content main-content-product no-sidebar">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="breadcrumb-trail breadcrumbs">
+						<ul class="trail-items breadcrumb">
+							<li class="trail-item trail-begin">
+								<a href="index.html">Home</a>
+							</li>
+							<li class="trail-item trail-end active">
+								Grid Products
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="content-area shop-grid-content full-width col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="site-main">
+						<h3 class="custom_blog_title">
+							Grid Products
+						</h3>
+						<div class="shop-top-control">
+							<form class="select-item select-form">
+								<span class="title">Soort</span>
+								<select title="sort" data-placeholder="9 Products/Page" class="chosen-select">
+									<option value="2">9 Products/Page</option>
+									<option value="1">12 Products/Page</option>
+									<option value="3">10 Products/Page</option>
+									<option value="4">8 Products/Page</option>
+									<option value="5">6 Products/Page</option>
+								</select>
+							</form>
+							<form class="filter-choice select-form">
+								<span class="title">Sorteer op</span>
+								<select title="sort-by" data-placeholder="Price: Low to High" class="chosen-select">
+									<option value="1">Prijs laag naar hoog</option>
+									<option value="2">Sorteer op populariteit</option>
+									<option value="3">Sorteer op gemiddelde beoordeling</option>
+									<option value="4">Sorteren op nieuwheid</option>
+									<option value="5">Sorteer op prijs: laag naar hoog</option>
+								</select>
+							</form>
+							<div class="grid-view-mode">
+								<div class="inner">
+									<a href="{{ route('gridproducts.listproducts') }}" class="modes-mode mode-list">
+										<span></span>
+										<span></span>
+									</a>
+									<a href="{{ route('gridproducts.listproducts') }}" class="modes-mode mode-grid  active">
+										<span></span>
+										<span></span>
+										<span></span>
+										<span></span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<ul class="row list-products auto-clear equal-container product-grid">
+							<li class="product-item  col-lg-3 col-md-4 col-sm-6 col-xs-6 col-ts-12 style-1">
+								<div class="product-inner equal-element">
+									<div class="product-top">
+										<div class="flash">
+											<span class="onnew">
+												<span class="text">
+													new
+												</span>
+											</span>
+										</div>
+									</div>
+									<div class="product-thumb">
+										<div class="thumb-inner">
+											<a href="{{ route('home.p1') }}">
+												<img src="/images/product-item-1.jpg" alt="img">
+											</a>
+											<div class="thumb-group">
+												<!-- <div class="yith-wcwl-add-to-wishlist">
+													<div class="yith-wcwl-add-button">
+														<a href="#">Add to Wishlist</a>
+													</div>
+												</div>
+												<a href="#" class="button quick-wiew-button">Quick View</a>
+												<div class="loop-form-add-to-cart">
+													<button class="single_add_to_cart_button button">Add to cart
+													</button>
+												</div> -->
+											</div>
+										</div>
+									</div>
+									<div class="product-info">
+										<h5 class="product-name product_title">
+											<a href="{{ route('home.p1') }}">Luxe management bureau met hoogte verstelbaar</a>
+										</h5>
+										<div class="group-info">
+											<div class="stars-rating">
+												<div class="star-rating">
+													<span class="star-3"></span>
+												</div>
+												<div class="count-star">
+													(3)
+												</div>
+											</div>
+											<div class="price">
+												<del>
+													€65
+												</del>
+												<ins>
+													€45
+												</ins>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="product-item product-type-variable col-lg-3 col-md-4 col-sm-6 col-xs-6 col-ts-12 style-1">
+								<div class="product-inner equal-element">
+									<div class="product-top">
+									</div>
+									<div class="product-thumb">
+										<div class="thumb-inner">
+											<a href="#">
+												<img src="/images/product-item-2.jpg" alt="img">
+											</a>
+											<div class="thumb-group">
+												<!-- <div class="yith-wcwl-add-to-wishlist">
+													<div class="yith-wcwl-add-button">
+														<a href="#">Add to Wishlist</a>
+													</div>
+												</div>
+												<a href="#" class="button quick-wiew-button">Quick View</a>
+												<div class="loop-form-add-to-cart">
+													<button class="single_add_to_cart_button button">Add to cart
+													</button>
+												</div> -->
+											</div>
+										</div>
+									</div>
+									<div class="product-info">
+										<h5 class="product-name product_title">
+											<a href="#">Product 2</a>
+										</h5>
+										<div class="group-info">
+											<div class="stars-rating">
+												<div class="star-rating">
+													<span class="star-3"></span>
+												</div>
+												<div class="count-star">
+													(3)
+												</div>
+											</div>
+											<div class="price">
+												<del>
+													€65
+												</del>
+												<ins>
+													€45
+												</ins>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="product-item product-type-variable col-lg-3 col-md-4 col-sm-6 col-xs-6 col-ts-12 style-1">
+								<div class="product-inner equal-element">
+									<div class="product-top">
+										<div class="flash">
+											<span class="onnew">
+												<span class="text">
+													new
+												</span>
+											</span>
+										</div>
+									</div>
+									<div class="product-thumb">
+										<div class="thumb-inner">
+											<a href="#">
+												<img src="/images/product-item-3.jpg" alt="img">
+											</a>
+											<div class="thumb-group">
+												<!-- <div class="yith-wcwl-add-to-wishlist">
+													<div class="yith-wcwl-add-button">
+														<a href="#">Add to Wishlist</a>
+													</div>
+												</div>
+												<a href="#" class="button quick-wiew-button">Quick View</a>
+												<div class="loop-form-add-to-cart">
+													<button class="single_add_to_cart_button button">Add to cart
+													</button>
+												</div> -->
+											</div>
+										</div>
+									</div>
+									<div class="product-info">
+										<h5 class="product-name product_title">
+											<a href="#">Product 3</a>
+										</h5>
+										<div class="group-info">
+											<div class="stars-rating">
+												<div class="star-rating">
+													<span class="star-3"></span>
+												</div>
+												<div class="count-star">
+													(3)
+												</div>
+											</div>
+											<div class="price">
+												<del>
+													€65
+												</del>
+												<ins>
+													€45
+												</ins>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="product-item product-type-variable col-lg-3 col-md-4 col-sm-6 col-xs-6 col-ts-12 style-1">
+								<div class="product-inner equal-element">
+									<div class="product-top">
+									</div>
+									<div class="product-thumb">
+										<div class="thumb-inner">
+											<a href="#">
+												<img src="/images/product-item-4.jpg" alt="img">
+											</a>
+											<div class="thumb-group">
+												<!-- <div class="yith-wcwl-add-to-wishlist">
+													<div class="yith-wcwl-add-button">
+														<a href="#">Add to Wishlist</a>
+													</div>
+												</div>
+												<a href="#" class="button quick-wiew-button">Quick View</a>
+												<div class="loop-form-add-to-cart">
+													<button class="single_add_to_cart_button button">Add to cart
+													</button>
+												</div> -->
+											</div>
+										</div>
+									</div>
+									<div class="product-info">
+										<h5 class="product-name product_title">
+											<a href="#">Product 4</a>
+										</h5>
+										<div class="group-info">
+											<div class="stars-rating">
+												<div class="star-rating">
+													<span class="star-3"></span>
+												</div>
+												<div class="count-star">
+													(3)
+												</div>
+											</div>
+											<div class="price">
+												<del>
+													€65
+												</del>
+												<ins>
+													€45
+												</ins>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="product-item  col-lg-3 col-md-4 col-sm-6 col-xs-6 col-ts-12 style-1">
+								<div class="product-inner equal-element">
+									<div class="product-top">
+									</div>
+									<div class="product-thumb">
+										<div class="thumb-inner">
+											<a href="#">
+												<img src="/images/product-item-5.jpg" alt="img">
+											</a>
+											<!-- <div class="thumb-group">
+												<div class="yith-wcwl-add-to-wishlist">
+													<div class="yith-wcwl-add-button">
+														<a href="#">Add to Wishlist</a>
+													</div>
+												</div>
+												<a href="#" class="button quick-wiew-button">Quick View</a>
+												<div class="loop-form-add-to-cart">
+													<button class="single_add_to_cart_button button">Add to cart
+													</button>
+												</div>
+											</div> -->
+										</div>
+									</div>
+									<div class="product-info">
+										<h5 class="product-name product_title">
+											<a href="#">Product 5</a>
+										</h5>
+										<div class="group-info">
+											<div class="stars-rating">
+												<div class="star-rating">
+													<span class="star-3"></span>
+												</div>
+												<div class="count-star">
+													(3)
+												</div>
+											</div>
+											<div class="price">
+												<del>
+													€65
+												</del>
+												<ins>
+													€45
+												</ins>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="product-item product-type-variable col-lg-3 col-md-4 col-sm-6 col-xs-6 col-ts-12 style-1">
+								<div class="product-inner equal-element">
+									<div class="product-top">
+										<div class="flash">
+											<span class="onnew">
+												<span class="text">
+													new
+												</span>
+											</span>
+										</div>
+									</div>
+									<div class="product-thumb">
+										<div class="thumb-inner">
+											<a href="#">
+												<img src="/images/product-item-6.jpg" alt="img">
+											</a>
+											<!-- <div class="thumb-group">
+												<div class="yith-wcwl-add-to-wishlist">
+													<div class="yith-wcwl-add-button">
+														<a href="#">Add to Wishlist</a>
+													</div>
+												</div>
+												<a href="#" class="button quick-wiew-button">Quick View</a>
+												<div class="loop-form-add-to-cart">
+													<button class="single_add_to_cart_button button">Add to cart
+													</button>
+												</div>
+											</div> -->
+										</div>
+									</div>
+									<div class="product-info">
+										<h5 class="product-name product_title">
+											<a href="#">Product 6</a>
+										</h5>
+										<div class="group-info">
+											<div class="stars-rating">
+												<div class="star-rating">
+													<span class="star-3"></span>
+												</div>
+												<div class="count-star">
+													(3)
+												</div>
+											</div>
+											<div class="price">
+												<del>
+													€65
+												</del>
+												<ins>
+													€45
+												</ins>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="product-item product-type-variable col-lg-3 col-md-4 col-sm-6 col-xs-6 col-ts-12 style-1">
+								<div class="product-inner equal-element">
+									<div class="product-top">
+									</div>
+									<div class="product-thumb">
+										<div class="thumb-inner">
+											<a href="#">
+												<img src="/images/product-item-7.jpg" alt="img">
+											</a>
+											<!-- <div class="thumb-group">
+												<div class="yith-wcwl-add-to-wishlist">
+													<div class="yith-wcwl-add-button">
+														<a href="#">Add to Wishlist</a>
+													</div>
+												</div>
+												<a href="#" class="button quick-wiew-button">Quick View</a>
+												<div class="loop-form-add-to-cart">
+													<button class="single_add_to_cart_button button">Add to cart
+													</button>
+												</div>
+											</div> -->
+										</div>
+									</div>
+									<div class="product-info">
+										<h5 class="product-name product_title">
+											<a href="#">Product 7 </a>
+										</h5>
+										<div class="group-info">
+											<div class="stars-rating">
+												<div class="star-rating">
+													<span class="star-3"></span>
+												</div>
+												<div class="count-star">
+													(3)
+												</div>
+											</div>
+											<div class="price">
+												<del>
+													€65
+												</del>
+												<ins>
+													€45
+												</ins>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="product-item  col-lg-3 col-md-4 col-sm-6 col-xs-6 col-ts-12 style-1">
+								<div class="product-inner equal-element">
+									<div class="product-top">
+									</div>
+									<div class="product-thumb">
+										<div class="thumb-inner">
+											<a href="#">
+												<img src="/images/product-item-20.jpg" alt="img">
+											</a>
+											<!-- <div class="thumb-group">
+												<div class="yith-wcwl-add-to-wishlist">
+													<div class="yith-wcwl-add-button">
+														<a href="#">Add to Wishlist</a>
+													</div>
+												</div>
+												<a href="#" class="button quick-wiew-button">Quick View</a>
+												<div class="loop-form-add-to-cart">
+													<button class="single_add_to_cart_button button">Add to cart
+													</button>
+												</div>
+											</div> -->
+										</div>
+									</div>
+									<div class="product-info">
+										<h5 class="product-name product_title">
+											<a href="#">Product 8</a>
+										</h5>
+										<div class="group-info">
+											<div class="stars-rating">
+												<div class="star-rating">
+													<span class="star-3"></span>
+												</div>
+												<div class="count-star">
+													(3)
+												</div>
+											</div>
+											<div class="price">
+												<del>
+													€65
+												</del>
+												<ins>
+													€45
+												</ins>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="product-item product-type-variable col-lg-3 col-md-4 col-sm-6 col-xs-6 col-ts-12 style-1">
+								<div class="product-inner equal-element">
+									<div class="product-top">
+										<div class="flash">
+											<span class="onnew">
+												<span class="text">
+													new
+												</span>
+											</span>
+										</div>
+									</div>
+									<div class="product-thumb">
+										<div class="thumb-inner">
+											<a href="#">
+												<img src="/images/product-item-9.jpg" alt="img">
+											</a>
+											<!-- <div class="thumb-group">
+												<div class="yith-wcwl-add-to-wishlist">
+													<div class="yith-wcwl-add-button">
+														<a href="#">Add to Wishlist</a>
+													</div>
+												</div>
+												<a href="#" class="button quick-wiew-button">Quick View</a>
+												<div class="loop-form-add-to-cart">
+													<button class="single_add_to_cart_button button">Add to cart
+													</button>
+												</div>
+											</div> -->
+										</div>
+									</div>
+									<div class="product-info">
+										<h5 class="product-name product_title">
+											<a href="#">Product 9</a>
+										</h5>
+										<div class="group-info">
+											<div class="stars-rating">
+												<div class="star-rating">
+													<span class="star-3"></span>
+												</div>
+												<div class="count-star">
+													(3)
+												</div>
+											</div>
+											<div class="price">
+												<del>
+													€65
+												</del>
+												<ins>
+													€45
+												</ins>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="product-item  col-lg-3 col-md-4 col-sm-6 col-xs-6 col-ts-12 style-1">
+								<div class="product-inner equal-element">
+									<div class="product-top">
+									</div>
+									<div class="product-thumb">
+										<div class="thumb-inner">
+											<a href="#">
+												<img src="/images/product-item-8.jpg" alt="img">
+											</a>
+											<!-- <div class="thumb-group">
+												<div class="yith-wcwl-add-to-wishlist">
+													<div class="yith-wcwl-add-button">
+														<a href="#">Add to Wishlist</a>
+													</div>
+												</div>
+												<a href="#" class="button quick-wiew-button">Quick View</a>
+												<div class="loop-form-add-to-cart">
+													<button class="single_add_to_cart_button button">Add to cart
+													</button>
+												</div>
+											</div> -->
+										</div>
+									</div>
+									<div class="product-info">
+										<h5 class="product-name product_title">
+											<a href="#">Product 10</a>
+										</h5>
+										<div class="group-info">
+											<div class="stars-rating">
+												<div class="star-rating">
+													<span class="star-3"></span>
+												</div>
+												<div class="count-star">
+													(3)
+												</div>
+											</div>
+											<div class="price">
+												<del>
+													€65
+												</del>
+												<ins>
+													€45
+												</ins>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="product-item  col-lg-3 col-md-4 col-sm-6 col-xs-6 col-ts-12 style-1">
+								<div class="product-inner equal-element">
+									<div class="product-top">
+										<div class="flash">
+											<span class="onnew">
+												<span class="text">
+													new
+												</span>
+											</span>
+										</div>
+									</div>
+									<div class="product-thumb">
+										<div class="thumb-inner">
+											<a href="#">
+												<img src="/images/product-item-21.jpg" alt="img">
+											</a>
+											<!-- <div class="thumb-group">
+												<div class="yith-wcwl-add-to-wishlist">
+													<div class="yith-wcwl-add-button">
+														<a href="#">Add to Wishlist</a>
+													</div>
+												</div>
+												<a href="#" class="button quick-wiew-button">Quick View</a>
+												<div class="loop-form-add-to-cart">
+													<button class="single_add_to_cart_button button">Add to cart
+													</button>
+												</div>
+											</div> -->
+										</div>
+									</div>
+									<div class="product-info">
+										<h5 class="product-name product_title">
+											<a href="#">Product 11</a>
+										</h5>
+										<div class="group-info">
+											<div class="stars-rating">
+												<div class="star-rating">
+													<span class="star-3"></span>
+												</div>
+												<div class="count-star">
+													(3)
+												</div>
+											</div>
+											<div class="price">
+												<del>
+													€65
+												</del>
+												<ins>
+													€45
+												</ins>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="product-item  col-lg-3 col-md-4 col-sm-6 col-xs-6 col-ts-12 style-1">
+								<div class="product-inner equal-element">
+									<div class="product-top">
+										<div class="flash">
+											<span class="onnew">
+												<span class="text">
+													new
+												</span>
+											</span>
+										</div>
+									</div>
+									<div class="product-thumb">
+										<div class="thumb-inner">
+											<a href="#">
+												<img src="/images/product-item-22.jpg" alt="img">
+											</a>
+											<!-- <div class="thumb-group">
+												<div class="yith-wcwl-add-to-wishlist">
+													<div class="yith-wcwl-add-button">
+														<a href="#">Add to Wishlist</a>
+													</div>
+												</div>
+												<a href="#" class="button quick-wiew-button">Quick View</a>
+												<div class="loop-form-add-to-cart">
+													<button class="single_add_to_cart_button button">Add to cart
+													</button>
+												</div>
+											</div> -->
+										</div>
+									</div>
+									<div class="product-info">
+										<h5 class="product-name product_title">
+											<a href="#">Product 12 </a>
+										</h5>
+										<div class="group-info">
+											<div class="stars-rating">
+												<div class="star-rating">
+													<span class="star-3"></span>
+												</div>
+												<div class="count-star">
+													(3)
+												</div>
+											</div>
+											<div class="price">
+												<del>
+													€65
+												</del>
+												<ins>
+													€45
+												</ins>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<div class="pagination clearfix style2">
+							<div class="nav-link">
+								<a href="#" class="page-numbers"><i class="icon fa fa-angle-left" aria-hidden="true"></i></a>
+								<a href="#" class="page-numbers">1</a>
+								<a href="#" class="page-numbers">2</a>
+								<a href="#" class="page-numbers current">3</a>
+								<a href="#" class="page-numbers"><i class="icon fa fa-angle-right" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- Footer -->
 <footer class="footer style7">
     <div class="container">
         <div class="container-wapper">
@@ -447,7 +1102,7 @@
                                 <a href="#">Levering</a>
                             </li>
                             <li class="menu-item">
-                                <a href="#">Contact Ons</a>
+                                <a href="{{ route('home.contact') }}">Contact Ons</a>
                             </li>
                             <li class="menu-item">
                                 <a href="#">Return</a>
