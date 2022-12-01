@@ -178,7 +178,7 @@
 							<span></span>
 							<span></span>
 						</span>
-                        <span class="text">All Categories</span>
+                        <span class="text">ALLE CATEGORIEËN</span>
                     </div>
                     <div class="block-content verticalmenu-content">
                         <ul class="cleric-nav-vertical vertical-menu cleric-clone-mobile-menu">
@@ -233,16 +233,16 @@
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 menu-page-item">
                                             <div class="cleric-custommenu default">
-                                                <h2 class="widgettitle">Winkelpagina's</h2>
+                                                <h2 class="{{ route('home.shoppingcart') }}">Winkelpagina's</h2>
                                                 <ul class="menu">
                                                     <li class="menu-item">
-                                                        <a href="shoppingcart.html">Winkelwagen</a>
+                                                        <a href="{{ route('home.shoppingcart') }}">Winkelwagen</a>
                                                     </li>
                                                     <li class="menu-item">
                                                         <a href="{{ route('home.checkout') }}">Uitchecken</a>
                                                     </li>
                                                     <li class="menu-item">
-                                                        <a href="contact.html">Contact</a>
+                                                        <a href="{{ route('home.contact') }}">Contact</a>
                                                     </li>
                                                     <li class="menu-item">
                                                         <a href="{{ route('home.error') }}">404</a>
@@ -262,7 +262,7 @@
                                 </div>
                             </li>
                             <li class="menu-item">
-                                <a href="about.html" class="cleric-menu-item-title">Over ons</a>
+                                <a href="{{ route('home.about') }}" class="cleric-menu-item-title">Over ons</a>
                             </li>
                         </ul>
                     </div>
@@ -317,21 +317,14 @@
                             <li class="active">
                                 <a href="#">
 											<span>
+												Nederland (EUR)
+											</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+											<span>
 												English (USD)
-											</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-											<span>
-												French (EUR)
-											</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-											<span>
-												Japanese (JPY)
 											</span>
                                 </a>
                             </li>
@@ -349,40 +342,189 @@
         </div>
     </div>
 </div>
-<div class="main-content main-content-404 right-sidebar">
-    <div class="container">
-        <div class="row">
-            <div class="content-area content-404 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="site-main">
-                    <section class="error-404 not-found">
-                        <div class="images">
-                            <img src="/images/404.png" alt="img">
-                        </div>
-                        <div class="text-404">
-                            <h1 class="page-title">
-                                Fout 404 niet gevonden
-                            </h1>
-                            <p class="page-content">
-                                Het spijt ons, maar de pagina die u zoekt bestaat niet. <br/>
-                                Je zou kunnen terugkeren naar
-                                <a href="{{ route('home.index') }}" class="hightlight"> Home pagina</a>
-                                of gebruik
-                                <span class="hightlight toggle-hightlight">
-                                    zoekmachine!
-									</span>
-                            </p>
-                            <form role="search" method="get" class="search-form">
-                                <input type="search" class="search-field" placeholder="Uw zoekopdracht hier">
-                                <button>Zoek</button>
+
+<!-- End Header -->
+
+
+
+<div class="site-content">
+    <main class="site-main  main-container no-sidebar">
+        <div class="container">
+            <div class="breadcrumb-trail breadcrumbs">
+                <ul class="trail-items breadcrumb">
+                    <li class="trail-item trail-begin">
+                        <a href="">
+								<span>
+									Home
+								</span>
+                        </a>
+                    </li>
+                    <li class="trail-item trail-end active">
+							<span>
+                            Winkelwagen
+							</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="main-content-cart main-content col-sm-12">
+                    <h3 class="custom_blog_title">
+                    Winkelwagen
+                    </h3>
+                    <div class="page-main-content">
+                        <div class="shoppingcart-content">
+                            <form action="shoppingcart.html" class="cart-form">
+                                <table class="shop_table">
+                                    <thead>
+                                    <tr>
+                                        <th class="product-remove"></th>
+                                        <th class="product-thumbnail"></th>
+                                        <th class="product-name"></th>
+                                        <th class="product-price"></th>
+                                        <th class="product-quantity"></th>
+                                        <th class="product-subtotal"></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr class="cart_item">
+                                        <td class="product-remove">
+                                            <a href="#" class="remove"></a>
+                                        </td>
+                                        <td class="product-thumbnail">
+                                            <a href="#">
+                                                <img src="/images/cart-item-2.jpg" alt="img"
+                                                     class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image">
+                                            </a>
+                                        </td>
+                                        <td class="product-name" data-title="Product">
+                                            <a href="#" class="title">Voorbeeld 1</a>
+                                            <span class="attributes-select attributes-color">Zwart,</span>
+                                            <span class="attributes-select attributes-size">XXL</span>
+                                        </td>
+                                        <td class="product-quantity" data-title="Quantity">
+                                            <div class="quantity">
+                                                <div class="control">
+                                                    <a class="btn-number qtyminus quantity-minus" href="#">-</a>
+                                                    <input type="text" data-step="1" data-min="0" value="1" title="Qty"
+                                                           class="input-qty qty" size="4">
+                                                    <a href="#" class="btn-number qtyplus quantity-plus">+</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="product-price" data-title="Price">
+													<span class="woocommerce-Price-amount amount">
+														<span class="woocommerce-Price-currencySymbol">
+															€
+														</span>
+														45
+													</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="cart_item">
+                                        <td class="product-remove">
+                                            <a href="#" class="remove"></a>
+                                        </td>
+                                        <td class="product-thumbnail">
+                                            <a href="#">
+                                                <img src="/images/cart-item-3.jpg" alt="img"
+                                                     class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image">
+                                            </a>
+                                        </td>
+                                        <td class="product-name" data-title="Product">
+                                            <a href="#" class="title">Voorbeeld 2</a>
+                                            <span class="attributes-select attributes-color">Wit,</span>
+                                            <span class="attributes-select attributes-size">M</span>
+                                        </td>
+                                        <td class="product-quantity" data-title="Quantity">
+                                            <div class="quantity">
+                                                <div class="control">
+                                                    <a class="btn-number qtyminus quantity-minus" href="#">-</a>
+                                                    <input type="text" data-step="1" data-min="0" value="1" title="Qty"
+                                                           class="input-qty qty" size="4">
+                                                    <a href="#" class="btn-number qtyplus quantity-plus">+</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="product-price" data-title="Price">
+													<span class="woocommerce-Price-amount amount">
+														<span class="woocommerce-Price-currencySymbol">
+															€
+														</span>
+														45
+													</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="cart_item">
+                                        <td class="product-remove">
+                                            <a href="#" class="remove"></a>
+                                        </td>
+                                        <td class="product-thumbnail">
+                                            <a href="#">
+                                                <img src="/images/cart-item-1.jpg" alt="img"
+                                                     class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image">
+                                            </a>
+                                        </td>
+                                        <td class="product-name" data-title="Product">
+                                            <a href="#" class="title">Voorbeeld 3</a>
+                                            <span class="attributes-select attributes-color">Bruin,</span>
+                                            <span class="attributes-select attributes-size">XS</span>
+                                        </td>
+                                        <td class="product-quantity" data-title="Quantity">
+                                            <div class="quantity">
+                                                <div class="control">
+                                                    <a class="btn-number qtyminus quantity-minus" href="#">-</a>
+                                                    <input type="text" data-step="1" data-min="0" value="1" title="Qty"
+                                                           class="input-qty qty" size="4">
+                                                    <a href="#" class="btn-number qtyplus quantity-plus">+</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="product-price" data-title="Price">
+													<span class="woocommerce-Price-amount amount">
+														<span class="woocommerce-Price-currencySymbol">
+															€
+														</span>
+														45
+													</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="actions">
+                                            <div class="coupon">
+                                                <label class="coupon_code">Coupon code:</label>
+                                                <input type="text" class="input-text" placeholder="Promotion code here">
+                                                <a href="#" class="button"></a>
+                                            </div>
+                                            <div class="order-total">
+														<span class="title">
+                                                          Totale prijs:
+														</span>
+                                                <span class="total-price">
+															€95
+														</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
                             </form>
+                            <div class="control-cart">
+                                <button class="button btn-continue-shopping">
+                                  Doorgaan met winkelen
+                                </button>
+                                <button class="button btn-cart-to-checkout"><a
+                                 href="{{ route('home.checkout') }}">Uitchecken</a>
+                                </button>
+                            </div>
                         </div>
-                    </section>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 </div>
 
+<!-- Footer -->
 <footer class="footer style7">
     <div class="container">
         <div class="container-wapper">
@@ -447,7 +589,7 @@
                                 <a href="#">Levering</a>
                             </li>
                             <li class="menu-item">
-                                <a href="#">Contact Ons</a>
+                                <a href="{{ route('home.contact') }}">Contact Ons</a>
                             </li>
                             <li class="menu-item">
                                 <a href="#">Return</a>

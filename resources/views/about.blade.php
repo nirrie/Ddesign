@@ -178,7 +178,7 @@
 							<span></span>
 							<span></span>
 						</span>
-                        <span class="text">All Categories</span>
+                        <span class="text">ALLE CATEGORIEËN</span>
                     </div>
                     <div class="block-content verticalmenu-content">
                         <ul class="cleric-nav-vertical vertical-menu cleric-clone-mobile-menu">
@@ -242,7 +242,7 @@
                                                         <a href="{{ route('home.checkout') }}">Uitchecken</a>
                                                     </li>
                                                     <li class="menu-item">
-                                                        <a href="contact.html">Contact</a>
+                                                        <a href="{{ route('home.contact') }}">Contact</a>
                                                     </li>
                                                     <li class="menu-item">
                                                         <a href="{{ route('home.error') }}">404</a>
@@ -262,7 +262,7 @@
                                 </div>
                             </li>
                             <li class="menu-item">
-                                <a href="about.html" class="cleric-menu-item-title">Over ons</a>
+                                <a href="{{ route('home.about') }}" class="cleric-menu-item-title">Over ons</a>
                             </li>
                         </ul>
                     </div>
@@ -317,21 +317,14 @@
                             <li class="active">
                                 <a href="#">
 											<span>
+												Nederland (EUR)
+											</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+											<span>
 												English (USD)
-											</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-											<span>
-												French (EUR)
-											</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-											<span>
-												Japanese (JPY)
 											</span>
                                 </a>
                             </li>
@@ -349,40 +342,113 @@
         </div>
     </div>
 </div>
-<div class="main-content main-content-404 right-sidebar">
+
+<!-- End Header -->
+
+<div class="main-content main-content-about">
     <div class="container">
         <div class="row">
-            <div class="content-area content-404 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="col-lg-12">
+                <div class="breadcrumb-trail breadcrumbs">
+                    <ul class="trail-items breadcrumb">
+                        <li class="trail-item trail-begin">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="trail-item trail-end active">
+                            Over Ons
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="content-area content-about col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="site-main">
-                    <section class="error-404 not-found">
-                        <div class="images">
-                            <img src="/images/404.png" alt="img">
+                    <h3 class="custom_blog_title">Over Ons</h3>
+                    <div class="page-main-content">
+                        <div class="header-banner banner-image">
+                            <div class="banner-wrap">
+                                <div class="banner-header">
+                                    <div class="col-lg-5 col-md-offset-7">
+                                        <div class="content-inner">
+                                            <h2 class="title">
+                                                    <br/>    
+                                            </h2>
+                                            <div class="sub-title">
+                                                      <br/>
+                                                     
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="text-404">
-                            <h1 class="page-title">
-                                Fout 404 niet gevonden
-                            </h1>
-                            <p class="page-content">
-                                Het spijt ons, maar de pagina die u zoekt bestaat niet. <br/>
-                                Je zou kunnen terugkeren naar
-                                <a href="{{ route('home.index') }}" class="hightlight"> Home pagina</a>
-                                of gebruik
-                                <span class="hightlight toggle-hightlight">
-                                    zoekmachine!
-									</span>
-                            </p>
-                            <form role="search" method="get" class="search-form">
-                                <input type="search" class="search-field" placeholder="Uw zoekopdracht hier">
-                                <button>Zoek</button>
-                            </form>
+                        <br><br>
+                         <!-- ======= About Section ======= -->
+                         <section id="about" class="about">
+                         <div class="container">
+
+                     <div class="section-title">
+                      <h3>Ons Verhaal</h3>                       
+                         <p>Desk & design is tot stand gekomen in het najaar van 2022. We zagen dat er in de wereld van het kantoormeubilair verandering nodig is.</p>
+                         <P>Kantoormeubilair is vaak duur. Dit zorgt er voor dat kleine bedrijven en mensen die minder geld hebben niet toegang hebben tot hetzelfde <br> meubilair als grotere bedrijven of multinationals. Wij als D&D zagen hiervoor een gat in de markt om luxe kantoormeubels aan te bieden <br> voor een scherpe prijs. </P>
+                     </div>
+
+                        <div class="team-member">
+                            <div class="row">
+                                <div class="col-sm-12 border-custom">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <h2 class="custom_blog_title center">
+                              ONS TEAM
+                            </h2>
+                            <div class="team-member-slider nav-center owl-slick"
+                                 data-slick='{"autoplay":false, "autoplaySpeed":1000, "arrows":true, "dots":false, "infinite":true, "speed":800, "rows":1}'
+                                 data-responsive='[{"breakpoint":"0","settings":{"slidesToShow":1}},{"breakpoint":"480","settings":{"slidesToShow":1}},{"breakpoint":"767","settings":{"slidesToShow":2}},{"breakpoint":"991","settings":{"slidesToShow":3}},{"breakpoint":"1199","settings":{"slidesToShow":3}},{"breakpoint":"2000","settings":{"slidesToShow":3}}]'>
+                                <div class="cleric-team-member">
+                                    <div class="team-member-item">
+                                        <div class="member_avatar">
+                                        <a href="https://hdabbah.nl"><img src="/images/member3.png" alt="img"></a>
+                                        </div>
+                                        <a href="https://hdabbah.nl"><h5 class="member_name">HISHAM DABBAH</h5></a>
+                                        <div class="member_position">
+                                          Full-Stack Developer
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cleric-team-member">
+                                    <div class="team-member-item">
+                                        <div class="member_avatar">
+                                            <img src="/images/member2.png" alt="img">
+                                        </div>
+                                        <h5 class="member_name">Nirmin Backhaus</h5>
+                                     <div class="member_position">
+                                         Back-End Developer
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cleric-team-member">
+                                    <div class="team-member-item">
+                                        <div class="member_avatar">
+                                            <img src="/images/member1.png" alt="img">
+                                        </div>
+                                        <h5 class="member_name">RENATE PIT</h5>
+                                        <div class="member_position">
+                                          Back-End Developer
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </section>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
+<br><br>
+<!-- Footer -->
 <footer class="footer style7">
     <div class="container">
         <div class="container-wapper">
@@ -447,7 +513,7 @@
                                 <a href="#">Levering</a>
                             </li>
                             <li class="menu-item">
-                                <a href="#">Contact Ons</a>
+                                <a href="{{ route('home.contact') }}">Contact Ons</a>
                             </li>
                             <li class="menu-item">
                                 <a href="#">Return</a>
