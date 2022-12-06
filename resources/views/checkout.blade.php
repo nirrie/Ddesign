@@ -178,7 +178,7 @@
 							<span></span>
 							<span></span>
 						</span>
-                        <span class="text">All Categories</span>
+                        <span class="text">ALLE CATEGORIEËN</span>
                     </div>
                     <div class="block-content verticalmenu-content">
                         <ul class="cleric-nav-vertical vertical-menu cleric-clone-mobile-menu">
@@ -233,16 +233,16 @@
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 menu-page-item">
                                             <div class="cleric-custommenu default">
-                                                <h2 class="widgettitle">Winkelpagina's</h2>
+                                                <h2 class="{{ route('home.shoppingcart') }}">Winkelpagina's</h2>
                                                 <ul class="menu">
                                                     <li class="menu-item">
-                                                        <a href="shoppingcart.html">Winkelwagen</a>
+                                                        <a href="{{ route('home.shoppingcart') }}">Winkelwagen</a>
                                                     </li>
                                                     <li class="menu-item">
                                                         <a href="{{ route('home.checkout') }}">Uitchecken</a>
                                                     </li>
                                                     <li class="menu-item">
-                                                        <a href="contact.html">Contact</a>
+                                                        <a href="{{ route('home.contact') }}">Contact</a>
                                                     </li>
                                                     <li class="menu-item">
                                                         <a href="{{ route('home.error') }}">404</a>
@@ -262,7 +262,7 @@
                                 </div>
                             </li>
                             <li class="menu-item">
-                                <a href="about.html" class="cleric-menu-item-title">Over ons</a>
+                                <a href="{{ route('home.about') }}" class="cleric-menu-item-title">Over ons</a>
                             </li>
                         </ul>
                     </div>
@@ -317,21 +317,14 @@
                             <li class="active">
                                 <a href="#">
 											<span>
+												Nederland (EUR)
+											</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+											<span>
 												English (USD)
-											</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-											<span>
-												French (EUR)
-											</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-											<span>
-												Japanese (JPY)
 											</span>
                                 </a>
                             </li>
@@ -349,40 +342,182 @@
         </div>
     </div>
 </div>
-<div class="main-content main-content-404 right-sidebar">
+
+<!-- End Header -->
+
+
+
+<div class="main-content main-content-checkout">
     <div class="container">
         <div class="row">
-            <div class="content-area content-404 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="site-main">
-                    <section class="error-404 not-found">
-                        <div class="images">
-                            <img src="/images/404.png" alt="img">
-                        </div>
-                        <div class="text-404">
-                            <h1 class="page-title">
-                                Fout 404 niet gevonden
-                            </h1>
-                            <p class="page-content">
-                                Het spijt ons, maar de pagina die u zoekt bestaat niet. <br/>
-                                Je zou kunnen terugkeren naar
-                                <a href="{{ route('home.index') }}" class="hightlight"> Home pagina</a>
-                                of gebruik
-                                <span class="hightlight toggle-hightlight">
-                                    zoekmachine!
-									</span>
-                            </p>
-                            <form role="search" method="get" class="search-form">
-                                <input type="search" class="search-field" placeholder="Uw zoekopdracht hier">
-                                <button>Zoek</button>
-                            </form>
-                        </div>
-                    </section>
+            <div class="col-lg-12">
+                <div class="breadcrumb-trail breadcrumbs">
+                    <ul class="trail-items breadcrumb">
+                        <li class="trail-item trail-begin">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="trail-item trail-end active">
+                         Uitchecken
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
+        <h3 class="custom_blog_title">
+           Uitchecken
+        </h3>
+        <div class="checkout-wrapp">
+            <div class="shipping-address-form-wrapp">
+                <div class="shipping-address-form  checkout-form">
+                    <div class="row-col-1 row-col">
+                        <div class="shipping-address">
+                            <h3 class="title-form">
+                              Verzendingsadres
+                            </h3>
+                            <p class="form-row form-row-first">
+                                <label class="text">Voornaam</label>
+                                <input title="first" type="text" class="input-text">
+                            </p>
+                            <p class="form-row form-row-last">
+                                <label class="text">Achternaam</label>
+                                <input title="last" type="text" class="input-text">
+                            </p>
+                            <p class="form-row forn-row-col forn-row-col-1">
+                                <label class="text">Land</label>
+                                <select title="country" data-placeholder="Nedreland" class="chosen-select"
+                                        tabindex="1">
+                                    <option value="Nederland">Nederland</option>
+                                    <option value="België">België</option>
+                                </select>
+                            <!-- </p>
+                            <p class="form-row forn-row-col forn-row-col-2">
+                                <label class="text">State</label>
+                                <select title="state" data-placeholder="London" class="chosen-select" tabindex="1">
+                                    <option value="United States">Amste</option>
+                                    <option value="United Kingdom">tokyo</option>
+                                    <option value="Afghanistan">Seoul</option>
+                                    <option value="Aland Islands">Mexico city</option>
+                                    <option value="Albania">Mumbai</option>
+                                    <option value="Algeria">Delhi</option>
+                                    <option value="American Samoa">New York</option>
+                                    <option value="Andorra">Jakarta</option>
+                                    <option value="Angola">Sao Paulo</option>
+                                    <option value="Anguilla">Osaka</option>
+                                    <option value="Antarctica">Karachi</option>
+                                    <option value="Antigua and Barbuda">Matx-cơ-va</option>
+                                    <option value="Argentina">Toronto</option>
+                                    <option value="Armenia">Boston</option>
+                                </select>
+                            </p> -->
+                            <!-- <p class="form-row forn-row-col forn-row-col-3">
+                                <label class="text">City</label>
+                                <select title="city" data-placeholder="London" class="chosen-select" tabindex="1">
+                                    <option value="United States">London</option>
+                                    <option value="United Kingdom">tokyo</option>
+                                    <option value="Afghanistan">Seoul</option>
+                                    <option value="Aland Islands">Mexico city</option>
+                                    <option value="Albania">Mumbai</option>
+                                    <option value="Algeria">Delhi</option>
+                                    <option value="American Samoa">New York</option>
+                                    <option value="Andorra">Jakarta</option>
+                                    <option value="Angola">Sao Paulo</option>
+                                    <option value="Anguilla">Osaka</option>
+                                    <option value="Antarctica">Karachi</option>
+                                    <option value="Antigua and Barbuda">Matx-cơ-va</option>
+                                    <option value="Argentina">Toronto</option>
+                                    <option value="Armenia">Boston</option>
+                                </select> -->
+                            </p>
+                            <p class="form-row forn-row-col forn-row-col-2">
+                                <label class="text">Post code</label>
+                                <input title="zip" type="text" class="input-text">
+                            </p>
+                            <p class="form-row forn-row-col forn-row-col-3">
+                                <label class="text">Adres</label>
+                                <input title="address" type="text" class="input-text">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-col-2 row-col">
+                        <div class="your-order">
+                            <h3 class="title-form">
+                              Jouw bestelling
+                            </h3>
+                            <ul class="list-product-order">
+                                <li class="product-item-order">
+                                    <div class="product-thumb">
+                                        <a href="#">
+                                            <img src="/images/item-order1.jpg" alt="img">
+                                        </a>
+                                    </div>
+                                    <div class="product-order-inner">
+                                        <h5 class="product-name">
+                                            <a href="#">Voorbeeld 1</a>
+                                        </h5>
+                                        <span class="attributes-select attributes-color">Blauw,</span>
+                                        <span class="attributes-select attributes-size">XXL</span>
+                                        <div class="price">
+                                            €45
+                                            <span class="count">x1</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="product-item-order">
+                                    <div class="product-thumb">
+                                        <a href="#">
+                                            <img src="/images/item-order1.jpg" alt="img">
+                                        </a>
+                                    </div>
+                                    <div class="product-order-inner">
+                                        <h5 class="product-name">
+                                            <a href="#">Voorbeeld 2</a>
+                                        </h5>
+                                        <span class="attributes-select attributes-color">Wit,</span>
+                                        <span class="attributes-select attributes-size">XXL</span>
+                                        <div class="price">
+                                            €45
+                                            <span class="count">x1</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="product-item-order">
+                                    <div class="product-thumb">
+                                        <a href="#">
+                                            <img src="/images/item-order2.jpg" alt="img">
+                                        </a>
+                                    </div>
+                                    <div class="product-order-inner">
+                                        <h5 class="product-name">
+                                            <a href="#">Voorbeeld 3</a>
+                                        </h5>
+                                        <span class="attributes-select attributes-color">Zwart,</span>
+                                        <span class="attributes-select attributes-size">XXL</span>
+                                        <div class="price">
+                                            €45
+                                            <span class="count">x1</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="order-total">
+									<span class="title">
+                                    Totale prijs:
+									</span>
+                                <span class="total-price">
+										€95
+									</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="{{ route('uitchecken.betaling') }}" class="button button-payment">Betaling</a>
+            </div>
+         </div>
     </div>
-</div>
 
+
+    
+<!-- Footer -->
 <footer class="footer style7">
     <div class="container">
         <div class="container-wapper">
@@ -447,7 +582,7 @@
                                 <a href="#">Levering</a>
                             </li>
                             <li class="menu-item">
-                                <a href="#">Contact Ons</a>
+                                <a href="{{ route('home.contact') }}">Contact Ons</a>
                             </li>
                             <li class="menu-item">
                                 <a href="#">Return</a>

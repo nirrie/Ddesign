@@ -100,7 +100,7 @@
                                     <span>
 											 0 ITEM(S)
 										</span>
-                                    IN UW TAS
+                                    IN UW Winkelwagen
                                 </p>
                             </div>
                         </div>
@@ -178,7 +178,7 @@
 							<span></span>
 							<span></span>
 						</span>
-                        <span class="text">All Categories</span>
+                        <span class="text">ALLE CATEGORIEËN</span>
                     </div>
                     <div class="block-content verticalmenu-content">
                         <ul class="cleric-nav-vertical vertical-menu cleric-clone-mobile-menu">
@@ -239,7 +239,7 @@
                                                         <a href="shoppingcart.html">Winkelwagen</a>
                                                     </li>
                                                     <li class="menu-item">
-                                                        <a href="checkout.html">Uitchecken</a>
+                                                        <a href="{{ route('home.checkout') }}">Uitchecken</a>
                                                     </li>
                                                     <li class="menu-item">
                                                         <a href="contact.html">Contact</a>

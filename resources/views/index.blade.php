@@ -100,7 +100,7 @@
                                     <span>
 											 0 ITEM(S)
 										</span>
-                                    IN UW TAS
+                                    IN UW Winkelwagen
                                 </p>
                             </div>
                         </div>
@@ -178,7 +178,7 @@
 							<span></span>
 							<span></span>
 						</span>
-                        <span class="text">All Categories</span>
+                        <span class="text">ALLE CATEGORIEËN</span>
                     </div>
                     <div class="block-content verticalmenu-content">
                         <ul class="cleric-nav-vertical vertical-menu cleric-clone-mobile-menu">
@@ -233,16 +233,16 @@
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 menu-page-item">
                                             <div class="cleric-custommenu default">
-                                                <h2 class="widgettitle">Winkelpagina's</h2>
+                                                <h2 class="{{ route('home.shoppingcart') }}">Winkelpagina's</h2>
                                                 <ul class="menu">
                                                     <li class="menu-item">
-                                                        <a href="shoppingcart.html">Winkelwagen</a>
+                                                        <a href="{{ route('home.shoppingcart') }}">Winkelwagen</a>
                                                     </li>
                                                     <li class="menu-item">
-                                                        <a href="checkout.html">Uitchecken</a>
+                                                        <a href="{{ route('home.checkout') }}">Uitchecken</a>
                                                     </li>
                                                     <li class="menu-item">
-                                                        <a href="contact.html">Contact</a>
+                                                        <a href="{{ route('home.contact') }}">Contact</a>
                                                     </li>
                                                     <li class="menu-item">
                                                         <a href="{{ route('home.error') }}">404</a>
@@ -262,7 +262,7 @@
                                 </div>
                             </li>
                             <li class="menu-item">
-                                <a href="about.html" class="cleric-menu-item-title">Over ons</a>
+                                <a href="{{ route('home.about') }}" class="cleric-menu-item-title">Over ons</a>
                             </li>
                         </ul>
                     </div>
@@ -317,21 +317,14 @@
                             <li class="active">
                                 <a href="#">
 											<span>
+												Nederland (EUR)
+											</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+											<span>
 												English (USD)
-											</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-											<span>
-												French (EUR)
-											</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-											<span>
-												Japanese (JPY)
 											</span>
                                 </a>
                             </li>
@@ -349,6 +342,11 @@
         </div>
     </div>
 </div>
+
+<!-- End Header -->
+
+
+
 <div class="main-content">
     <div class="fullwidth-template">
         <div class="home-slider style1 rows-space-30">
@@ -360,19 +358,19 @@
                         <div class="slider-inner equal-element">
                             <div class="slider-infor">
                                 <h5 class="title-small">
-                                    New Arrivals!
+                                  Nieuw binnen!
                                 </h5>
                                 <h3 class="title-big">
-                                    Scandinavians<br/>
-                                    Collection
+                                  Scandinavians<br/>
+                                  Collectie
                                 </h3>
                                 <div class="price">
-                                    Price from:
+                                Prijs vanaf:
                                     <span class="number-price">
-											$75.00
+											€75.00
 										</span>
                                 </div>
-                                <a href="#" class="button btn-shop-the-look bgroud-style">Shop now</a>
+                                <a href="{{ route('home.gridproducts') }}" class="button btn-shop-the-look bgroud-style">Winkel nu</a>
                             </div>
                         </div>
                     </div>
@@ -380,18 +378,18 @@
                         <div class="slider-inner equal-element">
                             <div class="slider-infor">
                                 <h5 class="title-small">
-                                    Table Supplies Sale!
+                                  Tafelbenodigdheden Aanbieding!
                                 </h5>
                                 <h3 class="title-big">
-                                    Up to <span>75%</span> <br/> Store Items
+                                    Tot <span> 35%</span> <br/> Van de winkelitems
                                 </h3>
                                 <div class="price">
-                                    Price from:
+                                    Prijs vanaf:
                                     <span class="number-price">
-											$95.00
+											€7.00
 										</span>
                                 </div>
-                                <a href="#" class="button btn-shop-now">Shop now</a>
+                                <a href="{{ route('home.gridproducts') }}" class="button btn-shop-the-look bgroud-style">Winkel nu</a>
                             </div>
                         </div>
                     </div>
@@ -399,19 +397,19 @@
                         <div class="slider-inner equal-element">
                             <div class="slider-infor">
                                 <h5 class="title-small">
-                                    New Arrivals!
+                                   Nieuw binnen!!
                                 </h5>
                                 <h3 class="title-big">
-                                    Trending <br/>
-                                    Collection
+                                    Bedrijfsbureaus <br/>
+                                    Collectie
                                 </h3>
                                 <div class="price">
-                                    Price from:
+                                    Prijs vanaf:
                                     <span class="number-price">
-											$75.00
+											€65.00
 										</span>
                                 </div>
-                                <a href="#" class="button btn-shop-the-look bgroud-style">Shop now</a>
+                                <a href="{{ route('home.gridproducts') }}" class="button btn-shop-the-look bgroud-style">Winkel nu</a>
                             </div>
                         </div>
                     </div>
@@ -443,33 +441,33 @@
                                             <div class="flash">
 													<span class="onnew">
 														<span class="text">
-															new
+                                                           best
 														</span>
 													</span>
                                             </div>
                                         </div>
                                         <div class="product-thumb">
                                             <div class="thumb-inner">
-                                                <a href="#">
+                                                <a href="{{ route('home.p1') }}">
                                                     <img src="/images/product-item-1.jpg" alt="img">
                                                 </a>
-                                                <div class="thumb-group">
+                                                <!-- <div class="thumb-group">
                                                     <div class="yith-wcwl-add-to-wishlist">
                                                         <div class="yith-wcwl-add-button">
-                                                            <a href="#">Add to Wishlist</a>
+                                                            <a href="#">Zet op verlanglijst</a>
                                                         </div>
                                                     </div>
-                                                    <a href="#" class="button quick-wiew-button">Quick View</a>
+                                                    <a href="#" class="button quick-wiew-button">Snelle kijken</a>
                                                     <div class="loop-form-add-to-cart">
-                                                        <button class="single_add_to_cart_button button">Add to cart
+                                                        <button class="single_add_to_cart_button button">Voeg aan winkelwagen
                                                         </button>
                                                     </div>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                         <div class="product-info">
                                             <h5 class="product-name product_title">
-                                                <a href="#">Super Tweeter</a>
+                                                <a href="{{ route('home.p1') }}">Luxe management bureau met hoogte verstelbaar</a>
                                             </h5>
                                             <div class="group-info">
                                                 <div class="stars-rating">
@@ -482,10 +480,10 @@
                                                 </div>
                                                 <div class="price">
                                                     <del>
-                                                        $65
+                                                        €650
                                                     </del>
                                                     <ins>
-                                                        $45
+                                                        €485
                                                     </ins>
                                                 </div>
                                             </div>
@@ -498,7 +496,7 @@
                                             <div class="flash">
 													<span class="onnew">
 														<span class="text">
-															new
+                                                           best
 														</span>
 													</span>
                                             </div>
@@ -508,23 +506,23 @@
                                                 <a href="#">
                                                     <img src="/images/product-item-2.jpg" alt="img">
                                                 </a>
-                                                <div class="thumb-group">
+                                                <!-- <div class="thumb-group">
                                                     <div class="yith-wcwl-add-to-wishlist">
                                                         <div class="yith-wcwl-add-button">
-                                                            <a href="#">Add to Wishlist</a>
+                                                            <a href="#">Zet op verlanglijst</a>
                                                         </div>
                                                     </div>
-                                                    <a href="#" class="button quick-wiew-button">Quick View</a>
+                                                    <a href="#" class="button quick-wiew-button">Snelle kijken</a>
                                                     <div class="loop-form-add-to-cart">
-                                                        <button class="single_add_to_cart_button button">Add to cart
+                                                        <button class="single_add_to_cart_button button">Voeg aan winkelwagen
                                                         </button>
                                                     </div>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                         <div class="product-info">
                                             <h5 class="product-name product_title">
-                                                <a href="#">Auto Accentss</a>
+                                                <a href="#">Product 2</a>
                                             </h5>
                                             <div class="group-info">
                                                 <div class="stars-rating">
@@ -537,10 +535,10 @@
                                                 </div>
                                                 <div class="price">
                                                     <del>
-                                                        $65
+                                                        €65
                                                     </del>
                                                     <ins>
-                                                        $45
+                                                        €45
                                                     </ins>
                                                 </div>
                                             </div>
@@ -553,7 +551,7 @@
                                             <div class="flash">
 													<span class="onnew">
 														<span class="text">
-															new
+                                                          best
 														</span>
 													</span>
                                             </div>
@@ -563,23 +561,23 @@
                                                 <a href="#">
                                                     <img src="/images/product-item-3.jpg" alt="img">
                                                 </a>
-                                                <div class="thumb-group">
+                                                <!-- <div class="thumb-group">
                                                     <div class="yith-wcwl-add-to-wishlist">
                                                         <div class="yith-wcwl-add-button">
-                                                            <a href="#">Add to Wishlist</a>
+                                                            <a href="#">Zet op verlanglijst</a>
                                                         </div>
                                                     </div>
-                                                    <a href="#" class="button quick-wiew-button">Quick View</a>
+                                                    <a href="#" class="button quick-wiew-button">Snelle kijken</a>
                                                     <div class="loop-form-add-to-cart">
-                                                        <button class="single_add_to_cart_button button">Add to cart
+                                                        <button class="single_add_to_cart_button button">Voeg aan winkelwagen
                                                         </button>
                                                     </div>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                         <div class="product-info">
                                             <h5 class="product-name product_title">
-                                                <a href="#">Nardi Bianco</a>
+                                                <a href="#">Product 3</a>
                                             </h5>
                                             <div class="group-info">
                                                 <div class="stars-rating">
@@ -592,10 +590,10 @@
                                                 </div>
                                                 <div class="price">
                                                     <del>
-                                                        $65
+                                                        €65
                                                     </del>
                                                     <ins>
-                                                        $45
+                                                        €45
                                                     </ins>
                                                 </div>
                                             </div>
@@ -608,7 +606,7 @@
                                             <div class="flash">
 													<span class="onnew">
 														<span class="text">
-															new
+                                                           best
 														</span>
 													</span>
                                             </div>
@@ -618,23 +616,23 @@
                                                 <a href="#">
                                                     <img src="/images/product-item-4.jpg" alt="img">
                                                 </a>
-                                                <div class="thumb-group">
+                                                <!-- <div class="thumb-group">
                                                     <div class="yith-wcwl-add-to-wishlist">
                                                         <div class="yith-wcwl-add-button">
-                                                            <a href="#">Add to Wishlist</a>
+                                                            <a href="#">Zet op verlanglijst</a>
                                                         </div>
                                                     </div>
-                                                    <a href="#" class="button quick-wiew-button">Quick View</a>
+                                                    <a href="#" class="button quick-wiew-button">Snelle kijken</a>
                                                     <div class="loop-form-add-to-cart">
-                                                        <button class="single_add_to_cart_button button">Add to cart
+                                                        <button class="single_add_to_cart_button button">Voeg aan winkelwagen
                                                         </button>
                                                     </div>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                         <div class="product-info">
                                             <h5 class="product-name product_title">
-                                                <a href="#">Chrimy Lights</a>
+                                                <a href="#">Product 4</a>
                                             </h5>
                                             <div class="group-info">
                                                 <div class="stars-rating">
@@ -647,10 +645,10 @@
                                                 </div>
                                                 <div class="price">
                                                     <del>
-                                                        $65
+                                                        €65
                                                     </del>
                                                     <ins>
-                                                        $45
+                                                        €45
                                                     </ins>
                                                 </div>
                                             </div>
@@ -663,7 +661,7 @@
                                             <div class="flash">
 													<span class="onnew">
 														<span class="text">
-															new
+                                                          best
 														</span>
 													</span>
                                             </div>
@@ -673,23 +671,23 @@
                                                 <a href="#">
                                                     <img src="/images/product-item-5.jpg" alt="img">
                                                 </a>
-                                                <div class="thumb-group">
+                                                <!-- <div class="thumb-group">
                                                     <div class="yith-wcwl-add-to-wishlist">
                                                         <div class="yith-wcwl-add-button">
-                                                            <a href="#">Add to Wishlist</a>
+                                                            <a href="#">Zet op verlanglijst</a>
                                                         </div>
                                                     </div>
-                                                    <a href="#" class="button quick-wiew-button">Quick View</a>
+                                                    <a href="#" class="button quick-wiew-button">Snelle kijken</a>
                                                     <div class="loop-form-add-to-cart">
-                                                        <button class="single_add_to_cart_button button">Add to cart
+                                                        <button class="single_add_to_cart_button button">Voeg aan winkelwagen
                                                         </button>
                                                     </div>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                         <div class="product-info">
                                             <h5 class="product-name product_title">
-                                                <a href="#">Series Chrome</a>
+                                                <a href="#">Product 5</a>
                                             </h5>
                                             <div class="group-info">
                                                 <div class="stars-rating">
@@ -702,10 +700,10 @@
                                                 </div>
                                                 <div class="price">
                                                     <del>
-                                                        $65
+                                                        €65
                                                     </del>
                                                     <ins>
-                                                        $45
+                                                        €45
                                                     </ins>
                                                 </div>
                                             </div>
@@ -718,7 +716,7 @@
                                             <div class="flash">
 													<span class="onnew">
 														<span class="text">
-															new
+                                                           best
 														</span>
 													</span>
                                             </div>
@@ -728,23 +726,23 @@
                                                 <a href="#">
                                                     <img src="/images/product-item-6.jpg" alt="img">
                                                 </a>
-                                                <div class="thumb-group">
+                                                <!-- <div class="thumb-group">
                                                     <div class="yith-wcwl-add-to-wishlist">
                                                         <div class="yith-wcwl-add-button">
-                                                            <a href="#">Add to Wishlist</a>
+                                                            <a href="#">Zet op verlanglijst</a>
                                                         </div>
                                                     </div>
-                                                    <a href="#" class="button quick-wiew-button">Quick View</a>
+                                                    <a href="#" class="button quick-wiew-button">Snelle kijken</a>
                                                     <div class="loop-form-add-to-cart">
-                                                        <button class="single_add_to_cart_button button">Add to cart
+                                                        <button class="single_add_to_cart_button button">Voeg aan winkelwagen
                                                         </button>
                                                     </div>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                         <div class="product-info">
                                             <h5 class="product-name product_title">
-                                                <a href="#">Shift Knob</a>
+                                                <a href="#">Product 6</a>
                                             </h5>
                                             <div class="group-info">
                                                 <div class="stars-rating">
@@ -757,10 +755,10 @@
                                                 </div>
                                                 <div class="price">
                                                     <del>
-                                                        $65
+                                                        €65
                                                     </del>
                                                     <ins>
-                                                        $45
+                                                        €45
                                                     </ins>
                                                 </div>
                                             </div>
@@ -773,7 +771,7 @@
                                             <div class="flash">
 													<span class="onnew">
 														<span class="text">
-															new
+                                                          best
 														</span>
 													</span>
                                             </div>
@@ -783,23 +781,23 @@
                                                 <a href="#">
                                                     <img src="/images/product-item-7.jpg" alt="img">
                                                 </a>
-                                                <div class="thumb-group">
+                                                <!-- <div class="thumb-group">
                                                     <div class="yith-wcwl-add-to-wishlist">
                                                         <div class="yith-wcwl-add-button">
-                                                            <a href="#">Add to Wishlist</a>
+                                                            <a href="#">Zet op verlanglijst</a>
                                                         </div>
                                                     </div>
-                                                    <a href="#" class="button quick-wiew-button">Quick View</a>
+                                                    <a href="#" class="button quick-wiew-button">Snelle kijken</a>
                                                     <div class="loop-form-add-to-cart">
-                                                        <button class="single_add_to_cart_button button">Add to cart
+                                                        <button class="single_add_to_cart_button button">Voeg aan winkelwagen
                                                         </button>
                                                     </div>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                         <div class="product-info">
                                             <h5 class="product-name product_title">
-                                                <a href="#">Vondom Tall</a>
+                                                <a href="#">Product 7</a>
                                             </h5>
                                             <div class="group-info">
                                                 <div class="stars-rating">
@@ -812,10 +810,10 @@
                                                 </div>
                                                 <div class="price">
                                                     <del>
-                                                        $65
+                                                        €65
                                                     </del>
                                                     <ins>
-                                                        $45
+                                                        €45
                                                     </ins>
                                                 </div>
                                             </div>
@@ -828,7 +826,7 @@
                                             <div class="flash">
 													<span class="onnew">
 														<span class="text">
-															new
+															best
 														</span>
 													</span>
                                             </div>
@@ -838,23 +836,23 @@
                                                 <a href="#">
                                                     <img src="/images/product-item-8.jpg" alt="img">
                                                 </a>
-                                                <div class="thumb-group">
+                                                <!-- <div class="thumb-group">
                                                     <div class="yith-wcwl-add-to-wishlist">
                                                         <div class="yith-wcwl-add-button">
-                                                            <a href="#">Add to Wishlist</a>
+                                                            <a href="#">Zet op verlanglijst</a>
                                                         </div>
                                                     </div>
-                                                    <a href="#" class="button quick-wiew-button">Quick View</a>
+                                                    <a href="#" class="button quick-wiew-button">Snelle kijken</a>
                                                     <div class="loop-form-add-to-cart">
-                                                        <button class="single_add_to_cart_button button">Add to cart
+                                                        <button class="single_add_to_cart_button button">Voeg aan winkelwagen
                                                         </button>
                                                     </div>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                         <div class="product-info">
                                             <h5 class="product-name product_title">
-                                                <a href="#">File Cabinet</a>
+                                                <a href="#">Product 8</a>
                                             </h5>
                                             <div class="group-info">
                                                 <div class="stars-rating">
@@ -867,10 +865,10 @@
                                                 </div>
                                                 <div class="price">
                                                     <del>
-                                                        $65
+                                                        €65
                                                     </del>
                                                     <ins>
-                                                        $45
+                                                        €45
                                                     </ins>
                                                 </div>
                                             </div>
@@ -899,23 +897,23 @@
                                                 <a href="#">
                                                     <img src="/images/product-item-9.jpg" alt="img">
                                                 </a>
-                                                <div class="thumb-group">
+                                                <!-- <div class="thumb-group">
                                                     <div class="yith-wcwl-add-to-wishlist">
                                                         <div class="yith-wcwl-add-button">
-                                                            <a href="#">Add to Wishlist</a>
+                                                            <a href="#">Zet op verlanglijst</a>
                                                         </div>
                                                     </div>
-                                                    <a href="#" class="button quick-wiew-button">Quick View</a>
+                                                    <a href="#" class="button quick-wiew-button">Snelle kijken</a>
                                                     <div class="loop-form-add-to-cart">
-                                                        <button class="single_add_to_cart_button button">Add to cart
+                                                        <button class="single_add_to_cart_button button">Voeg aan winkelwagen
                                                         </button>
                                                     </div>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                         <div class="product-info">
                                             <h5 class="product-name product_title">
-                                                <a href="#">Bells Side Table</a>
+                                                <a href="#">Product 1</a>
                                             </h5>
                                             <div class="group-info">
                                                 <div class="stars-rating">
@@ -928,10 +926,10 @@
                                                 </div>
                                                 <div class="price">
                                                     <del>
-                                                        $65
+                                                        €65
                                                     </del>
                                                     <ins>
-                                                        $45
+                                                        €45
                                                     </ins>
                                                 </div>
                                             </div>
@@ -954,23 +952,23 @@
                                                 <a href="#">
                                                     <img src="/images/product-item-10.jpg" alt="img">
                                                 </a>
-                                                <div class="thumb-group">
+                                                <!-- <div class="thumb-group">
                                                     <div class="yith-wcwl-add-to-wishlist">
                                                         <div class="yith-wcwl-add-button">
-                                                            <a href="#">Add to Wishlist</a>
+                                                            <a href="#">Zet op verlanglijst</a>
                                                         </div>
                                                     </div>
-                                                    <a href="#" class="button quick-wiew-button">Quick View</a>
+                                                    <a href="#" class="button quick-wiew-button">Snelle kijken</a>
                                                     <div class="loop-form-add-to-cart">
-                                                        <button class="single_add_to_cart_button button">Add to cart
+                                                        <button class="single_add_to_cart_button button">Voeg aan winkelwagen
                                                         </button>
                                                     </div>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                         <div class="product-info">
                                             <h5 class="product-name product_title">
-                                                <a href="#">Exotic Diamond</a>
+                                                <a href="#">Product 2</a>
                                             </h5>
                                             <div class="group-info">
                                                 <div class="stars-rating">
@@ -983,10 +981,10 @@
                                                 </div>
                                                 <div class="price">
                                                     <del>
-                                                        $65
+                                                        €65
                                                     </del>
                                                     <ins>
-                                                        $45
+                                                        €45
                                                     </ins>
                                                 </div>
                                             </div>
@@ -1009,23 +1007,23 @@
                                                 <a href="#">
                                                     <img src="/images/product-item-11.jpg" alt="img">
                                                 </a>
-                                                <div class="thumb-group">
+                                                <!-- <div class="thumb-group">
                                                     <div class="yith-wcwl-add-to-wishlist">
                                                         <div class="yith-wcwl-add-button">
-                                                            <a href="#">Add to Wishlist</a>
+                                                            <a href="#">Zet op verlanglijst</a>
                                                         </div>
                                                     </div>
-                                                    <a href="#" class="button quick-wiew-button">Quick View</a>
+                                                    <a href="#" class="button quick-wiew-button">Snelle kijken</a>
                                                     <div class="loop-form-add-to-cart">
-                                                        <button class="single_add_to_cart_button button">Add to cart
+                                                        <button class="single_add_to_cart_button button">Voeg aan winkelwagen
                                                         </button>
                                                     </div>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                         <div class="product-info">
                                             <h5 class="product-name product_title">
-                                                <a href="#">Marvellous Ring</a>
+                                                <a href="#">Product 3</a>
                                             </h5>
                                             <div class="group-info">
                                                 <div class="stars-rating">
@@ -1038,10 +1036,10 @@
                                                 </div>
                                                 <div class="price">
                                                     <del>
-                                                        $65
+                                                        €65
                                                     </del>
                                                     <ins>
-                                                        $45
+                                                        €45
                                                     </ins>
                                                 </div>
                                             </div>
@@ -1064,23 +1062,23 @@
                                                 <a href="#">
                                                     <img src="/images/product-item-13.jpg" alt="img">
                                                 </a>
-                                                <div class="thumb-group">
+                                                <!-- <div class="thumb-group">
                                                     <div class="yith-wcwl-add-to-wishlist">
                                                         <div class="yith-wcwl-add-button">
-                                                            <a href="#">Add to Wishlist</a>
+                                                            <a href="#">Zet op verlanglijst</a>
                                                         </div>
                                                     </div>
-                                                    <a href="#" class="button quick-wiew-button">Quick View</a>
+                                                    <a href="#" class="button quick-wiew-button">Snelle kijken</a>
                                                     <div class="loop-form-add-to-cart">
-                                                        <button class="single_add_to_cart_button button">Add to cart
+                                                        <button class="single_add_to_cart_button button">Voeg aan winkelwagen
                                                         </button>
                                                     </div>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                         <div class="product-info">
                                             <h5 class="product-name product_title">
-                                                <a href="#">Dainty Diamond</a>
+                                                <a href="#">Product 4</a>
                                             </h5>
                                             <div class="group-info">
                                                 <div class="stars-rating">
@@ -1093,10 +1091,10 @@
                                                 </div>
                                                 <div class="price">
                                                     <del>
-                                                        $65
+                                                        €65
                                                     </del>
                                                     <ins>
-                                                        $45
+                                                        €45
                                                     </ins>
                                                 </div>
                                             </div>
@@ -1119,23 +1117,23 @@
                                                 <a href="#">
                                                     <img src="/images/product-item-14.jpg" alt="img">
                                                 </a>
-                                                <div class="thumb-group">
+                                                <!-- <div class="thumb-group">
                                                     <div class="yith-wcwl-add-to-wishlist">
                                                         <div class="yith-wcwl-add-button">
-                                                            <a href="#">Add to Wishlist</a>
+                                                            <a href="#">Zet op verlanglijst</a>
                                                         </div>
                                                     </div>
-                                                    <a href="#" class="button quick-wiew-button">Quick View</a>
+                                                    <a href="#" class="button quick-wiew-button">Snelle kijken</a>
                                                     <div class="loop-form-add-to-cart">
-                                                        <button class="single_add_to_cart_button button">Add to cart
+                                                        <button class="single_add_to_cart_button button">Voeg aan winkelwagen
                                                         </button>
                                                     </div>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                         <div class="product-info">
                                             <h5 class="product-name product_title">
-                                                <a href="#">Mausami Ruby Ring</a>
+                                                <a href="#">Product 5</a>
                                             </h5>
                                             <div class="group-info">
                                                 <div class="stars-rating">
@@ -1148,10 +1146,10 @@
                                                 </div>
                                                 <div class="price">
                                                     <del>
-                                                        $65
+                                                        €65
                                                     </del>
                                                     <ins>
-                                                        $45
+                                                        €45
                                                     </ins>
                                                 </div>
                                             </div>
@@ -1174,23 +1172,23 @@
                                                 <a href="#">
                                                     <img src="/images/product-item-15.jpg" alt="img">
                                                 </a>
-                                                <div class="thumb-group">
+                                                <!-- <div class="thumb-group">
                                                     <div class="yith-wcwl-add-to-wishlist">
                                                         <div class="yith-wcwl-add-button">
-                                                            <a href="#">Add to Wishlist</a>
+                                                            <a href="#">Zet op verlanglijst</a>
                                                         </div>
                                                     </div>
-                                                    <a href="#" class="button quick-wiew-button">Quick View</a>
+                                                    <a href="#" class="button quick-wiew-button">Snelle kijken</a>
                                                     <div class="loop-form-add-to-cart">
-                                                        <button class="single_add_to_cart_button button">Add to cart
+                                                        <button class="single_add_to_cart_button button">Voeg aan winkelwagen
                                                         </button>
                                                     </div>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                         <div class="product-info">
                                             <h5 class="product-name product_title">
-                                                <a href="#">OE Specialty</a>
+                                                <a href="#">Product 6</a>
                                             </h5>
                                             <div class="group-info">
                                                 <div class="stars-rating">
@@ -1203,10 +1201,10 @@
                                                 </div>
                                                 <div class="price">
                                                     <del>
-                                                        $65
+                                                        €65
                                                     </del>
                                                     <ins>
-                                                        $45
+                                                        €45
                                                     </ins>
                                                 </div>
                                             </div>
@@ -1229,23 +1227,23 @@
                                                 <a href="#">
                                                     <img src="/images/product-item-16.jpg" alt="img">
                                                 </a>
-                                                <div class="thumb-group">
+                                                <!-- <div class="thumb-group">
                                                     <div class="yith-wcwl-add-to-wishlist">
                                                         <div class="yith-wcwl-add-button">
-                                                            <a href="#">Add to Wishlist</a>
+                                                            <a href="#">Zet op verlanglijst</a>
                                                         </div>
                                                     </div>
-                                                    <a href="#" class="button quick-wiew-button">Quick View</a>
+                                                    <a href="#" class="button quick-wiew-button">Snelle kijken</a>
                                                     <div class="loop-form-add-to-cart">
-                                                        <button class="single_add_to_cart_button button">Add to cart
+                                                        <button class="single_add_to_cart_button button">Voeg aan winkelwagen
                                                         </button>
                                                     </div>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                         <div class="product-info">
                                             <h5 class="product-name product_title">
-                                                <a href="#">Iridium Spark Plug</a>
+                                                <a href="#">Product 7</a>
                                             </h5>
                                             <div class="group-info">
                                                 <div class="stars-rating">
@@ -1258,10 +1256,10 @@
                                                 </div>
                                                 <div class="price">
                                                     <del>
-                                                        $65
+                                                        €65
                                                     </del>
                                                     <ins>
-                                                        $45
+                                                        €45
                                                     </ins>
                                                 </div>
                                             </div>
@@ -1284,23 +1282,23 @@
                                                 <a href="#">
                                                     <img src="/images/product-item-2.jpg" alt="img">
                                                 </a>
-                                                <div class="thumb-group">
+                                                <!-- <div class="thumb-group">
                                                     <div class="yith-wcwl-add-to-wishlist">
                                                         <div class="yith-wcwl-add-button">
-                                                            <a href="#">Add to Wishlist</a>
+                                                            <a href="#">Zet op verlanglijst</a>
                                                         </div>
                                                     </div>
-                                                    <a href="#" class="button quick-wiew-button">Quick View</a>
+                                                    <a href="#" class="button quick-wiew-button">Snelle kijken</a>
                                                     <div class="loop-form-add-to-cart">
-                                                        <button class="single_add_to_cart_button button">Add to cart
+                                                        <button class="single_add_to_cart_button button">Voeg aan winkelwagen
                                                         </button>
                                                     </div>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                         <div class="product-info">
                                             <h5 class="product-name product_title">
-                                                <a href="#">Ibiza Chair</a>
+                                                <a href="#">Product 8</a>
                                             </h5>
                                             <div class="group-info">
                                                 <div class="stars-rating">
@@ -1313,10 +1311,10 @@
                                                 </div>
                                                 <div class="price">
                                                     <del>
-                                                        $65
+                                                        €65
                                                     </del>
                                                     <ins>
-                                                        $45
+                                                        €45
                                                     </ins>
                                                 </div>
                                             </div>
@@ -1335,7 +1333,7 @@
                                             <div class="flash">
 													<span class="onnew">
 														<span class="text">
-															new
+                                                           top 
 														</span>
 													</span>
                                             </div>
@@ -1345,23 +1343,23 @@
                                                 <a href="#">
                                                     <img src="/images/product-item-10.jpg" alt="img">
                                                 </a>
-                                                <div class="thumb-group">
+                                                <!-- <div class="thumb-group">
                                                     <div class="yith-wcwl-add-to-wishlist">
                                                         <div class="yith-wcwl-add-button">
-                                                            <a href="#">Add to Wishlist</a>
+                                                            <a href="#">Zet op verlanglijst</a>
                                                         </div>
                                                     </div>
-                                                    <a href="#" class="button quick-wiew-button">Quick View</a>
+                                                    <a href="#" class="button quick-wiew-button">Snelle kijken</a>
                                                     <div class="loop-form-add-to-cart">
-                                                        <button class="single_add_to_cart_button button">Add to cart
+                                                        <button class="single_add_to_cart_button button">Voeg aan winkelwagen
                                                         </button>
                                                     </div>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                         <div class="product-info">
                                             <h5 class="product-name product_title">
-                                                <a href="#">Sport Seats</a>
+                                                <a href="#">Product 1</a>
                                             </h5>
                                             <div class="group-info">
                                                 <div class="stars-rating">
@@ -1374,10 +1372,10 @@
                                                 </div>
                                                 <div class="price">
                                                     <del>
-                                                        $65
+                                                        €65
                                                     </del>
                                                     <ins>
-                                                        $45
+                                                        €45
                                                     </ins>
                                                 </div>
                                             </div>
@@ -1390,7 +1388,7 @@
                                             <div class="flash">
 													<span class="onnew">
 														<span class="text">
-															new
+                                                           top
 														</span>
 													</span>
                                             </div>
@@ -1400,23 +1398,23 @@
                                                 <a href="#">
                                                     <img src="/images/product-item-12.jpg" alt="img">
                                                 </a>
-                                                <div class="thumb-group">
+                                                <!-- <div class="thumb-group">
                                                     <div class="yith-wcwl-add-to-wishlist">
                                                         <div class="yith-wcwl-add-button">
-                                                            <a href="#">Add to Wishlist</a>
+                                                            <a href="#">Zet op verlanglijst</a>
                                                         </div>
                                                     </div>
-                                                    <a href="#" class="button quick-wiew-button">Quick View</a>
+                                                    <a href="#" class="button quick-wiew-button">Snelle kijken</a>
                                                     <div class="loop-form-add-to-cart">
-                                                        <button class="single_add_to_cart_button button">Add to cart
+                                                        <button class="single_add_to_cart_button button">Voeg aan winkelwagen
                                                         </button>
                                                     </div>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                         <div class="product-info">
                                             <h5 class="product-name product_title">
-                                                <a href="#">Cross Drilled</a>
+                                                <a href="#">Product 2</a>
                                             </h5>
                                             <div class="group-info">
                                                 <div class="stars-rating">
@@ -1429,10 +1427,10 @@
                                                 </div>
                                                 <div class="price">
                                                     <del>
-                                                        $65
+                                                        €65
                                                     </del>
                                                     <ins>
-                                                        $45
+                                                        €45
                                                     </ins>
                                                 </div>
                                             </div>
@@ -1445,7 +1443,7 @@
                                             <div class="flash">
 													<span class="onnew">
 														<span class="text">
-															new
+                                                           top
 														</span>
 													</span>
                                             </div>
@@ -1455,23 +1453,23 @@
                                                 <a href="#">
                                                     <img src="/images/product-item-8.jpg" alt="img">
                                                 </a>
-                                                <div class="thumb-group">
+                                                <!-- <div class="thumb-group">
                                                     <div class="yith-wcwl-add-to-wishlist">
                                                         <div class="yith-wcwl-add-button">
-                                                            <a href="#">Add to Wishlist</a>
+                                                            <a href="#">Zet op verlanglijst</a>
                                                         </div>
                                                     </div>
-                                                    <a href="#" class="button quick-wiew-button">Quick View</a>
+                                                    <a href="#" class="button quick-wiew-button">Snelle kijken</a>
                                                     <div class="loop-form-add-to-cart">
-                                                        <button class="single_add_to_cart_button button">Add to cart
+                                                        <button class="single_add_to_cart_button button">Voeg aan winkelwagen
                                                         </button>
                                                     </div>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                         <div class="product-info">
                                             <h5 class="product-name product_title">
-                                                <a href="#">Big Brake Kit</a>
+                                                <a href="#">Product 3</a>
                                             </h5>
                                             <div class="group-info">
                                                 <div class="stars-rating">
@@ -1484,10 +1482,10 @@
                                                 </div>
                                                 <div class="price">
                                                     <del>
-                                                        $65
+                                                        €65
                                                     </del>
                                                     <ins>
-                                                        $45
+                                                        €45
                                                     </ins>
                                                 </div>
                                             </div>
@@ -1500,7 +1498,7 @@
                                             <div class="flash">
 													<span class="onnew">
 														<span class="text">
-															new
+                                                           top
 														</span>
 													</span>
                                             </div>
@@ -1510,23 +1508,23 @@
                                                 <a href="#">
                                                     <img src="/images/product-item-4.jpg" alt="img">
                                                 </a>
-                                                <div class="thumb-group">
+                                                <!-- <div class="thumb-group">
                                                     <div class="yith-wcwl-add-to-wishlist">
                                                         <div class="yith-wcwl-add-button">
-                                                            <a href="#">Add to Wishlist</a>
+                                                            <a href="#">Zet op verlanglijst</a>
                                                         </div>
                                                     </div>
-                                                    <a href="#" class="button quick-wiew-button">Quick View</a>
+                                                    <a href="#" class="button quick-wiew-button">Snelle kijken</a>
                                                     <div class="loop-form-add-to-cart">
-                                                        <button class="single_add_to_cart_button button">Add to cart
+                                                        <button class="single_add_to_cart_button button">Voeg aan winkelwagen
                                                         </button>
                                                     </div>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                         <div class="product-info">
                                             <h5 class="product-name product_title">
-                                                <a href="#">Throttle Bodies</a>
+                                                <a href="#">Product 4</a>
                                             </h5>
                                             <div class="group-info">
                                                 <div class="stars-rating">
@@ -1539,10 +1537,10 @@
                                                 </div>
                                                 <div class="price">
                                                     <del>
-                                                        $65
+                                                        €65
                                                     </del>
                                                     <ins>
-                                                        $45
+                                                        €45
                                                     </ins>
                                                 </div>
                                             </div>
@@ -1555,7 +1553,7 @@
                                             <div class="flash">
 													<span class="onnew">
 														<span class="text">
-															new
+                                                           top
 														</span>
 													</span>
                                             </div>
@@ -1565,23 +1563,23 @@
                                                 <a href="#">
                                                     <img src="/images/product-item-9.jpg" alt="img">
                                                 </a>
-                                                <div class="thumb-group">
+                                                <!-- <div class="thumb-group">
                                                     <div class="yith-wcwl-add-to-wishlist">
                                                         <div class="yith-wcwl-add-button">
-                                                            <a href="#">Add to Wishlist</a>
+                                                            <a href="#">Zet op verlanglijst</a>
                                                         </div>
                                                     </div>
-                                                    <a href="#" class="button quick-wiew-button">Quick View</a>
+                                                    <a href="#" class="button quick-wiew-button">Snelle kijken</a>
                                                     <div class="loop-form-add-to-cart">
-                                                        <button class="single_add_to_cart_button button">Add to cart
+                                                        <button class="single_add_to_cart_button button">Voeg aan winkelwagen
                                                         </button>
                                                     </div>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                         <div class="product-info">
                                             <h5 class="product-name product_title">
-                                                <a href="#">Sparta Evolution</a>
+                                                <a href="#">Product 5</a>
                                             </h5>
                                             <div class="group-info">
                                                 <div class="stars-rating">
@@ -1594,10 +1592,10 @@
                                                 </div>
                                                 <div class="price">
                                                     <del>
-                                                        $65
+                                                        €65
                                                     </del>
                                                     <ins>
-                                                        $45
+                                                        €45
                                                     </ins>
                                                 </div>
                                             </div>
@@ -1610,7 +1608,7 @@
                                             <div class="flash">
 													<span class="onnew">
 														<span class="text">
-															new
+                                                           top
 														</span>
 													</span>
                                             </div>
@@ -1620,23 +1618,23 @@
                                                 <a href="#">
                                                     <img src="/images/product-item-13.jpg" alt="img">
                                                 </a>
-                                                <div class="thumb-group">
+                                                <!-- <div class="thumb-group">
                                                     <div class="yith-wcwl-add-to-wishlist">
                                                         <div class="yith-wcwl-add-button">
-                                                            <a href="#">Add to Wishlist</a>
+                                                            <a href="#">Zet op verlanglijst</a>
                                                         </div>
                                                     </div>
-                                                    <a href="#" class="button quick-wiew-button">Quick View</a>
+                                                    <a href="#" class="button quick-wiew-button">Snelle kijken</a>
                                                     <div class="loop-form-add-to-cart">
-                                                        <button class="single_add_to_cart_button button">Add to cart
+                                                        <button class="single_add_to_cart_button button">Voeg aan winkelwagen
                                                         </button>
                                                     </div>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                         <div class="product-info">
                                             <h5 class="product-name product_title">
-                                                <a href="#">Series Slotted</a>
+                                                <a href="#">Product 6</a>
                                             </h5>
                                             <div class="group-info">
                                                 <div class="stars-rating">
@@ -1649,10 +1647,10 @@
                                                 </div>
                                                 <div class="price">
                                                     <del>
-                                                        $65
+                                                        €65
                                                     </del>
                                                     <ins>
-                                                        $45
+                                                        €45
                                                     </ins>
                                                 </div>
                                             </div>
@@ -1665,7 +1663,7 @@
                                             <div class="flash">
 													<span class="onnew">
 														<span class="text">
-															new
+                                                           top
 														</span>
 													</span>
                                             </div>
@@ -1675,23 +1673,23 @@
                                                 <a href="#">
                                                     <img src="/images/product-item-16.jpg" alt="img">
                                                 </a>
-                                                <div class="thumb-group">
+                                                <!-- <div class="thumb-group">
                                                     <div class="yith-wcwl-add-to-wishlist">
                                                         <div class="yith-wcwl-add-button">
-                                                            <a href="#">Add to Wishlist</a>
+                                                            <a href="#">Zet op verlanglijst</a>
                                                         </div>
                                                     </div>
-                                                    <a href="#" class="button quick-wiew-button">Quick View</a>
+                                                    <a href="#" class="button quick-wiew-button">Snelle kijken</a>
                                                     <div class="loop-form-add-to-cart">
-                                                        <button class="single_add_to_cart_button button">Add to cart
+                                                        <button class="single_add_to_cart_button button">Voeg aan winkelwagen
                                                         </button>
                                                     </div>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                         <div class="product-info">
                                             <h5 class="product-name product_title">
-                                                <a href="#"> Brake Rotors</a>
+                                                <a href="#"> Product 7</a>
                                             </h5>
                                             <div class="group-info">
                                                 <div class="stars-rating">
@@ -1704,10 +1702,10 @@
                                                 </div>
                                                 <div class="price">
                                                     <del>
-                                                        $65
+                                                        €65
                                                     </del>
                                                     <ins>
-                                                        $45
+                                                        €45
                                                     </ins>
                                                 </div>
                                             </div>
@@ -1720,7 +1718,7 @@
                                             <div class="flash">
 													<span class="onnew">
 														<span class="text">
-															new
+															top
 														</span>
 													</span>
                                             </div>
@@ -1730,23 +1728,23 @@
                                                 <a href="#">
                                                     <img src="/images/product-item-8.jpg" alt="img">
                                                 </a>
-                                                <div class="thumb-group">
+                                                <!-- <div class="thumb-group">
                                                     <div class="yith-wcwl-add-to-wishlist">
                                                         <div class="yith-wcwl-add-button">
-                                                            <a href="#">Add to Wishlist</a>
+                                                            <a href="#">Zet op verlanglijst</a>
                                                         </div>
                                                     </div>
-                                                    <a href="#" class="button quick-wiew-button">Quick View</a>
+                                                    <a href="#" class="button quick-wiew-button">Snelle kijken</a>
                                                     <div class="loop-form-add-to-cart">
-                                                        <button class="single_add_to_cart_button button">Add to cart
+                                                        <button class="single_add_to_cart_button button">Voeg aan winkelwagen
                                                         </button>
                                                     </div>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                         <div class="product-info">
                                             <h5 class="product-name product_title">
-                                                <a href="#">DRL Bar Headlights</a>
+                                                <a href="#">Product 8</a>
                                             </h5>
                                             <div class="group-info">
                                                 <div class="stars-rating">
@@ -1759,10 +1757,10 @@
                                                 </div>
                                                 <div class="price">
                                                     <del>
-                                                        $65
+                                                        €65
                                                     </del>
                                                     <ins>
-                                                        $45
+                                                        €45
                                                     </ins>
                                                 </div>
                                             </div>
@@ -1784,10 +1782,10 @@
                                 <div class="inner">
                                     <div class="container">
                                         <div class="banner-content">
-                                            <h4 class="cleric-subtitle">KONINGSDAG ACTIE!</h4>
-                                            <h3 class="title">Bespaar <span>25%</span> op alle<br/>items collectie
+                                            <h4 class="cleric-subtitle">feestdagen actie!</h4>
+                                            <h3 class="title">Bespaar <span>25%</span> op alle<br/>items collectie in December
                                             </h3>
-                                            <a href="#" class="button btn-view-promotion">Winkel nu</a>
+                                            <a href="{{ route('home.gridproducts') }}" class="button btn-view-promotion">Winkel nu</a>
                                         </div>
                                     </div>
                                 </div>
@@ -1799,6 +1797,8 @@
         </div>
 </div>
 
+
+<!-- Footer -->
 <footer class="footer style7">
     <div class="container">
         <div class="container-wapper">
@@ -1863,7 +1863,7 @@
                                 <a href="#">Levering</a>
                             </li>
                             <li class="menu-item">
-                                <a href="#">Contact Ons</a>
+                                <a href="{{ route('home.contact') }}">Contact Ons</a>
                             </li>
                             <li class="menu-item">
                                 <a href="#">Return</a>

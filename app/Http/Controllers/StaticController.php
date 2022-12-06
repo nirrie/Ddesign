@@ -18,6 +18,14 @@ class StaticController extends Controller
         return view('404page');
     }
 
+    public function about() {
+        return view('about');
+    }
+
+    public function contact() {
+        return view('contact');
+    }
+
     public function gridproducts() {
         return view('gridproducts');
     }
@@ -26,4 +34,23 @@ class StaticController extends Controller
         return view('listproducts');
     }
 
+    public function shoppingcart() {
+        return view('shoppingcart');
+    }
+
+    public function checkout() {
+        return view('checkout');
+    }
+
+    public function Betaling() {
+        return view('Betaling');
+    }
+
+    public function verwerkt() {
+        return view('verwerkt');
+    }
+
+    public function p1() {
+        return view('p1');
+    }
 }
