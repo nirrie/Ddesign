@@ -1,14 +1,14 @@
 <?php
 
 namespace Database\Factories;
-
-use App\Models\Category;
+use App\Models\Cart;
+use App\Models\Product;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Model>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\cart_items>
  */
-class ProductFactory extends Factory
+class cart_itemsFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -18,17 +18,14 @@ class ProductFactory extends Factory
     public function definition()
     {
         return [
-           
-            'title' =>  fake()->word(),
-            'summary' => fake()->sentence(),
-            'type'  =>  fake()->randomDigit(),
+            'product_id' => Product::factory(),
+            'cart_id' => Cart::factory(),
             'sku' => fake()->randomDigit(),
-            'price' => fake()->randomDigit(),
+            'price' => fake()->randomNumber(),
             'quantity' => fake()->randomDigit(),
             'created_at' => now(),
             'updated_at' => now(),
-            'category_id' => Category::factory(),
-
+            //
         ];
     }
 }

@@ -142,7 +142,7 @@
                                             </form>
                                         </div>
                                         <div id="header-tab-rigister" class="tab-panel">
-                                            <form method="post" class="register form-register">
+                                            <form method="post" action="/register" class="register form-register">
                                                 <p class="form-row form-row-wide">
                                                     <input type="email" placeholder="Email" class="input-text">
                                                 </p>
