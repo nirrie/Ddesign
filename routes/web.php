@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
 use App\Http\controllers\StaticController;
 
@@ -29,4 +30,7 @@ Route::get('/checkout', [StaticController::class, 'checkout'])->name('home.check
 // Producten
 Route::get('/p1', [StaticController::class, 'p1'])->name('home.p1');
 
+//users
+Route::get('register', [RegisterController::class, 'create']);
+Route::post('register', [RegisterController::class, 'store']);
   
