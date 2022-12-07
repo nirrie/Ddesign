@@ -33,4 +33,4 @@ Route::get('/p1', [StaticController::class, 'p1'])->name('home.p1');
 //users
 Route::get('register', [RegisterController::class, 'create']);
 Route::post('register', [RegisterController::class, 'store']);
-  
+
