@@ -34,3 +34,5 @@ Route::get('/p1', [StaticController::class, 'p1'])->name('home.p1');
 Route::get('register', [RegisterController::class, 'create']);
 Route::post('register', [RegisterController::class, 'store']);
 
+//Cookie
+route::get('getCookie',[CookieController::class, 'CookieController']);
