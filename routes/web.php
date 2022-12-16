@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\SessionController;
 use Illuminate\Support\Facades\Route;
 use App\Http\controllers\StaticController;
 
@@ -34,5 +35,5 @@ Route::get('/p1', [StaticController::class, 'p1'])->name('home.p1');
 Route::get('register', [RegisterController::class, 'create']);
 Route::post('register', [RegisterController::class, 'store']);
 
-//Cookie
-route::get('getCookie',[CookieController::class, 'CookieController']);
+//Cookie-sessions
+route::get('index',[SessionController::class, 'accessSessionData']);
