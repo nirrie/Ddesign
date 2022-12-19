@@ -28,5 +28,13 @@ Route::get('/checkout', [StaticController::class, 'checkout'])->name('home.check
 
 // Producten
 Route::get('/p1', [StaticController::class, 'p1'])->name('home.p1');
+Route::get('/p2', [StaticController::class, 'p2'])->name('home.p2');
+Route::get('/p3', [StaticController::class, 'p3'])->name('home.p3');
+Route::get('/p4', [StaticController::class, 'p4'])->name('home.p4');
+Route::get('/p5', [StaticController::class, 'p5'])->name('home.p5');
+Route::get('/p6', [StaticController::class, 'p6'])->name('home.p6');
+Route::get('/p7', [StaticController::class, 'p7'])->name('home.p7');
+Route::get('/p8', [StaticController::class, 'p8'])->name('home.p8');
+
 
   

@@ -346,7 +346,6 @@
 <!-- End Header -->
 
 
-
 <div class="main-content main-content-details single no-sidebar">
     <div class="container">
         <div class="row">
@@ -360,7 +359,7 @@
                             <a href="#">Accenten</a>
                         </li>
                         <li class="trail-item trail-end active">
-                        Luxe management bureau met hoogte verstelbaar 
+                        Houten bureau met zwart metalen frame 
                         </li>
                     </ul>
                 </div>
@@ -372,20 +371,20 @@
                     <div class="details-product">
                         <div class="details-thumd">
                             <div class="image-preview-container image-thick-box image_preview_container">
-                                <img id="img_zoom" data-zoom-image="/images/details-item-1.jpg"
-                                     src="/images/details-item-1.jpg" alt="img">
+                                <img id="img_zoom" data-zoom-image="/images/details-item-6.jpg"
+                                     src="/images/details-item-6.jpg" alt="img">
                                 <a href="#" class="btn-zoom open_qv"><i class="fa fa-search" aria-hidden="true"></i></a>
                             </div>
                             <div class="product-preview image-small product_preview">
                                 <div id="thumbnails" class="thumbnails_carousel owl-carousel" data-nav="true"
                                      data-autoplay="false" data-dots="false" data-loop="false" data-margin="10"
                                      data-responsive='{"0":{"items":3},"480":{"items":3},"600":{"items":3},"1000":{"items":3}}'>
-                                    <a href="#" data-image="/images/details-item-1.jpg"
-                                       data-zoom-image="/images/details-item-1.jpg" class="active">
-                                        <img src="/images/details-item-1.jpg"
-                                             data-large-image="/images/details-item-1.jpg" alt="img">
+                                    <a href="#" data-image="/images/details-item-6.jpg"
+                                       data-zoom-image="/images/details-item-6.jpg" class="active">
+                                        <img src="/images/details-item-6.jpg"
+                                             data-large-image="/images/details-item-6.jpg" alt="img">
                                     </a>
-                                    <a href="#" data-image="/images/details-item-2.jpg"
+                                    <!-- <a href="#" data-image="/images/details-item-2.jpg"
                                        data-zoom-image="/images/details-item-2.jpg">
                                         <img src="/images/details-item-2.jpg"
                                              data-large-image="/images/details-item-2.jpg" alt="img">
@@ -404,13 +403,13 @@
                                        data-zoom-image="/images/details-item-5.jpg">
                                         <img src="/images/details-item-5.jpg"
                                              data-large-image="/images/details-item-5.jpg" alt="img">
-                                    </a>
+                                    </a> -->
                                 </div>
                             </div>
                         </div>
                         <div class="details-infor">
                             <h1 class="product-title">
-                             Luxe management bureau met hoogte verstelbaar
+                             Houten Bureau met zwart metalen frame 
                             </h1>
                             <div class="stars-rating">
                                 <div class="star-rating">
@@ -429,7 +428,7 @@
                             </div>
                             <div class="product-details-description">
                                 <ul>
-                                    <li>Art.Nu. 001</li>
+                                    <li>Art.Nu. 002</li>
                                 </ul>
                             </div>
                             <div class="variations">
@@ -438,10 +437,7 @@
                                       Kleur:
                                     </div>
                                     <div class="list-color list-item">
-                                        <a href="#" class="color1"></a>
-                                        <a href="#" class="color2"></a>
-                                        <a href="#" class="color3 active"></a>
-                                        <a href="#" class="color4"></a>
+                                        <a href="#" class="color4 active"></a>
                                     </div>
                                 </div>
                                 <div class="attribute attribute_size">
@@ -449,12 +445,12 @@
                                        Maat:
                                     </div>
                                     <div class="list-size list-item">
-                                        <!-- <a href="#" class="">xs</a>
-                                        <a href="#" class="">s</a>
-                                        <a href="#" class="active">m</a>
-                                        <a href="#" class="">l</a>
-                                        <a href="#" class="">xl</a> -->
-                                        <a href="#" class="">1 Maat</a>
+                                        <a href="#" class="">120x60cm</a>
+                                        <a href="#" class="">120x80cm</a>
+                                        <a href="#" class="active">140x80cm</a>
+                                        <a href="#" class="">160x80cm</a>
+                                        <a href="#" class="">180x80cm</a>
+                                        <a href="#" class="">200x100cm</a>
                                     </div>
                                 </div>
                             </div>
@@ -498,19 +494,13 @@
                         <div class="tab-container">
                             <div id="product-descriptions" class="tab-panel active">
                                 <p>
-                                Het is tegen de zwaartekracht in maar toch betrouwbaar en comfortabel. 
-                                Het Gravity elektrisch in hoogte instelbare directie bureau van D&D brengt het idee van een directiekamer 
-                                naar een heel nieuw niveau. Het Gravity bureau is gebouwd op één eenvoudige steun en verbergt een elektrisch 
-                                mechanisme voor hoogteaanpassing, zodat de gebruiker van werkhouding kan veranderen van zittend naar staand. 
-                                Het onzichtbare frame creëert en beeldt een zwevend werkoppervlak uit, wat een minimalistische sfeer op kantoor introduceert. 
-                                Door de zeer robuuste constructie is het werkblad net zo stabiel als een niet zwevende oplossing. 
-                                Het werkblad heeft een afmeting van 220 cm x 100 cm. Uiterst ruim dus.
+                                Een bureau met zwart metalen frame en heeft een luxe look blad in Cognac Walnoten kleur. Het bureau is hoogte instelbaar en eenvoudig in gebruik.
+
                                 
 
                                 </p>
                                 <p>
                                 Alle features op een rijtje: <br>
-                                <li>Elektrisch hoogte verstelsysteem.</li>
                                 <li>Zelfsluitende lades.</li>
                                 <li>Optionele mediabox en een Bluetooth-bedieningspaneel.</li>
                                 <li>Stabiele betonnen constructie.</li>
@@ -523,11 +513,11 @@
                                 <table class="table table-bordered">
                                     <tr>
                                         <td>Maat</td>
-                                        <td>220 cm x 100 cm</td>
+                                        <td>120x60, 120x80, 140x80, 160x80 ,180x80 en 200x100 cm</td>
                                     </tr>
                                     <tr>
                                         <td>Kleur</td>
-                                        <td>Wit/ Zwart/ Blauwgroen/ Bruin</td>
+                                        <td>Bruin</td>
                                     </tr>
                                     <tr>
                                         <td>Eigendommen</td>
@@ -859,6 +849,8 @@
         </div>
     </div>
 </div>
+
+
 
 <!-- Footer -->
 <footer class="footer style7">
