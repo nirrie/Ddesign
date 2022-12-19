@@ -73,10 +73,14 @@
                 </div>
                 <div class="col-lg-7 col-sm-8 col-md-6 col-xs-5 col-ts-12">
                     <div class="block-search-block">
-                        <form class="form-search form-search-width-category">
+                        <form class="form-search form-search-width-category" method="GET" action="/">
+                            @if(request('category'))
+                            	<input type="hidden"	name="category" value="{{ request('category') }}">
+							@endif
+
                             <div class="form-content">
                                 <div class="inner">
-                                    <input type="text" class="input" name="s" value="" placeholder="Zoek hier">
+                                    <input type="text" class="input" name="search" value="{{ request('search') }}" placeholder="Zoek hier">
                                 </div>
                                 <button class="btn-search" type="submit">
                                     <span class="icon-search"></span>
@@ -120,7 +124,7 @@
                                     </ul>
                                     <div class="tab-container">
                                         <div id="header-tab-login" class="tab-panel active">
-                                            <form method="post" class="login form-login">
+                                            <form method="POST" class="login form-login">
                                                 <p class="form-row form-row-wide">
                                                     <input type="email" placeholder="Email" class="input-text">
                                                 </p>
@@ -142,7 +146,7 @@
                                             </form>
                                         </div>
                                         <div id="header-tab-rigister" class="tab-panel">
-                                            <form method="post" action="/register" class="register form-register">
+                                            <form method="POST" action="/register" class="register form-register">
                                                 <p class="form-row form-row-wide">
                                                     <input type="email" placeholder="Email" class="input-text">
                                                 </p>
@@ -271,6 +275,7 @@
         </div>
     </div>
 </header>
+
 <div class="header-device-mobile">
     <div class="wapper">
         <div class="item mobile-logo">
@@ -350,7 +355,7 @@
     </div>
 </div>
 <!-- End-Head-->
-
+   
 	<div class="main-content main-content-login">
 		<div class="container">
 			<div class="row">
@@ -403,27 +408,42 @@
 										</form>
 									</div>
 								</div>
+                               
 								<div class="col-lg-6 col-md-6 col-sm-12">
 									<div class="login-item">
 										<h5 class="title-login">Registreer nu</h5>
-										<form class="register">
+										<form method="POST" action="/register" class="register" >
+                                            @csrf
 											<p class="form-row form-row-wide">
 												<label class="text">Uw email</label>
-												<input title="email" type="email" class="input-text">
+												<input title="email" type="email" name="email" id="email" class="input-text" value="{{ old('email') }}" required>
 											</p>
+                                            @error('email')
+                                                <p class="text-danger">{{ $message }}</p>
+                                            @enderror
+
 											<p class="form-row form-row-wide">
 												<label class="text">Gebruikersnaam</label>
-												<input title="name" type="text" class="input-text">
+												<input title="name" type="text" name="username" id="username" class="input-text" value="{{ old('username') }} " required>
 											</p>
+                                            @error('username')
+                                                <p class="text-danger">{{ $message }}</p>
+                                            @enderror
 											<p class="form-row form-row-wide">
 												<label class="text">Wachtwoord</label>
-												<input title="pass" type="password" class="input-text">
+												<input title="pass" type="password" name="password" id="password" class="input-text"  required>
 											</p>
+                                            @error('password')
+                                                <p class="text-danger">{{ $message }}</p>
+                                            @enderror
 											<p class="form-row">
 												<span class="inline">
-													<input type="checkbox" id="cb2">
+													<input type="checkbox" id="cb2" >
 													<label for="cb2" class="label-text">Ik ga akkoord met <span>algemene voorwaarden</span></label>
 												</span>
+                                                @error('checkbox')
+                                                    <p class="text-danger">{{ $message }}</p>
+                                                @enderror
 											</p>
 											<p class="">
 												<input type="submit" class="button-submit" value="Registreer nu">
@@ -431,6 +451,7 @@
 										</form>
 									</div>
 								</div>
+                                
 							</div>
 						</div>
 					</div>
@@ -438,7 +459,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 <footer class="footer style7">
     <div class="container">
         <div class="container-wapper">
