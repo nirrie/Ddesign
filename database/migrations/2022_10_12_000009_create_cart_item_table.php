@@ -1,12 +1,16 @@
 <?php
+
 namespace Database\Migrations;
+
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+
 return new class extends Migration
 {
     /**
      * Run the migrations.
+     *
      * @table cart_item
      *
      * @return void
@@ -32,7 +36,6 @@ return new class extends Migration
         //     $table->index(["productId"], 'idx_cart_item_product');
 
         //     $table->index(["cartId"], 'idx_cart_item_cart');
-
 
         //     $table->foreign('cartId', 'idx_cart_item_cart')
         //         ->references('id')->on('cart')

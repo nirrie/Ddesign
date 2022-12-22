@@ -2,7 +2,6 @@
 
 namespace Database\Factories;
 
-use App\Models\Product;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -18,9 +17,9 @@ class CategoryFactory extends Factory
     public function definition()
     {
         return [
-            'title' =>fake()->word(),
-            'created_at'=> now(),
-            'updated_at'=>now(),
+            'title'      => fake()->word(),
+            'created_at' => now(),
+            'updated_at' => now(),
             //
         ];
     }

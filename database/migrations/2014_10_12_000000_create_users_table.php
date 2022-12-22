@@ -1,8 +1,8 @@
 <?php
 
-use Illuminate\Database\Migrations\Migration;
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
 
 return new class extends Migration
 {
@@ -27,8 +27,8 @@ return new class extends Migration
             $table->text('profile')->nullable();
             $table->string('line1', 50)->nullable();
             $table->string('line2', 50)->nullable();
-            $table->unique(["mobile"], 'uq_mobile');
-            $table->unique(["email"], 'uq_email');
+            $table->unique(['mobile'], 'uq_mobile');
+            $table->unique(['email'], 'uq_email');
             $table->timestamp('email_verified_at')->nullable();
             $table->rememberToken();
             $table->timestamps();

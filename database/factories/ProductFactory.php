@@ -18,15 +18,15 @@ class ProductFactory extends Factory
     public function definition()
     {
         return [
-           
-            'title' =>  fake()->word(),
-            'summary' => fake()->sentence(),
-            'type'  =>  fake()->randomDigit(),
-            'sku' => fake()->randomDigit(),
-            'price' => fake()->randomDigit(),
-            'quantity' => fake()->randomDigit(),
-            'created_at' => now(),
-            'updated_at' => now(),
+
+            'title'       => fake()->word(),
+            'summary'     => fake()->sentence(),
+            'type'        => fake()->randomDigit(),
+            'sku'         => fake()->randomDigit(),
+            'price'       => fake()->randomDigit(),
+            'quantity'    => fake()->randomDigit(),
+            'created_at'  => now(),
+            'updated_at'  => now(),
             'category_id' => Category::factory(),
 
         ];

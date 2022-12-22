@@ -1,6 +1,7 @@
 <?php
 
 namespace Database\Factories;
+
 use App\Models\Cart;
 use App\Models\Product;
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -19,10 +20,10 @@ class cart_itemsFactory extends Factory
     {
         return [
             'product_id' => Product::factory(),
-            'cart_id' => Cart::factory(),
-            'sku' => fake()->randomDigit(),
-            'price' => fake()->randomNumber(),
-            'quantity' => fake()->randomDigit(),
+            'cart_id'    => Cart::factory(),
+            'sku'        => fake()->randomDigit(),
+            'price'      => fake()->randomNumber(),
+            'quantity'   => fake()->randomDigit(),
             'created_at' => now(),
             'updated_at' => now(),
             //

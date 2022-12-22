@@ -1,13 +1,16 @@
 <?php
+
 namespace Database\Migrations;
+
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+
 return new class extends Migration
 {
-
     /**
      * Run the migrations.
+     *
      * @table order_item
      *
      * @return void
@@ -32,7 +35,6 @@ return new class extends Migration
             // $table->index(["productId"], 'idx_order_item_product');
 
             // $table->index(["orderId"], 'idx_order_item_order');
-
 
             // $table->foreign('orderId', 'idx_order_item_order')
             //     ->references('id')->on('order')

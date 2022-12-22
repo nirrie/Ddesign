@@ -1,12 +1,16 @@
 <?php
+
 namespace Database\Migrations;
+
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+
 return new class extends Migration
 {
     /**
      * Run the migrations.
+     *
      * @table order
      *
      * @return void
@@ -39,7 +43,6 @@ return new class extends Migration
             $table->timestamps();
 
             // $table->index(["userId"], 'idx_order_user');
-
 
             // $table->foreign('userId', 'idx_order_user')
             //     ->references('id')->on('user')

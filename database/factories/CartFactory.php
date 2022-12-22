@@ -19,18 +19,17 @@ class CartFactory extends Factory
     {
         return [
             'session_id' => fake()->randomDigit(),
-            'token' =>  fake()->randomDigit(),
-            'status' => fake()->randomDigit(),
+            'token'      => fake()->randomDigit(),
+            'status'     => fake()->randomDigit(),
             'first_name' => fake()->firstName(),
-            'last_name' => fake()->lastName(),
-            'mobile' => fake()->phoneNumber(),
-            'email' => fake()->email(),
-            'city' => fake()->city(),
-            'province' => fake()->state(),
+            'last_name'  => fake()->lastName(),
+            'mobile'     => fake()->phoneNumber(),
+            'email'      => fake()->email(),
+            'city'       => fake()->city(),
+            'province'   => fake()->state(),
             'created_at' => now(),
             'updated_at' => now(),
-            'user_id' => User::factory(),
-
+            'user_id'    => User::factory(),
 
             //
         ];
