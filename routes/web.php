@@ -33,7 +33,6 @@ Route::get('/checkout', [StaticController::class, 'checkout'])->name('home.check
 Route::get('/p1', [StaticController::class, 'p1'])->name('home.p1');
 
 //users
-
-Route::post('/store', [RegisterController::class, 'store'])->name('store');
+Route::post('/register', [RegisterController::class, 'store'])->middleware('guest');
 
   
