@@ -8,6 +8,9 @@ use Illuminate\Validation\Rule;
 
 class RegisterController extends Controller
 {	
+	public function create(){
+		return redirect('login');
+	}
 
 	public function store(Request $request)
 
