@@ -354,13 +354,13 @@
                 <div class="breadcrumb-trail breadcrumbs">
                     <ul class="trail-items breadcrumb">
                         <li class="trail-item trail-begin">
-                        <a href="{{ route('home.index') }}">Home</a>
+                            <a href="index.html">Home</a>
                         </li>
                         <li class="trail-item">
                             <a href="#">Accenten</a>
                         </li>
                         <li class="trail-item trail-end active">
-                        Luxe management bureau met hoogte verstelbaar 
+                        Bureau-eiland (met ladeblokken en kastjes) 
                         </li>
                     </ul>
                 </div>
@@ -372,52 +372,32 @@
                     <div class="details-product">
                         <div class="details-thumd">
                             <div class="image-preview-container image-thick-box image_preview_container">
-                                <img id="img_zoom" data-zoom-image="/images/details-item-1.jpg"
-                                     src="/images/details-item-1.jpg" alt="img">
+                                <img id="img_zoom" data-zoom-image="/images/details-item-15.jpg"
+                                     src="/images/details-item-15.jpg" alt="img">
                                 <a href="#" class="btn-zoom open_qv"><i class="fa fa-search" aria-hidden="true"></i></a>
                             </div>
                             <div class="product-preview image-small product_preview">
                                 <div id="thumbnails" class="thumbnails_carousel owl-carousel" data-nav="true"
                                      data-autoplay="false" data-dots="false" data-loop="false" data-margin="10"
                                      data-responsive='{"0":{"items":3},"480":{"items":3},"600":{"items":3},"1000":{"items":3}}'>
-                                    <a href="#" data-image="/images/details-item-1.jpg"
-                                       data-zoom-image="/images/details-item-1.jpg" class="active">
-                                        <img src="/images/details-item-1.jpg"
-                                             data-large-image="/images/details-item-1.jpg" alt="img">
-                                    </a>
-                                    <a href="#" data-image="/images/details-item-2.jpg"
-                                       data-zoom-image="/images/details-item-2.jpg">
-                                        <img src="/images/details-item-2.jpg"
-                                             data-large-image="/images/details-item-2.jpg" alt="img">
-                                    </a>
-                                    <a href="#" data-image="/images/details-item-3.jpg"
-                                       data-zoom-image="/images/details-item-3.jpg">
-                                        <img src="/images/details-item-3.jpg"
-                                             data-large-image="/images/details-item-3.jpg" alt="img">
-                                    </a>
-                                    <a href="#" data-image="/images/details-item-4.jpg"
-                                       data-zoom-image="/images/details-item-4.jpg">
-                                        <img src="/images/details-item-4.jpg"
-                                             data-large-image="/images/details-item-4.jpg" alt="img">
-                                    </a>
-                                    <a href="#" data-image="/images/details-item-5.jpg"
-                                       data-zoom-image="/images/details-item-5.jpg">
-                                        <img src="/images/details-item-5.jpg"
-                                             data-large-image="/images/details-item-5.jpg" alt="img">
+                                    <a href="#" data-image="/images/details-item-15.jpg"
+                                       data-zoom-image="/images/details-item-15.jpg" class="active">
+                                        <img src="/images/details-item-15.jpg"
+                                             data-large-image="/images/details-item-15.jpg" alt="img">
                                     </a>
                                 </div>
                             </div>
                         </div>
                         <div class="details-infor">
                             <h1 class="product-title">
-                             Luxe management bureau met hoogte verstelbaar
+                            Bureau-eiland (met ladeblokken en kastjes)
                             </h1>
                             <div class="stars-rating">
                                 <div class="star-rating">
                                     <span class="star-5"></span>
                                 </div>
                                 <div class="count-star">
-                                    (7)
+                                    (5)
                                 </div>
                             </div>
                             <div class="availability">
@@ -425,11 +405,11 @@
                                 <a href="#">op voorraad</a>
                             </div>
                             <div class="price">
-                                <span>€485</span>
+                                <span>€500</span>
                             </div>
                             <div class="product-details-description">
                                 <ul>
-                                    <li>Art.Nu. 001</li>
+                                    <li>Art.Nu. 007</li>
                                 </ul>
                             </div>
                             <div class="variations">
@@ -438,10 +418,7 @@
                                       Kleur:
                                     </div>
                                     <div class="list-color list-item">
-                                        <a href="#" class="color1"></a>
-                                        <a href="#" class="color2"></a>
-                                        <a href="#" class="color3 active"></a>
-                                        <a href="#" class="color4"></a>
+                                        <a href="#" class="color1 active"></a>
                                     </div>
                                 </div>
                                 <div class="attribute attribute_size">
@@ -454,7 +431,7 @@
                                         <a href="#" class="active">m</a>
                                         <a href="#" class="">l</a>
                                         <a href="#" class="">xl</a> -->
-                                        <a href="#" class="">1 Maat</a>
+                                        <a href="#" class="active">1 Maat</a>
                                     </div>
                                 </div>
                             </div>
@@ -498,25 +475,22 @@
                         <div class="tab-container">
                             <div id="product-descriptions" class="tab-panel active">
                                 <p>
-                                Het is tegen de zwaartekracht in maar toch betrouwbaar en comfortabel. 
-                                Het Gravity elektrisch in hoogte instelbare directie bureau van D&D brengt het idee van een directiekamer 
-                                naar een heel nieuw niveau. Het Gravity bureau is gebouwd op één eenvoudige steun en verbergt een elektrisch 
-                                mechanisme voor hoogteaanpassing, zodat de gebruiker van werkhouding kan veranderen van zittend naar staand. 
-                                Het onzichtbare frame creëert en beeldt een zwevend werkoppervlak uit, wat een minimalistische sfeer op kantoor introduceert. 
-                                Door de zeer robuuste constructie is het werkblad net zo stabiel als een niet zwevende oplossing. 
-                                Het werkblad heeft een afmeting van 220 cm x 100 cm. Uiterst ruim dus.
+                                bureaus en bureaueilanden zijn de ultieme oplossing voor bedrijven waar in teamverband wordt gewerkt. Met het OGI-systeem kan de indeling van elk kantoor worden georganiseerd en gewijzigd. Maak het mogelijk om enkele en meerdere stations te maken. De bureauschermen, in talloze uitvoeringen, maken het mogelijk om de werkplekken te verdelen en gewenste privacy en veiligheid te creëren, maar nog wel steeds de mogelijkheid bieden om effectief met elkaar te kunnen blijven communiceren. Optioneel zijn deze (akoestische) privacyschermen leverbaar.
+
+De Ogi-V bureau-eilanden zijn geschikt als bureau 2 personen of 4 persoons bureau. Perfect geschikt om call centers mee in te richten of op afdelingen waar in teamverband wordt gewerkt. Kies zelf uw eigen uitstraling met behulp van de vele kleuruitvoeringen van de werkbladen en de onderstellen. Praktisch kabelmanagement voor het wegwerken van stekkerdozen en snoeren kun u er optioneel bij bestellen.
+
+Het 2 persoons bureaueiland bestaat uit: 2 bureaus, 2 ladeblokken met 4 laden en 2 kastjes van 80 cm met een schuifdeur.
+
+Het 4 persoons bureaueiland bestaat uit: 4 bureaus, 4 ladeblokken met 4 laden en 2 kastjes van 160 cm met een schuifdeur.
+
+Klik HIER voor de complete bureau collectie van D&D.
+
                                 
 
                                 </p>
+                                <br><br>
                                 <p>
-                                Alle features op een rijtje: <br>
-                                <li>Elektrisch hoogte verstelsysteem.</li>
-                                <li>Zelfsluitende lades.</li>
-                                <li>Optionele mediabox en een Bluetooth-bedieningspaneel.</li>
-                                <li>Stabiele betonnen constructie.</li>
-                                <li>Luxe afwerkingen: iep, Amerikaans noten, grafiet of wit.</li>
-                                <li>Details en vorm passend bij de rest van de Gravity-collectie.</li>
-                                <li>Onder het bureau staat een vast dressoir wat zowel links als rechts te plaatsen is.</li>
+                                Over het merk: “Wat ons inspireert en motiveert, zijn de familiewaarden. Die waarden vormen de basis van wederzijds vertrouwen en voortdurende verbetering. Daardoor bieden we hoogwaardige oplossingen, slaan we lange procedures over en laten we iedereen focussen op werk dat zinvol en persoonlijk belangrijk is.” Bij D&D geloven we dat een beter arbeidsleven gebaseerd is op vertrouwen. We onderzoeken de behoeften van onze partners op zoek naar de beste en unieke oplossingen. We werken om aan uw verwachtingen te voldoen, of u nu bij ons komt met een ontwerpidee of een verbeterde kantoorruimte nodig heeft. We investeren voortdurend in nieuwe technologieën, waardoor we regelmatig nieuwe producten kunnen introduceren. Wij vervaardigen meer dan 90% van de componenten zelf. Hierdoor zijn wij volledig verantwoordelijk voor de hoge kwaliteit van onze meubelen en de tijdige levering van bestellingen.
                                 </p>
                             </div>
                             <div id="information" class="tab-panel">
@@ -527,7 +501,7 @@
                                     </tr>
                                     <tr>
                                         <td>Kleur</td>
-                                        <td>Wit/ Zwart/ Blauwgroen/ Bruin</td>
+                                        <td>Wit</td>
                                     </tr>
                                     <tr>
                                         <td>Eigendommen</td>
@@ -558,7 +532,7 @@
                                                             </div>
                                                         </div>
                                                         <p class="meta">
-                                                            <strong class="author">Jeroen Heuvelman</strong>
+                                                            <strong class="author">André Dalmolen</strong>
                                                             <span>-</span>
                                                             <span class="time">June 7, 2022</span>
                                                         </p>

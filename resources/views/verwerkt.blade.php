@@ -354,14 +354,15 @@
                     <div class="icon">
                     </div>
                     <h3 class="title-checkend">
-                     Gefeliciteerd! Uw bestelling is verwerkt.
+                     Gefeliciteerd! Uw bestelling is verwerkt. <br>
+                     U ontvangt een bevestigingsmail
                     </h3>
                     <div class="sub-title">
                         <!-- Aenean dui mi, tempus non volutpat eget, molestie a orci.
                         Nullam eget sem et eros laoreet rutrum.
                         Quisque sem ante, feugiat quis lorem in. -->
                     </div>
-                    <a href="{{ route('home.index') }}" class="button btn-return">Return to Store</a>
+                    <a href="{{ route('home.index') }}" class="button btn-return">Keer terug naar de winkel</a>
                 </div>
 </div>
             

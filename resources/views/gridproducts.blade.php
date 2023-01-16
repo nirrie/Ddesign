@@ -449,10 +449,10 @@
 											</div>
 											<div class="price">
 												<del>
-													€65
+													€650
 												</del>
 												<ins>
-													€45
+													€485
 												</ins>
 											</div>
 										</div>
@@ -465,7 +465,7 @@
 									</div>
 									<div class="product-thumb">
 										<div class="thumb-inner">
-											<a href="#">
+											<a href="{{ route('home.p2') }}">
 												<img src="/images/product-item-2.jpg" alt="img">
 											</a>
 											<div class="thumb-group">
@@ -484,23 +484,23 @@
 									</div>
 									<div class="product-info">
 										<h5 class="product-name product_title">
-											<a href="#">Product 2</a>
+											<a href="{{ route('home.p2') }}">Houten bureau met zwart metalen frame</a>
 										</h5>
 										<div class="group-info">
 											<div class="stars-rating">
 												<div class="star-rating">
-													<span class="star-3"></span>
+													<span class="star-4"></span>
 												</div>
 												<div class="count-star">
-													(3)
+													(4)
 												</div>
 											</div>
 											<div class="price">
 												<del>
-													€65
+													€600
 												</del>
 												<ins>
-													€45
+													€485
 												</ins>
 											</div>
 										</div>
@@ -520,7 +520,7 @@
 									</div>
 									<div class="product-thumb">
 										<div class="thumb-inner">
-											<a href="#">
+											<a href="{{ route('home.p3') }}">
 												<img src="/images/product-item-3.jpg" alt="img">
 											</a>
 											<div class="thumb-group">
@@ -539,23 +539,23 @@
 									</div>
 									<div class="product-info">
 										<h5 class="product-name product_title">
-											<a href="#">Product 3</a>
+											<a href="{{ route('home.p3') }}">Vergadertafel met stoelen</a>
 										</h5>
 										<div class="group-info">
 											<div class="stars-rating">
 												<div class="star-rating">
-													<span class="star-3"></span>
+													<span class="star-5"></span>
 												</div>
 												<div class="count-star">
-													(3)
+													(5)
 												</div>
 											</div>
 											<div class="price">
 												<del>
-													€65
+													€350
 												</del>
 												<ins>
-													€45
+													€299
 												</ins>
 											</div>
 										</div>

@@ -354,13 +354,13 @@
                 <div class="breadcrumb-trail breadcrumbs">
                     <ul class="trail-items breadcrumb">
                         <li class="trail-item trail-begin">
-                        <a href="{{ route('home.index') }}">Home</a>
+                            <a href="index.html">Home</a>
                         </li>
                         <li class="trail-item">
                             <a href="#">Accenten</a>
                         </li>
                         <li class="trail-item trail-end active">
-                        Luxe management bureau met hoogte verstelbaar 
+                        Glanzend zwart en goud bureau 
                         </li>
                     </ul>
                 </div>
@@ -372,52 +372,47 @@
                     <div class="details-product">
                         <div class="details-thumd">
                             <div class="image-preview-container image-thick-box image_preview_container">
-                                <img id="img_zoom" data-zoom-image="/images/details-item-1.jpg"
-                                     src="/images/details-item-1.jpg" alt="img">
+                                <img id="img_zoom" data-zoom-image="/images/details-item-16.jpg"
+                                     src="/images/details-item-16.jpg" alt="img">
                                 <a href="#" class="btn-zoom open_qv"><i class="fa fa-search" aria-hidden="true"></i></a>
                             </div>
                             <div class="product-preview image-small product_preview">
                                 <div id="thumbnails" class="thumbnails_carousel owl-carousel" data-nav="true"
                                      data-autoplay="false" data-dots="false" data-loop="false" data-margin="10"
                                      data-responsive='{"0":{"items":3},"480":{"items":3},"600":{"items":3},"1000":{"items":3}}'>
-                                    <a href="#" data-image="/images/details-item-1.jpg"
-                                       data-zoom-image="/images/details-item-1.jpg" class="active">
-                                        <img src="/images/details-item-1.jpg"
-                                             data-large-image="/images/details-item-1.jpg" alt="img">
+                                    <a href="#" data-image="/images/details-item-16.jpg"
+                                       data-zoom-image="/images/details-item-16.jpg" class="active">
+                                        <img src="/images/details-item-16.jpg"
+                                             data-large-image="/images/details-item-16.jpg" alt="img">
                                     </a>
-                                    <a href="#" data-image="/images/details-item-2.jpg"
-                                       data-zoom-image="/images/details-item-2.jpg">
-                                        <img src="/images/details-item-2.jpg"
-                                             data-large-image="/images/details-item-2.jpg" alt="img">
+                                    <a href="#" data-image="/images/details-item-17.jpg"
+                                       data-zoom-image="/images/details-item-17.jpg">
+                                        <img src="/images/details-item-17.jpg"
+                                             data-large-image="/images/details-item-17.jpg" alt="img">
                                     </a>
-                                    <a href="#" data-image="/images/details-item-3.jpg"
-                                       data-zoom-image="/images/details-item-3.jpg">
-                                        <img src="/images/details-item-3.jpg"
-                                             data-large-image="/images/details-item-3.jpg" alt="img">
+                                    <a href="#" data-image="/images/details-item-18.jpg"
+                                       data-zoom-image="/images/details-item-18.jpg">
+                                        <img src="/images/details-item-18.jpg"
+                                             data-large-image="/images/details-item-18.jpg" alt="img">
                                     </a>
-                                    <a href="#" data-image="/images/details-item-4.jpg"
-                                       data-zoom-image="/images/details-item-4.jpg">
-                                        <img src="/images/details-item-4.jpg"
-                                             data-large-image="/images/details-item-4.jpg" alt="img">
-                                    </a>
-                                    <a href="#" data-image="/images/details-item-5.jpg"
-                                       data-zoom-image="/images/details-item-5.jpg">
-                                        <img src="/images/details-item-5.jpg"
-                                             data-large-image="/images/details-item-5.jpg" alt="img">
+                                    <a href="#" data-image="/images/details-item-19.jpg"
+                                       data-zoom-image="/images/details-item-19.jpg">
+                                        <img src="/images/details-item-19.jpg"
+                                             data-large-image="/images/details-item-19.jpg" alt="img">
                                     </a>
                                 </div>
                             </div>
                         </div>
                         <div class="details-infor">
                             <h1 class="product-title">
-                             Luxe management bureau met hoogte verstelbaar
+                            Glanzend zwart en goud bureau
                             </h1>
                             <div class="stars-rating">
                                 <div class="star-rating">
                                     <span class="star-5"></span>
                                 </div>
                                 <div class="count-star">
-                                    (7)
+                                    (5)
                                 </div>
                             </div>
                             <div class="availability">
@@ -425,11 +420,11 @@
                                 <a href="#">op voorraad</a>
                             </div>
                             <div class="price">
-                                <span>€485</span>
+                                <span>€255</span>
                             </div>
                             <div class="product-details-description">
                                 <ul>
-                                    <li>Art.Nu. 001</li>
+                                    <li>Art.Nu. 008</li>
                                 </ul>
                             </div>
                             <div class="variations">
@@ -438,10 +433,7 @@
                                       Kleur:
                                     </div>
                                     <div class="list-color list-item">
-                                        <a href="#" class="color1"></a>
-                                        <a href="#" class="color2"></a>
-                                        <a href="#" class="color3 active"></a>
-                                        <a href="#" class="color4"></a>
+                                        <a href="#" class="color2 active"></a>
                                     </div>
                                 </div>
                                 <div class="attribute attribute_size">
@@ -449,11 +441,6 @@
                                        Maat:
                                     </div>
                                     <div class="list-size list-item">
-                                        <!-- <a href="#" class="">xs</a>
-                                        <a href="#" class="">s</a>
-                                        <a href="#" class="active">m</a>
-                                        <a href="#" class="">l</a>
-                                        <a href="#" class="">xl</a> -->
                                         <a href="#" class="">1 Maat</a>
                                     </div>
                                 </div>
@@ -498,36 +485,31 @@
                         <div class="tab-container">
                             <div id="product-descriptions" class="tab-panel active">
                                 <p>
-                                Het is tegen de zwaartekracht in maar toch betrouwbaar en comfortabel. 
-                                Het Gravity elektrisch in hoogte instelbare directie bureau van D&D brengt het idee van een directiekamer 
-                                naar een heel nieuw niveau. Het Gravity bureau is gebouwd op één eenvoudige steun en verbergt een elektrisch 
-                                mechanisme voor hoogteaanpassing, zodat de gebruiker van werkhouding kan veranderen van zittend naar staand. 
-                                Het onzichtbare frame creëert en beeldt een zwevend werkoppervlak uit, wat een minimalistische sfeer op kantoor introduceert. 
-                                Door de zeer robuuste constructie is het werkblad net zo stabiel als een niet zwevende oplossing. 
-                                Het werkblad heeft een afmeting van 220 cm x 100 cm. Uiterst ruim dus.
+                                Dit moderne bureau is de ideale combinatie van stijl en functionaliteit voor thuis of op de werkplek. Het heeft een gouden basis en een zwart essenfineer of wit lakblad met een gestructureerd ontwerp. Het bureau, dat een enkele lade heeft voor opslag en gouden hardware, wordt onmiddellijk het brandpunt van elke kamer. Een gouden accent en een strak wit of zwart lakoppervlak combineren mooi in een moderne of luxe ruimte. Kantoorbenodigdheden kunnen worden opgeslagen in de grote opslagruimte van de lade. Het is gebouwd om lang mee te gaan vanwege de robuuste en roestvrijstalen constructie. Je kunt het voor alles gebruiken, van een bureau tot een kaptafel tot een console met opbergruimte, afhankelijk van waar je hem voor wilt gebruiken.
+
+
+
+
+
                                 
 
                                 </p>
                                 <p>
                                 Alle features op een rijtje: <br>
-                                <li>Elektrisch hoogte verstelsysteem.</li>
-                                <li>Zelfsluitende lades.</li>
-                                <li>Optionele mediabox en een Bluetooth-bedieningspaneel.</li>
-                                <li>Stabiele betonnen constructie.</li>
-                                <li>Luxe afwerkingen: iep, Amerikaans noten, grafiet of wit.</li>
-                                <li>Details en vorm passend bij de rest van de Gravity-collectie.</li>
-                                <li>Onder het bureau staat een vast dressoir wat zowel links als rechts te plaatsen is.</li>
+                                <li>- De slanke en subtiele vorm van deze uitbreidbare bureauconsole maakt hem geschikt voor verschillende omgevingen, waaronder de slaapkamer, woonkamer en gang.</li>
+                                <li>- Materiaal: MDF (boven), multiplex (lade), roestvrij staal (basis).</li>
+                                <li>- Onderhoud en reinigen: Veeg schoon met een vochtige doek, droog afvegen met een schone doek.</li>
                                 </p>
                             </div>
                             <div id="information" class="tab-panel">
                                 <table class="table table-bordered">
                                     <tr>
                                         <td>Maat</td>
-                                        <td>220 cm x 100 cm</td>
+                                        <td>47,2 B x 23,6 D x 29,5 H</td>
                                     </tr>
                                     <tr>
                                         <td>Kleur</td>
-                                        <td>Wit/ Zwart/ Blauwgroen/ Bruin</td>
+                                        <td>Zwart</td>
                                     </tr>
                                     <tr>
                                         <td>Eigendommen</td>
@@ -558,7 +540,7 @@
                                                             </div>
                                                         </div>
                                                         <p class="meta">
-                                                            <strong class="author">Jeroen Heuvelman</strong>
+                                                            <strong class="author">André Dalmolen</strong>
                                                             <span>-</span>
                                                             <span class="time">June 7, 2022</span>
                                                         </p>

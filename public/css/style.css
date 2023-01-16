@@ -73,7 +73,7 @@ ol ul {
 h1, h2, h3, h4, h5, h6 {
 	line-height: 1.428;
 	font-weight: 500;
-	color: #6e5816;
+	color: #000000;
 	margin-top: 0;
 }
 h1 {
@@ -6033,7 +6033,7 @@ ul.list-products {
 }
 .slider-item.style2 .title-big span {
     position: absolute;
-    color: #6e5816;
+    color: #000000;
 
 
 }

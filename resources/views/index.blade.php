@@ -548,7 +548,7 @@
                                         </div>
                                         <div class="product-thumb">
                                             <div class="thumb-inner">
-                                                <a href="#">
+                                                <a href="{{ route('home.p2') }}">
                                                     <img src="/images/product-item-2.jpg" alt="img">
                                                 </a>
                                                 <!-- <div class="thumb-group">
@@ -567,7 +567,7 @@
                                         </div>
                                         <div class="product-info">
                                             <h5 class="product-name product_title">
-                                                <a href="#">Product 2</a>
+                                                <a href="{{ route('home.p2') }}">Houten bureau met zwart metalen frame </a>
                                             </h5>
                                             <div class="group-info">
                                                 <div class="stars-rating">
@@ -580,10 +580,10 @@
                                                 </div>
                                                 <div class="price">
                                                     <del>
-                                                        €65
+                                                        €600
                                                     </del>
                                                     <ins>
-                                                        €45
+                                                        €485
                                                     </ins>
                                                 </div>
                                             </div>
@@ -603,7 +603,7 @@
                                         </div>
                                         <div class="product-thumb">
                                             <div class="thumb-inner">
-                                                <a href="#">
+                                                <a href="{{ route('home.p3') }}">
                                                     <img src="/images/product-item-3.jpg" alt="img">
                                                 </a>
                                                 <!-- <div class="thumb-group">
@@ -622,23 +622,23 @@
                                         </div>
                                         <div class="product-info">
                                             <h5 class="product-name product_title">
-                                                <a href="#">Product 3</a>
+                                                <a href="{{ route('home.p3') }}">Vergadertafel met stoelen</a>
                                             </h5>
                                             <div class="group-info">
                                                 <div class="stars-rating">
                                                     <div class="star-rating">
-                                                        <span class="star-3"></span>
+                                                        <span class="star-5"></span>
                                                     </div>
                                                     <div class="count-star">
-                                                        (3)
+                                                        (5)
                                                     </div>
                                                 </div>
                                                 <div class="price">
                                                     <del>
-                                                        €65
+                                                        €350
                                                     </del>
                                                     <ins>
-                                                        €45
+                                                        €299
                                                     </ins>
                                                 </div>
                                             </div>
@@ -658,7 +658,7 @@
                                         </div>
                                         <div class="product-thumb">
                                             <div class="thumb-inner">
-                                                <a href="#">
+                                                <a href="{{ route('home.p4') }}">
                                                     <img src="/images/product-item-4.jpg" alt="img">
                                                 </a>
                                                 <!-- <div class="thumb-group">
@@ -677,7 +677,7 @@
                                         </div>
                                         <div class="product-info">
                                             <h5 class="product-name product_title">
-                                                <a href="#">Product 4</a>
+                                                <a href="{{ route('home.p4') }}">Bureaucombinatie Standaard, 2 Bureautafels Met Schuifdeurkast</a>
                                             </h5>
                                             <div class="group-info">
                                                 <div class="stars-rating">
@@ -690,10 +690,10 @@
                                                 </div>
                                                 <div class="price">
                                                     <del>
-                                                        €65
+                                                        €450
                                                     </del>
                                                     <ins>
-                                                        €45
+                                                        €350
                                                     </ins>
                                                 </div>
                                             </div>
@@ -713,7 +713,7 @@
                                         </div>
                                         <div class="product-thumb">
                                             <div class="thumb-inner">
-                                                <a href="#">
+                                                <a href="{{ route('home.p5') }}">
                                                     <img src="/images/product-item-5.jpg" alt="img">
                                                 </a>
                                                 <!-- <div class="thumb-group">
@@ -732,7 +732,7 @@
                                         </div>
                                         <div class="product-info">
                                             <h5 class="product-name product_title">
-                                                <a href="#">Product 5</a>
+                                                <a href="{{ route('home.p5') }}">Directie hoekbureau</a>
                                             </h5>
                                             <div class="group-info">
                                                 <div class="stars-rating">
@@ -740,15 +740,15 @@
                                                         <span class="star-3"></span>
                                                     </div>
                                                     <div class="count-star">
-                                                        (3)
+                                                        (4)
                                                     </div>
                                                 </div>
                                                 <div class="price">
                                                     <del>
-                                                        €65
+                                                        €430
                                                     </del>
                                                     <ins>
-                                                        €45
+                                                        €299
                                                     </ins>
                                                 </div>
                                             </div>
@@ -768,7 +768,7 @@
                                         </div>
                                         <div class="product-thumb">
                                             <div class="thumb-inner">
-                                                <a href="#">
+                                                <a href="{{ route('home.p6') }}">
                                                     <img src="/images/product-item-6.jpg" alt="img">
                                                 </a>
                                                 <!-- <div class="thumb-group">
@@ -787,23 +787,23 @@
                                         </div>
                                         <div class="product-info">
                                             <h5 class="product-name product_title">
-                                                <a href="#">Product 6</a>
+                                                <a href="{{ route('home.p6') }}">Hoekbureau Francisca</a>
                                             </h5>
                                             <div class="group-info">
                                                 <div class="stars-rating">
                                                     <div class="star-rating">
-                                                        <span class="star-3"></span>
+                                                        <span class="star-7"></span>
                                                     </div>
                                                     <div class="count-star">
-                                                        (3)
+                                                        (7)
                                                     </div>
                                                 </div>
                                                 <div class="price">
                                                     <del>
-                                                        €65
+                                                        €299
                                                     </del>
                                                     <ins>
-                                                        €45
+                                                        €199
                                                     </ins>
                                                 </div>
                                             </div>
@@ -823,7 +823,7 @@
                                         </div>
                                         <div class="product-thumb">
                                             <div class="thumb-inner">
-                                                <a href="#">
+                                                <a href="{{ route('home.p7') }}">
                                                     <img src="/images/product-item-7.jpg" alt="img">
                                                 </a>
                                                 <!-- <div class="thumb-group">
@@ -842,23 +842,23 @@
                                         </div>
                                         <div class="product-info">
                                             <h5 class="product-name product_title">
-                                                <a href="#">Product 7</a>
+                                                <a href="{{ route('home.p7') }}">Bureau-eiland (met ladeblokken en kastjes)</a>
                                             </h5>
                                             <div class="group-info">
                                                 <div class="stars-rating">
                                                     <div class="star-rating">
-                                                        <span class="star-3"></span>
+                                                        <span class="star-5"></span>
                                                     </div>
                                                     <div class="count-star">
-                                                        (3)
+                                                        (5)
                                                     </div>
                                                 </div>
                                                 <div class="price">
                                                     <del>
-                                                        €65
+                                                        €800
                                                     </del>
                                                     <ins>
-                                                        €45
+                                                        €500
                                                     </ins>
                                                 </div>
                                             </div>
@@ -878,7 +878,7 @@
                                         </div>
                                         <div class="product-thumb">
                                             <div class="thumb-inner">
-                                                <a href="#">
+                                                <a href="{{ route('home.p8') }}">
                                                     <img src="/images/product-item-8.jpg" alt="img">
                                                 </a>
                                                 <!-- <div class="thumb-group">
@@ -897,23 +897,23 @@
                                         </div>
                                         <div class="product-info">
                                             <h5 class="product-name product_title">
-                                                <a href="#">Product 8</a>
+                                                <a href="{{ route('home.p8') }}">Glanzend zwart en goud bureau</a>
                                             </h5>
                                             <div class="group-info">
                                                 <div class="stars-rating">
                                                     <div class="star-rating">
-                                                        <span class="star-3"></span>
+                                                        <span class="star-5"></span>
                                                     </div>
                                                     <div class="count-star">
-                                                        (3)
+                                                        (5)
                                                     </div>
                                                 </div>
                                                 <div class="price">
                                                     <del>
-                                                        €65
+                                                        €455
                                                     </del>
                                                     <ins>
-                                                        €45
+                                                        €255
                                                     </ins>
                                                 </div>
                                             </div>
@@ -1828,7 +1828,7 @@
                                     <div class="container">
                                         <div class="banner-content">
                                             <h4 class="cleric-subtitle">feestdagen actie!</h4>
-                                            <h3 class="title">Bespaar <span>25%</span> op alle<br/>items collectie in December
+                                            <h3 class="title">Bespaar <span></span> op alle<br/>items collectie in December
                                             </h3>
                                             <a href="{{ route('home.gridproducts') }}" class="button btn-view-promotion">Winkel nu</a>
                                         </div>

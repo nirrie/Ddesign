@@ -354,13 +354,13 @@
                 <div class="breadcrumb-trail breadcrumbs">
                     <ul class="trail-items breadcrumb">
                         <li class="trail-item trail-begin">
-                        <a href="{{ route('home.index') }}">Home</a>
+                            <a href="{{ route('home.index') }}">Home</a>
                         </li>
                         <li class="trail-item">
                             <a href="#">Accenten</a>
                         </li>
                         <li class="trail-item trail-end active">
-                        Luxe management bureau met hoogte verstelbaar 
+                        Hoekbureau Francisca 
                         </li>
                     </ul>
                 </div>
@@ -372,45 +372,35 @@
                     <div class="details-product">
                         <div class="details-thumd">
                             <div class="image-preview-container image-thick-box image_preview_container">
-                                <img id="img_zoom" data-zoom-image="/images/details-item-1.jpg"
-                                     src="/images/details-item-1.jpg" alt="img">
+                                <img id="img_zoom" data-zoom-image="/images/details-item-12.jpg"
+                                     src="/images/details-item-12.jpg" alt="img">
                                 <a href="#" class="btn-zoom open_qv"><i class="fa fa-search" aria-hidden="true"></i></a>
                             </div>
                             <div class="product-preview image-small product_preview">
                                 <div id="thumbnails" class="thumbnails_carousel owl-carousel" data-nav="true"
                                      data-autoplay="false" data-dots="false" data-loop="false" data-margin="10"
                                      data-responsive='{"0":{"items":3},"480":{"items":3},"600":{"items":3},"1000":{"items":3}}'>
-                                    <a href="#" data-image="/images/details-item-1.jpg"
-                                       data-zoom-image="/images/details-item-1.jpg" class="active">
-                                        <img src="/images/details-item-1.jpg"
-                                             data-large-image="/images/details-item-1.jpg" alt="img">
+                                    <a href="#" data-image="/images/details-item-12.jpg"
+                                       data-zoom-image="/images/details-item-12.jpg" class="active">
+                                        <img src="/images/details-item-12.jpg"
+                                             data-large-image="/images/details-item-12.jpg" alt="img">
                                     </a>
-                                    <a href="#" data-image="/images/details-item-2.jpg"
-                                       data-zoom-image="/images/details-item-2.jpg">
-                                        <img src="/images/details-item-2.jpg"
-                                             data-large-image="/images/details-item-2.jpg" alt="img">
+                                    <a href="#" data-image="/images/details-item-13.jpg"
+                                       data-zoom-image="/images/details-item-13.jpg">
+                                        <img src="/images/details-item-13.jpg"
+                                             data-large-image="/images/details-item-13.jpg" alt="img">
                                     </a>
-                                    <a href="#" data-image="/images/details-item-3.jpg"
-                                       data-zoom-image="/images/details-item-3.jpg">
-                                        <img src="/images/details-item-3.jpg"
-                                             data-large-image="/images/details-item-3.jpg" alt="img">
-                                    </a>
-                                    <a href="#" data-image="/images/details-item-4.jpg"
-                                       data-zoom-image="/images/details-item-4.jpg">
-                                        <img src="/images/details-item-4.jpg"
-                                             data-large-image="/images/details-item-4.jpg" alt="img">
-                                    </a>
-                                    <a href="#" data-image="/images/details-item-5.jpg"
-                                       data-zoom-image="/images/details-item-5.jpg">
-                                        <img src="/images/details-item-5.jpg"
-                                             data-large-image="/images/details-item-5.jpg" alt="img">
+                                    <a href="#" data-image="/images/details-item-14.jpg"
+                                       data-zoom-image="/images/details-item-14.jpg">
+                                        <img src="/images/details-item-14.jpg"
+                                             data-large-image="/images/details-item-14.jpg" alt="img">
                                     </a>
                                 </div>
                             </div>
                         </div>
                         <div class="details-infor">
                             <h1 class="product-title">
-                             Luxe management bureau met hoogte verstelbaar
+                            Hoekbureau Francisca
                             </h1>
                             <div class="stars-rating">
                                 <div class="star-rating">
@@ -425,11 +415,11 @@
                                 <a href="#">op voorraad</a>
                             </div>
                             <div class="price">
-                                <span>€485</span>
+                                <span>€199</span>
                             </div>
                             <div class="product-details-description">
                                 <ul>
-                                    <li>Art.Nu. 001</li>
+                                    <li>Art.Nu. 006</li>
                                 </ul>
                             </div>
                             <div class="variations">
@@ -438,9 +428,7 @@
                                       Kleur:
                                     </div>
                                     <div class="list-color list-item">
-                                        <a href="#" class="color1"></a>
-                                        <a href="#" class="color2"></a>
-                                        <a href="#" class="color3 active"></a>
+                                        <a href="#" class="color1 active"></a>
                                         <a href="#" class="color4"></a>
                                     </div>
                                 </div>
@@ -498,25 +486,13 @@
                         <div class="tab-container">
                             <div id="product-descriptions" class="tab-panel active">
                                 <p>
-                                Het is tegen de zwaartekracht in maar toch betrouwbaar en comfortabel. 
-                                Het Gravity elektrisch in hoogte instelbare directie bureau van D&D brengt het idee van een directiekamer 
-                                naar een heel nieuw niveau. Het Gravity bureau is gebouwd op één eenvoudige steun en verbergt een elektrisch 
-                                mechanisme voor hoogteaanpassing, zodat de gebruiker van werkhouding kan veranderen van zittend naar staand. 
-                                Het onzichtbare frame creëert en beeldt een zwevend werkoppervlak uit, wat een minimalistische sfeer op kantoor introduceert. 
-                                Door de zeer robuuste constructie is het werkblad net zo stabiel als een niet zwevende oplossing. 
-                                Het werkblad heeft een afmeting van 220 cm x 100 cm. Uiterst ruim dus.
-                                
-
+                                Het hoekbureau Francisca is een stijlvol en praktisch kantoorbureau. Het bureau heeft een in hoogte verstelbaar frame (67,5 t/m 77,5 cm) waardoor ergonomisch verantwoord gewerkt kan worden. Door het plaatsen van een hoekbureau heeft u extra veel werkruimte vanwege het grote bureaublad. Het bureau is voorzien van een slank en stijlvol T-poot frame.
                                 </p>
                                 <p>
                                 Alle features op een rijtje: <br>
-                                <li>Elektrisch hoogte verstelsysteem.</li>
-                                <li>Zelfsluitende lades.</li>
-                                <li>Optionele mediabox en een Bluetooth-bedieningspaneel.</li>
-                                <li>Stabiele betonnen constructie.</li>
-                                <li>Luxe afwerkingen: iep, Amerikaans noten, grafiet of wit.</li>
-                                <li>Details en vorm passend bij de rest van de Gravity-collectie.</li>
-                                <li>Onder het bureau staat een vast dressoir wat zowel links als rechts te plaatsen is.</li>
+                                <li>Rechte\ Links hoek.</li>
+                                <li>Verstelbaar met Inbussleutel.</li>
+                                <li>Garantie: 5 jaar.</li>
                                 </p>
                             </div>
                             <div id="information" class="tab-panel">
@@ -527,7 +503,7 @@
                                     </tr>
                                     <tr>
                                         <td>Kleur</td>
-                                        <td>Wit/ Zwart/ Blauwgroen/ Bruin</td>
+                                        <td>Wit/ Bruin</td>
                                     </tr>
                                     <tr>
                                         <td>Eigendommen</td>
@@ -540,7 +516,7 @@
                                     <div class="comments">
                                         <h2 class="reviews-title">
                                           1 recensie voor
-                                            <span>Luxe management bureau met hoogte verstelbaar</span>
+                                            <span>Hoekbureau Francisca</span>
                                         </h2>
                                         <ol class="commentlist">
                                             <li class="conment">
@@ -558,7 +534,7 @@
                                                             </div>
                                                         </div>
                                                         <p class="meta">
-                                                            <strong class="author">Jeroen Heuvelman</strong>
+                                                            <strong class="author">Peter van Gemert</strong>
                                                             <span>-</span>
                                                             <span class="time">June 7, 2022</span>
                                                         </p>
