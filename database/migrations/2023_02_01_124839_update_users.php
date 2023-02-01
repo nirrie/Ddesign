@@ -18,7 +18,8 @@ return new class extends Migration
             $table->dropColumn(['middleName', 'intro', 'profile', 'line1', 'line2' ]);
             $table->renameColumn('firstName', 'first_name');
             $table->renameColumn('lastName', 'last_name');
-            $table->renameColumn('passwordHash', 'password_hash');
+            $table->dropColumn('passwordHash');
+            $table->string('password_hash','255');
             $table->renameColumn('lastLogin', 'last_login');
 
         });
