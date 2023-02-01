@@ -398,7 +398,7 @@
                                                 <span class="form-label">Uw naam *</span>
                                                 <span class="form-control-wrap your-name">
 														<input title="your-name" type="text" name="name" size="40"
-                                                               class="form-control form-control-name" required> {{!! $name !!}}
+                                                               class="form-control form-control-name" required> 
                                                         @if($errors->has('name'))
                                                             <span class="text-danger">{{ $errors->first('name') }} </span>
                                                         @endif
