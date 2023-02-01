@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="{{ url ('css/mobile-menu.css') }}">
     <link rel="stylesheet" href="{{ url ('fonts/flaticon/flaticon.css') }}">
     <link rel="stylesheet" href="{{ url ('css/style.css') }}">
+    <link rel="script"     href="{{ url ('bootstrap.min.js') }}">
 </head>
 <body class="home">
 <header class="header style7">
@@ -53,11 +54,13 @@
                         </ul>
                     </div>
                 </div>
-                <ul class="header-user-links">
-                    <li>
-                        <a href="{{ route('home.login') }}">Login of Registreer</a>
-                    </li>
-                </ul>
+                @guest
+                    <ul class="header-user-links">
+                        <li>
+                            <a href="{{ route('home.login') }}">Login of Registreer</a>
+                        </li>
+                    </ul>
+                @endguest
             </div>
         </div>
     </div>
@@ -104,60 +107,90 @@
                                 </p>
                             </div>
                         </div>
+                      
+                        @auth
+                            <div class="block-account block-header cleric-dropdown">
+                                <a href="javascript:void(0);" data-cleric="cleric-dropdown">
+                                    <span class="flaticon-user"></span>
+                                </a>
+                                    <div class="header-account cleric-submenu">
+                                        <div class="header-user-form-tabs">
+                                            <ul class="tab-link">
+                                                <li class="active">
+                                                    <span class="fst-normal">Welkom, {{ auth()->user()->username }} </span>
+                                                </li>
+                                                
+                                            </ul>
+                                                    <div class="tab-container">
+                                                        <div id="header-tab-logged-in" class="tab-panel-active">
+                                                        </div>
+                                                    </div>
+                                        </div>
+                                    </div>
+
+                        @else
+
                         <div class="block-account block-header cleric-dropdown">
                             <a href="javascript:void(0);" data-cleric="cleric-dropdown">
                                 <span class="flaticon-user"></span>
                             </a>
-                            <div class="header-account cleric-submenu">
-                                <div class="header-user-form-tabs">
-                                    <ul class="tab-link">
-                                        <li class="active">
-                                            <a data-toggle="tab" aria-expanded="true" href="#header-tab-login">Login</a>
-                                        </li>
-                                        <li>
-                                            <a data-toggle="tab" aria-expanded="true" href="#header-tab-rigister">Register</a>
-                                        </li>
-                                    </ul>
-                                    <div class="tab-container">
-                                        <div id="header-tab-login" class="tab-panel active">
-                                            <form method="post" class="login form-login">
-                                                <p class="form-row form-row-wide">
-                                                    <input type="email" placeholder="Email" class="input-text">
-                                                </p>
-                                                <p class="form-row form-row-wide">
-                                                    <input type="password" class="input-text" placeholder="Password">
-                                                </p>
-                                                <p class="form-row">
-                                                    <label class="form-checkbox">
-                                                        <input type="checkbox" class="input-checkbox">
-                                                        <span>
-																Onthoud mij
-															</span>
-                                                    </label>
-                                                    <input type="submit" class="button" value="Login">
-                                                </p>
-                                                <p class="lost_password">
-                                                    <a href="#">Wachtwoord vergeten?</a>
-                                                </p>
-                                            </form>
-                                        </div>
-                                        <div id="header-tab-rigister" class="tab-panel">
-                                            <form method="post" class="register form-register">
-                                                <p class="form-row form-row-wide">
-                                                    <input type="email" placeholder="Email" class="input-text">
-                                                </p>
-                                                <p class="form-row form-row-wide">
-                                                    <input type="password" class="input-text" placeholder="Password">
-                                                </p>
-                                                <p class="form-row">
-                                                    <input type="submit" class="button" value="Register">
-                                                </p>
-                                            </form>
+                                <div class="header-account cleric-submenu">
+                                    <div class="header-user-form-tabs">
+                                        <ul class="tab-link">
+                                            <li class="active">
+                                                <div class="tab-container">
+                                                    <div id="header-tab-logged-in" class="tab-panel-active">
+                                                    </div>
+                                                </div>
+                                                <li class="active">
+                                                    <a data-toggle="tab" aria-expanded="true" href="#header-tab-login">Login</a>
+                                                </li>
+                                                <li>
+                                                    <a data-toggle="tab" aria-expanded="true" href="#header-tab-rigister">Register</a>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-container">
+                                                <div id="header-tab-login" class="tab-panel active">
+                                                    <form method="post" class="login form-login">
+                                                        <p class="form-row form-row-wide">
+                                                            <input type="email" placeholder="Email" class="input-text">
+                                                        </p>
+                                                        <p class="form-row form-row-wide">
+                                                            <input type="password" class="input-text" placeholder="Password">
+                                                        </p>
+                                                        <p class="form-row">
+                                                            <label class="form-checkbox">
+                                                                <input type="checkbox" class="input-checkbox">
+                                                                <span>
+						    	    									Onthoud mij
+						    	    								</span>
+                                                            </label>
+                                                            <input type="submit" class="button" value="Login">
+                                                        </p>
+                                                        <p class="lost_password">
+                                                            <a href="#">Wachtwoord vergeten?</a>
+                                                        </p>
+                                                    </form>
+                                                </div>
+                                                <div id="header-tab-rigister" class="tab-panel">
+                                                    <form method="post" class="register form-register">
+                                                        <p class="form-row form-row-wide">
+                                                            <input type="email" placeholder="Email" class="input-text">
+                                                        </p>
+                                                        <p class="form-row form-row-wide">
+                                                            <input type="password" class="input-text" placeholder="Password">
+                                                        </p>
+                                                        <p class="form-row">
+                                                            <input type="submit" class="button" value="Register">
+                                                        </p>
+                                                    </form>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
                             </div>
-                        </div>
+                        @endauth  
+                        
                         <a class="menu-bar mobile-navigation menu-toggle" href="#">
                             <span></span>
                             <span></span>
@@ -343,6 +376,18 @@
     </div>
 </div>
 
+
+    @if(session()->has('succes'))
+        
+        <div class="alert alert-warning alert-dismissible " role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <p>{{ session('succes')}}</p>
+           
+        </div>
+    @endif
+
 <!-- End Header -->
 
 
@@ -503,7 +548,7 @@
                                         </div>
                                         <div class="product-thumb">
                                             <div class="thumb-inner">
-                                                <a href="#">
+                                                <a href="{{ route('home.p2') }}">
                                                     <img src="/images/product-item-2.jpg" alt="img">
                                                 </a>
                                                 <!-- <div class="thumb-group">
@@ -522,7 +567,7 @@
                                         </div>
                                         <div class="product-info">
                                             <h5 class="product-name product_title">
-                                                <a href="#">Product 2</a>
+                                                <a href="{{ route('home.p2') }}">Houten bureau met zwart metalen frame </a>
                                             </h5>
                                             <div class="group-info">
                                                 <div class="stars-rating">
@@ -535,10 +580,10 @@
                                                 </div>
                                                 <div class="price">
                                                     <del>
-                                                        €65
+                                                        €600
                                                     </del>
                                                     <ins>
-                                                        €45
+                                                        €485
                                                     </ins>
                                                 </div>
                                             </div>
@@ -558,7 +603,7 @@
                                         </div>
                                         <div class="product-thumb">
                                             <div class="thumb-inner">
-                                                <a href="#">
+                                                <a href="{{ route('home.p3') }}">
                                                     <img src="/images/product-item-3.jpg" alt="img">
                                                 </a>
                                                 <!-- <div class="thumb-group">
@@ -577,23 +622,23 @@
                                         </div>
                                         <div class="product-info">
                                             <h5 class="product-name product_title">
-                                                <a href="#">Product 3</a>
+                                                <a href="{{ route('home.p3') }}">Vergadertafel met stoelen</a>
                                             </h5>
                                             <div class="group-info">
                                                 <div class="stars-rating">
                                                     <div class="star-rating">
-                                                        <span class="star-3"></span>
+                                                        <span class="star-5"></span>
                                                     </div>
                                                     <div class="count-star">
-                                                        (3)
+                                                        (5)
                                                     </div>
                                                 </div>
                                                 <div class="price">
                                                     <del>
-                                                        €65
+                                                        €350
                                                     </del>
                                                     <ins>
-                                                        €45
+                                                        €299
                                                     </ins>
                                                 </div>
                                             </div>
@@ -613,7 +658,7 @@
                                         </div>
                                         <div class="product-thumb">
                                             <div class="thumb-inner">
-                                                <a href="#">
+                                                <a href="{{ route('home.p4') }}">
                                                     <img src="/images/product-item-4.jpg" alt="img">
                                                 </a>
                                                 <!-- <div class="thumb-group">
@@ -632,7 +677,7 @@
                                         </div>
                                         <div class="product-info">
                                             <h5 class="product-name product_title">
-                                                <a href="#">Product 4</a>
+                                                <a href="{{ route('home.p4') }}">Bureaucombinatie Standaard, 2 Bureautafels Met Schuifdeurkast</a>
                                             </h5>
                                             <div class="group-info">
                                                 <div class="stars-rating">
@@ -645,10 +690,10 @@
                                                 </div>
                                                 <div class="price">
                                                     <del>
-                                                        €65
+                                                        €450
                                                     </del>
                                                     <ins>
-                                                        €45
+                                                        €350
                                                     </ins>
                                                 </div>
                                             </div>
@@ -668,7 +713,7 @@
                                         </div>
                                         <div class="product-thumb">
                                             <div class="thumb-inner">
-                                                <a href="#">
+                                                <a href="{{ route('home.p5') }}">
                                                     <img src="/images/product-item-5.jpg" alt="img">
                                                 </a>
                                                 <!-- <div class="thumb-group">
@@ -687,7 +732,7 @@
                                         </div>
                                         <div class="product-info">
                                             <h5 class="product-name product_title">
-                                                <a href="#">Product 5</a>
+                                                <a href="{{ route('home.p5') }}">Directie hoekbureau</a>
                                             </h5>
                                             <div class="group-info">
                                                 <div class="stars-rating">
@@ -695,15 +740,15 @@
                                                         <span class="star-3"></span>
                                                     </div>
                                                     <div class="count-star">
-                                                        (3)
+                                                        (4)
                                                     </div>
                                                 </div>
                                                 <div class="price">
                                                     <del>
-                                                        €65
+                                                        €430
                                                     </del>
                                                     <ins>
-                                                        €45
+                                                        €299
                                                     </ins>
                                                 </div>
                                             </div>
@@ -723,7 +768,7 @@
                                         </div>
                                         <div class="product-thumb">
                                             <div class="thumb-inner">
-                                                <a href="#">
+                                                <a href="{{ route('home.p6') }}">
                                                     <img src="/images/product-item-6.jpg" alt="img">
                                                 </a>
                                                 <!-- <div class="thumb-group">
@@ -742,23 +787,23 @@
                                         </div>
                                         <div class="product-info">
                                             <h5 class="product-name product_title">
-                                                <a href="#">Product 6</a>
+                                                <a href="{{ route('home.p6') }}">Hoekbureau Francisca</a>
                                             </h5>
                                             <div class="group-info">
                                                 <div class="stars-rating">
                                                     <div class="star-rating">
-                                                        <span class="star-3"></span>
+                                                        <span class="star-7"></span>
                                                     </div>
                                                     <div class="count-star">
-                                                        (3)
+                                                        (7)
                                                     </div>
                                                 </div>
                                                 <div class="price">
                                                     <del>
-                                                        €65
+                                                        €299
                                                     </del>
                                                     <ins>
-                                                        €45
+                                                        €199
                                                     </ins>
                                                 </div>
                                             </div>
@@ -778,7 +823,7 @@
                                         </div>
                                         <div class="product-thumb">
                                             <div class="thumb-inner">
-                                                <a href="#">
+                                                <a href="{{ route('home.p7') }}">
                                                     <img src="/images/product-item-7.jpg" alt="img">
                                                 </a>
                                                 <!-- <div class="thumb-group">
@@ -797,23 +842,23 @@
                                         </div>
                                         <div class="product-info">
                                             <h5 class="product-name product_title">
-                                                <a href="#">Product 7</a>
+                                                <a href="{{ route('home.p7') }}">Bureau-eiland (met ladeblokken en kastjes)</a>
                                             </h5>
                                             <div class="group-info">
                                                 <div class="stars-rating">
                                                     <div class="star-rating">
-                                                        <span class="star-3"></span>
+                                                        <span class="star-5"></span>
                                                     </div>
                                                     <div class="count-star">
-                                                        (3)
+                                                        (5)
                                                     </div>
                                                 </div>
                                                 <div class="price">
                                                     <del>
-                                                        €65
+                                                        €800
                                                     </del>
                                                     <ins>
-                                                        €45
+                                                        €500
                                                     </ins>
                                                 </div>
                                             </div>
@@ -833,7 +878,7 @@
                                         </div>
                                         <div class="product-thumb">
                                             <div class="thumb-inner">
-                                                <a href="#">
+                                                <a href="{{ route('home.p8') }}">
                                                     <img src="/images/product-item-8.jpg" alt="img">
                                                 </a>
                                                 <!-- <div class="thumb-group">
@@ -852,23 +897,23 @@
                                         </div>
                                         <div class="product-info">
                                             <h5 class="product-name product_title">
-                                                <a href="#">Product 8</a>
+                                                <a href="{{ route('home.p8') }}">Glanzend zwart en goud bureau</a>
                                             </h5>
                                             <div class="group-info">
                                                 <div class="stars-rating">
                                                     <div class="star-rating">
-                                                        <span class="star-3"></span>
+                                                        <span class="star-5"></span>
                                                     </div>
                                                     <div class="count-star">
-                                                        (3)
+                                                        (5)
                                                     </div>
                                                 </div>
                                                 <div class="price">
                                                     <del>
-                                                        €65
+                                                        €455
                                                     </del>
                                                     <ins>
-                                                        €45
+                                                        €255
                                                     </ins>
                                                 </div>
                                             </div>
@@ -1783,7 +1828,7 @@
                                     <div class="container">
                                         <div class="banner-content">
                                             <h4 class="cleric-subtitle">feestdagen actie!</h4>
-                                            <h3 class="title">Bespaar <span>25%</span> op alle<br/>items collectie in December
+                                            <h3 class="title">Bespaar <span></span> op alle<br/>items collectie in December
                                             </h3>
                                             <a href="{{ route('home.gridproducts') }}" class="button btn-view-promotion">Winkel nu</a>
                                         </div>

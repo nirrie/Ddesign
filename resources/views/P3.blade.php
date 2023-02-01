@@ -346,7 +346,6 @@
 <!-- End Header -->
 
 
-
 <div class="main-content main-content-details single no-sidebar">
     <div class="container">
         <div class="row">
@@ -360,7 +359,7 @@
                             <a href="#">Accenten</a>
                         </li>
                         <li class="trail-item trail-end active">
-                        Luxe management bureau met hoogte verstelbaar 
+                        Vergadertafel met stoelen
                         </li>
                     </ul>
                 </div>
@@ -372,20 +371,20 @@
                     <div class="details-product">
                         <div class="details-thumd">
                             <div class="image-preview-container image-thick-box image_preview_container">
-                                <img id="img_zoom" data-zoom-image="/images/details-item-1.jpg"
-                                     src="/images/details-item-1.jpg" alt="img">
+                                <img id="img_zoom" data-zoom-image="/images/details-item-7.jpg"
+                                     src="/images/details-item-7.jpg" alt="img">
                                 <a href="#" class="btn-zoom open_qv"><i class="fa fa-search" aria-hidden="true"></i></a>
                             </div>
                             <div class="product-preview image-small product_preview">
                                 <div id="thumbnails" class="thumbnails_carousel owl-carousel" data-nav="true"
                                      data-autoplay="false" data-dots="false" data-loop="false" data-margin="10"
                                      data-responsive='{"0":{"items":3},"480":{"items":3},"600":{"items":3},"1000":{"items":3}}'>
-                                    <a href="#" data-image="/images/details-item-1.jpg"
-                                       data-zoom-image="/images/details-item-1.jpg" class="active">
-                                        <img src="/images/details-item-1.jpg"
-                                             data-large-image="/images/details-item-1.jpg" alt="img">
+                                    <a href="#" data-image="/images/details-item-7.jpg"
+                                       data-zoom-image="/images/details-item-7.jpg" class="active">
+                                        <img src="/images/details-item-7.jpg"
+                                             data-large-image="/images/details-item-7.jpg" alt="img">
                                     </a>
-                                    <a href="#" data-image="/images/details-item-2.jpg"
+                                    <!-- <a href="#" data-image="/images/details-item-2.jpg"
                                        data-zoom-image="/images/details-item-2.jpg">
                                         <img src="/images/details-item-2.jpg"
                                              data-large-image="/images/details-item-2.jpg" alt="img">
@@ -404,20 +403,20 @@
                                        data-zoom-image="/images/details-item-5.jpg">
                                         <img src="/images/details-item-5.jpg"
                                              data-large-image="/images/details-item-5.jpg" alt="img">
-                                    </a>
+                                    </a> -->
                                 </div>
                             </div>
                         </div>
                         <div class="details-infor">
                             <h1 class="product-title">
-                             Luxe management bureau met hoogte verstelbaar
+                             Vergadertafel met stoelen
                             </h1>
                             <div class="stars-rating">
                                 <div class="star-rating">
                                     <span class="star-5"></span>
                                 </div>
                                 <div class="count-star">
-                                    (7)
+                                    (5)
                                 </div>
                             </div>
                             <div class="availability">
@@ -425,11 +424,11 @@
                                 <a href="#">op voorraad</a>
                             </div>
                             <div class="price">
-                                <span>€485</span>
+                                <span>€299</span>
                             </div>
                             <div class="product-details-description">
                                 <ul>
-                                    <li>Art.Nu. 001</li>
+                                    <li>Art.Nu. 003</li>
                                 </ul>
                             </div>
                             <div class="variations">
@@ -438,10 +437,7 @@
                                       Kleur:
                                     </div>
                                     <div class="list-color list-item">
-                                        <a href="#" class="color1"></a>
-                                        <a href="#" class="color2"></a>
-                                        <a href="#" class="color3 active"></a>
-                                        <a href="#" class="color4"></a>
+                                        <a href="#" class="color4 active"></a>
                                     </div>
                                 </div>
                                 <div class="attribute attribute_size">
@@ -449,12 +445,12 @@
                                        Maat:
                                     </div>
                                     <div class="list-size list-item">
-                                        <!-- <a href="#" class="">xs</a>
-                                        <a href="#" class="">s</a>
-                                        <a href="#" class="active">m</a>
-                                        <a href="#" class="">l</a>
-                                        <a href="#" class="">xl</a> -->
-                                        <a href="#" class="">1 Maat</a>
+                                        <a href="#" class="">300x80-120cm</a>
+                                        <!-- <a href="#" class="">120x80cm</a>
+                                        <a href="#" class="active">140x80cm</a>
+                                        <a href="#" class="">160x80cm</a>
+                                        <a href="#" class="">180x80cm</a>
+                                        <a href="#" class="">200x100cm</a> -->
                                     </div>
                                 </div>
                             </div>
@@ -498,36 +494,39 @@
                         <div class="tab-container">
                             <div id="product-descriptions" class="tab-panel active">
                                 <p>
-                                Het is tegen de zwaartekracht in maar toch betrouwbaar en comfortabel. 
-                                Het Gravity elektrisch in hoogte instelbare directie bureau van D&D brengt het idee van een directiekamer 
-                                naar een heel nieuw niveau. Het Gravity bureau is gebouwd op één eenvoudige steun en verbergt een elektrisch 
-                                mechanisme voor hoogteaanpassing, zodat de gebruiker van werkhouding kan veranderen van zittend naar staand. 
-                                Het onzichtbare frame creëert en beeldt een zwevend werkoppervlak uit, wat een minimalistische sfeer op kantoor introduceert. 
-                                Door de zeer robuuste constructie is het werkblad net zo stabiel als een niet zwevende oplossing. 
-                                Het werkblad heeft een afmeting van 220 cm x 100 cm. Uiterst ruim dus.
+                                De vergaderdruppel heeft een diameter geeft ruimte voor 3 vergaderstoelen. De bladen zijn verkrijgbaar in 80, 120, 140, 160 en 180 cm met een vergaderstuk van 120 cm in diameter. Het vergaderstuk is zowel links als rechts te monteren.
+
+
                                 
 
                                 </p>
                                 <p>
-                                Alle features op een rijtje: <br>
-                                <li>Elektrisch hoogte verstelsysteem.</li>
-                                <li>Zelfsluitende lades.</li>
-                                <li>Optionele mediabox en een Bluetooth-bedieningspaneel.</li>
-                                <li>Stabiele betonnen constructie.</li>
-                                <li>Luxe afwerkingen: iep, Amerikaans noten, grafiet of wit.</li>
-                                <li>Details en vorm passend bij de rest van de Gravity-collectie.</li>
-                                <li>Onder het bureau staat een vast dressoir wat zowel links als rechts te plaatsen is.</li>
+                                Afmetingen: <br>
+                                Beschikbare bladen: <br> 
+                                300x80-120cm* <br>
+                                Vergaderdruppel zowel links als rechts te monteren. <br>
+                                * dit bureau heeft op het werkgedeelte een oversteek van 30cm. <br>
+
+                                Hoogte instelbaar: 64 – 84 cm <br>
+
+                                Garantie: 5 jaar <br>
+
+                                Optioneel: <br>
+                                Ladeblok <br>
+                                Bureaustoel <br>
+                                Vergaderstoelen <br>
+
                                 </p>
                             </div>
                             <div id="information" class="tab-panel">
                                 <table class="table table-bordered">
                                     <tr>
                                         <td>Maat</td>
-                                        <td>220 cm x 100 cm</td>
+                                        <td>300x80-120cm</td>
                                     </tr>
                                     <tr>
                                         <td>Kleur</td>
-                                        <td>Wit/ Zwart/ Blauwgroen/ Bruin</td>
+                                        <td>Bruin</td>
                                     </tr>
                                     <tr>
                                         <td>Eigendommen</td>
@@ -540,7 +539,7 @@
                                     <div class="comments">
                                         <h2 class="reviews-title">
                                           1 recensie voor
-                                            <span>Luxe management bureau met hoogte verstelbaar</span>
+                                            <span>Vergadertafel met stoelen</span>
                                         </h2>
                                         <ol class="commentlist">
                                             <li class="conment">
@@ -558,12 +557,12 @@
                                                             </div>
                                                         </div>
                                                         <p class="meta">
-                                                            <strong class="author">Jeroen Heuvelman</strong>
+                                                            <strong class="author">Peter van Gemert</strong>
                                                             <span>-</span>
                                                             <span class="time">June 7, 2022</span>
                                                         </p>
                                                         <div class="description">
-                                                            <p>Luxe en effectief ontwerp. Een van mijn favorieten.</p>
+                                                            <p>Vergadertafel met stoelen.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -859,6 +858,7 @@
         </div>
     </div>
 </div>
+
 
 <!-- Footer -->
 <footer class="footer style7">

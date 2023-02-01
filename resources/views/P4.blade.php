@@ -360,7 +360,7 @@
                             <a href="#">Accenten</a>
                         </li>
                         <li class="trail-item trail-end active">
-                        Luxe management bureau met hoogte verstelbaar 
+                        Bureaucombinatie Standaard, 2 Bureautafels Met Schuifdeurkast 
                         </li>
                     </ul>
                 </div>
@@ -372,52 +372,42 @@
                     <div class="details-product">
                         <div class="details-thumd">
                             <div class="image-preview-container image-thick-box image_preview_container">
-                                <img id="img_zoom" data-zoom-image="/images/details-item-1.jpg"
-                                     src="/images/details-item-1.jpg" alt="img">
+                                <img id="img_zoom" data-zoom-image="/images/details-item-8.jpg"
+                                     src="/images/details-item-8.jpg" alt="img">
                                 <a href="#" class="btn-zoom open_qv"><i class="fa fa-search" aria-hidden="true"></i></a>
                             </div>
                             <div class="product-preview image-small product_preview">
                                 <div id="thumbnails" class="thumbnails_carousel owl-carousel" data-nav="true"
                                      data-autoplay="false" data-dots="false" data-loop="false" data-margin="10"
                                      data-responsive='{"0":{"items":3},"480":{"items":3},"600":{"items":3},"1000":{"items":3}}'>
-                                    <a href="#" data-image="/images/details-item-1.jpg"
-                                       data-zoom-image="/images/details-item-1.jpg" class="active">
-                                        <img src="/images/details-item-1.jpg"
-                                             data-large-image="/images/details-item-1.jpg" alt="img">
+                                    <a href="#" data-image="/images/details-item-8.jpg"
+                                       data-zoom-image="/images/details-item-8.jpg" class="active">
+                                        <img src="/images/details-item-8.jpg"
+                                             data-large-image="/images/details-item-8.jpg" alt="img">
                                     </a>
-                                    <a href="#" data-image="/images/details-item-2.jpg"
-                                       data-zoom-image="/images/details-item-2.jpg">
-                                        <img src="/images/details-item-2.jpg"
-                                             data-large-image="/images/details-item-2.jpg" alt="img">
+                                    <a href="#" data-image="/images/details-item-9.jpg"
+                                       data-zoom-image="/images/details-item-9.jpg">
+                                        <img src="/images/details-item-9.jpg"
+                                             data-large-image="/images/details-item-9.jpg" alt="img">
                                     </a>
-                                    <a href="#" data-image="/images/details-item-3.jpg"
-                                       data-zoom-image="/images/details-item-3.jpg">
-                                        <img src="/images/details-item-3.jpg"
-                                             data-large-image="/images/details-item-3.jpg" alt="img">
-                                    </a>
-                                    <a href="#" data-image="/images/details-item-4.jpg"
-                                       data-zoom-image="/images/details-item-4.jpg">
-                                        <img src="/images/details-item-4.jpg"
-                                             data-large-image="/images/details-item-4.jpg" alt="img">
-                                    </a>
-                                    <a href="#" data-image="/images/details-item-5.jpg"
-                                       data-zoom-image="/images/details-item-5.jpg">
-                                        <img src="/images/details-item-5.jpg"
-                                             data-large-image="/images/details-item-5.jpg" alt="img">
+                                    <a href="#" data-image="/images/details-item-10.jpg"
+                                       data-zoom-image="/images/details-item-10.jpg">
+                                        <img src="/images/details-item-10.jpg"
+                                             data-large-image="/images/details-item-10.jpg" alt="img">
                                     </a>
                                 </div>
                             </div>
                         </div>
                         <div class="details-infor">
                             <h1 class="product-title">
-                             Luxe management bureau met hoogte verstelbaar
+                             Bureaucombinatie Standaard, 2 Bureautafels Met Schuifdeurkast
                             </h1>
                             <div class="stars-rating">
                                 <div class="star-rating">
-                                    <span class="star-5"></span>
+                                    <span class="star-3"></span>
                                 </div>
                                 <div class="count-star">
-                                    (7)
+                                    (3)
                                 </div>
                             </div>
                             <div class="availability">
@@ -425,11 +415,11 @@
                                 <a href="#">op voorraad</a>
                             </div>
                             <div class="price">
-                                <span>€485</span>
+                                <span>€350</span>
                             </div>
                             <div class="product-details-description">
                                 <ul>
-                                    <li>Art.Nu. 001</li>
+                                    <li>Art.Nu. 004</li>
                                 </ul>
                             </div>
                             <div class="variations">
@@ -439,9 +429,7 @@
                                     </div>
                                     <div class="list-color list-item">
                                         <a href="#" class="color1"></a>
-                                        <a href="#" class="color2"></a>
-                                        <a href="#" class="color3 active"></a>
-                                        <a href="#" class="color4"></a>
+                                        <a href="#" class="color2 active"></a>
                                     </div>
                                 </div>
                                 <div class="attribute attribute_size">
@@ -454,7 +442,7 @@
                                         <a href="#" class="active">m</a>
                                         <a href="#" class="">l</a>
                                         <a href="#" class="">xl</a> -->
-                                        <a href="#" class="">1 Maat</a>
+                                        <a href="#" class="">xxl</a>
                                     </div>
                                 </div>
                             </div>
@@ -498,40 +486,36 @@
                         <div class="tab-container">
                             <div id="product-descriptions" class="tab-panel active">
                                 <p>
-                                Het is tegen de zwaartekracht in maar toch betrouwbaar en comfortabel. 
-                                Het Gravity elektrisch in hoogte instelbare directie bureau van D&D brengt het idee van een directiekamer 
-                                naar een heel nieuw niveau. Het Gravity bureau is gebouwd op één eenvoudige steun en verbergt een elektrisch 
-                                mechanisme voor hoogteaanpassing, zodat de gebruiker van werkhouding kan veranderen van zittend naar staand. 
-                                Het onzichtbare frame creëert en beeldt een zwevend werkoppervlak uit, wat een minimalistische sfeer op kantoor introduceert. 
-                                Door de zeer robuuste constructie is het werkblad net zo stabiel als een niet zwevende oplossing. 
-                                Het werkblad heeft een afmeting van 220 cm x 100 cm. Uiterst ruim dus.
-                                
+                                product wordt in een woonhuis alleen op de begane grond geleverd.
+Deze bureaucombinatie bestaat uit 2 bureautafels van 180bx80d en een bijpassende (gelaste) schuifdeurkast van 160bx45d. Leverbaar in 2 kleurcombinaties.                                
 
                                 </p>
                                 <p>
                                 Alle features op een rijtje: <br>
-                                <li>Elektrisch hoogte verstelsysteem.</li>
-                                <li>Zelfsluitende lades.</li>
-                                <li>Optionele mediabox en een Bluetooth-bedieningspaneel.</li>
-                                <li>Stabiele betonnen constructie.</li>
-                                <li>Luxe afwerkingen: iep, Amerikaans noten, grafiet of wit.</li>
-                                <li>Details en vorm passend bij de rest van de Gravity-collectie.</li>
-                                <li>Onder het bureau staat een vast dressoir wat zowel links als rechts te plaatsen is.</li>
+                                <li>Bureautafels voorzien van een stalen buisframe met vierkante poten.</li>
+                                <li>Poten bureautafels uitgevoerd met steldoppen.</li>
+                                <li>Topblad bureautafels voorzien van een krasvaste melamine toplaag en PVC stootrand.</li>
+                                <li>Dikte topblad bureautafel 25mm.</li>
+                                <li>Schuifdeurkast (gelast) voorzien van 2 legborden.</li>
+                                <li>Uitgevoerd met een cilinderslot met 2 sleutels.</li>
+                                <li>Krasvaste epoxylak.</li>
+                                <li>Bureautafels leverbaar in 2 kleurcombinaties.</li>
+
                                 </p>
                             </div>
                             <div id="information" class="tab-panel">
                                 <table class="table table-bordered">
                                     <tr>
                                         <td>Maat</td>
-                                        <td>220 cm x 100 cm</td>
+                                        <td>75cm H x 180cm b x80cm d</td>
                                     </tr>
                                     <tr>
                                         <td>Kleur</td>
-                                        <td>Wit/ Zwart/ Blauwgroen/ Bruin</td>
+                                        <td>Wit/ Zwart</td>
                                     </tr>
                                     <tr>
                                         <td>Eigendommen</td>
-                                        <td>Luxe kantoor</td>
+                                        <td>bedrijf kantoor</td>
                                     </tr>
                                 </table>
                             </div>
@@ -540,7 +524,7 @@
                                     <div class="comments">
                                         <h2 class="reviews-title">
                                           1 recensie voor
-                                            <span>Luxe management bureau met hoogte verstelbaar</span>
+                                            <span>Bureaucombinatie Standaard, 2 Bureautafels Met Schuifdeurkast</span>
                                         </h2>
                                         <ol class="commentlist">
                                             <li class="conment">
@@ -558,7 +542,7 @@
                                                             </div>
                                                         </div>
                                                         <p class="meta">
-                                                            <strong class="author">Jeroen Heuvelman</strong>
+                                                            <strong class="author">Jan Jaap</strong>
                                                             <span>-</span>
                                                             <span class="time">June 7, 2022</span>
                                                         </p>
@@ -859,6 +843,7 @@
         </div>
     </div>
 </div>
+
 
 <!-- Footer -->
 <footer class="footer style7">

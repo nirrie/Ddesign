@@ -360,7 +360,7 @@
                             <a href="#">Accenten</a>
                         </li>
                         <li class="trail-item trail-end active">
-                        Luxe management bureau met hoogte verstelbaar 
+                        Directie hoekbureau 
                         </li>
                     </ul>
                 </div>
@@ -372,52 +372,32 @@
                     <div class="details-product">
                         <div class="details-thumd">
                             <div class="image-preview-container image-thick-box image_preview_container">
-                                <img id="img_zoom" data-zoom-image="/images/details-item-1.jpg"
-                                     src="/images/details-item-1.jpg" alt="img">
+                                <img id="img_zoom" data-zoom-image="/images/details-item-11.jpg"
+                                     src="/images/details-item-11.jpg" alt="img">
                                 <a href="#" class="btn-zoom open_qv"><i class="fa fa-search" aria-hidden="true"></i></a>
                             </div>
                             <div class="product-preview image-small product_preview">
                                 <div id="thumbnails" class="thumbnails_carousel owl-carousel" data-nav="true"
                                      data-autoplay="false" data-dots="false" data-loop="false" data-margin="10"
                                      data-responsive='{"0":{"items":3},"480":{"items":3},"600":{"items":3},"1000":{"items":3}}'>
-                                    <a href="#" data-image="/images/details-item-1.jpg"
-                                       data-zoom-image="/images/details-item-1.jpg" class="active">
-                                        <img src="/images/details-item-1.jpg"
-                                             data-large-image="/images/details-item-1.jpg" alt="img">
-                                    </a>
-                                    <a href="#" data-image="/images/details-item-2.jpg"
-                                       data-zoom-image="/images/details-item-2.jpg">
-                                        <img src="/images/details-item-2.jpg"
-                                             data-large-image="/images/details-item-2.jpg" alt="img">
-                                    </a>
-                                    <a href="#" data-image="/images/details-item-3.jpg"
-                                       data-zoom-image="/images/details-item-3.jpg">
-                                        <img src="/images/details-item-3.jpg"
-                                             data-large-image="/images/details-item-3.jpg" alt="img">
-                                    </a>
-                                    <a href="#" data-image="/images/details-item-4.jpg"
-                                       data-zoom-image="/images/details-item-4.jpg">
-                                        <img src="/images/details-item-4.jpg"
-                                             data-large-image="/images/details-item-4.jpg" alt="img">
-                                    </a>
-                                    <a href="#" data-image="/images/details-item-5.jpg"
-                                       data-zoom-image="/images/details-item-5.jpg">
-                                        <img src="/images/details-item-5.jpg"
-                                             data-large-image="/images/details-item-5.jpg" alt="img">
+                                    <a href="#" data-image="/images/details-item-11.jpg"
+                                       data-zoom-image="/images/details-item-11.jpg" class="active">
+                                        <img src="/images/details-item-11.jpg"
+                                             data-large-image="/images/details-item-11.jpg" alt="img">
                                     </a>
                                 </div>
                             </div>
                         </div>
                         <div class="details-infor">
                             <h1 class="product-title">
-                             Luxe management bureau met hoogte verstelbaar
+                             Directie hoekbureau
                             </h1>
                             <div class="stars-rating">
                                 <div class="star-rating">
-                                    <span class="star-5"></span>
+                                    <span class="star-4"></span>
                                 </div>
                                 <div class="count-star">
-                                    (7)
+                                    (4)
                                 </div>
                             </div>
                             <div class="availability">
@@ -425,11 +405,11 @@
                                 <a href="#">op voorraad</a>
                             </div>
                             <div class="price">
-                                <span>€485</span>
+                                <span>€299</span>
                             </div>
                             <div class="product-details-description">
                                 <ul>
-                                    <li>Art.Nu. 001</li>
+                                    <li>Art.Nu. 005</li>
                                 </ul>
                             </div>
                             <div class="variations">
@@ -438,10 +418,7 @@
                                       Kleur:
                                     </div>
                                     <div class="list-color list-item">
-                                        <a href="#" class="color1"></a>
-                                        <a href="#" class="color2"></a>
-                                        <a href="#" class="color3 active"></a>
-                                        <a href="#" class="color4"></a>
+                                        <a href="#" class="color4 active"></a>
                                     </div>
                                 </div>
                                 <div class="attribute attribute_size">
@@ -498,36 +475,27 @@
                         <div class="tab-container">
                             <div id="product-descriptions" class="tab-panel active">
                                 <p>
-                                Het is tegen de zwaartekracht in maar toch betrouwbaar en comfortabel. 
-                                Het Gravity elektrisch in hoogte instelbare directie bureau van D&D brengt het idee van een directiekamer 
-                                naar een heel nieuw niveau. Het Gravity bureau is gebouwd op één eenvoudige steun en verbergt een elektrisch 
-                                mechanisme voor hoogteaanpassing, zodat de gebruiker van werkhouding kan veranderen van zittend naar staand. 
-                                Het onzichtbare frame creëert en beeldt een zwevend werkoppervlak uit, wat een minimalistische sfeer op kantoor introduceert. 
-                                Door de zeer robuuste constructie is het werkblad net zo stabiel als een niet zwevende oplossing. 
-                                Het werkblad heeft een afmeting van 220 cm x 100 cm. Uiterst ruim dus.
+                                Een groot directie hoekbureau voor een directie lid met een groot blad. Het hoekbureau heeft een rechte hoek om aan één kant te werken en aan de andere kant mensen te ontvangen. Hoogte instelbaar, het blad is ongeboord en daarmee is het bureau zowel links als rechts te monteren. 
                                 
 
                                 </p>
                                 <p>
                                 Alle features op een rijtje: <br>
-                                <li>Elektrisch hoogte verstelsysteem.</li>
-                                <li>Zelfsluitende lades.</li>
-                                <li>Optionele mediabox en een Bluetooth-bedieningspaneel.</li>
-                                <li>Stabiele betonnen constructie.</li>
-                                <li>Luxe afwerkingen: iep, Amerikaans noten, grafiet of wit.</li>
-                                <li>Details en vorm passend bij de rest van de Gravity-collectie.</li>
-                                <li>Onder het bureau staat een vast dressoir wat zowel links als rechts te plaatsen is.</li>
-                                </p>
+                                <li>Rechte\ Links hoek.</li>
+                                <li>Verstelbaar met Inbussleutel.</li>
+                                <li>Garantie: 5 jaar.</li>
+
+                            </p>
                             </div>
                             <div id="information" class="tab-panel">
                                 <table class="table table-bordered">
                                     <tr>
                                         <td>Maat</td>
-                                        <td>220 cm x 100 cm</td>
+                                        <td>Afmetingen blad: 220x200 cm. <br> Hoogte instelbaar: 64 – 84 cm</td>
                                     </tr>
                                     <tr>
                                         <td>Kleur</td>
-                                        <td>Wit/ Zwart/ Blauwgroen/ Bruin</td>
+                                        <td>Bruin</td>
                                     </tr>
                                     <tr>
                                         <td>Eigendommen</td>
@@ -540,7 +508,7 @@
                                     <div class="comments">
                                         <h2 class="reviews-title">
                                           1 recensie voor
-                                            <span>Luxe management bureau met hoogte verstelbaar</span>
+                                            <span>Directie hoekbureau</span>
                                         </h2>
                                         <ol class="commentlist">
                                             <li class="conment">
@@ -558,12 +526,12 @@
                                                             </div>
                                                         </div>
                                                         <p class="meta">
-                                                            <strong class="author">Jeroen Heuvelman</strong>
+                                                            <strong class="author">Jan Jaap</strong>
                                                             <span>-</span>
                                                             <span class="time">June 7, 2022</span>
                                                         </p>
                                                         <div class="description">
-                                                            <p>Luxe en effectief ontwerp. Een van mijn favorieten.</p>
+                                                            <p>Elegant ontwerp dat in elke hoek van de kamer past.</p>
                                                         </div>
                                                     </div>
                                                 </div>
