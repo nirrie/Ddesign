@@ -373,6 +373,13 @@
         <div class="google-map">
                 <iframe width="100%" height="500" id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.678369909291!2d6.082173752010763!3d52.521159479715344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c7df34b9a32335%3A0xaabbb8d575d9fccb!2sDeltion%20College!5e0!3m2!1sen!2snl!4v1668425104002!5m2!1sen!2snl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
         </div>
+
+        @if(Session::has('bedankt'))
+        <div class="alert alert-success">
+            {{Session::get('bedankt')}}
+        </div>
+        @endif
+
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
@@ -380,16 +387,21 @@
                         <div class="col-lg-8 no-padding">
                             <div class="form-message">
                                 <h2 class="title">
-                                ZEND ONS EEN BERICHT!
+                                STUUR ONS EEN BERICHT!
                                 </h2>
-                                <form action="#" class="cleric-contact-fom">
+                                <form method="POST" action="{{ route('contact.store') }}" class="cleric-contact-fom">
+
+                                    {{ csrf_field() }}
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <p>
                                                 <span class="form-label">Uw naam *</span>
                                                 <span class="form-control-wrap your-name">
-														<input title="your-name" type="text" name="your-name" size="40"
-                                                               class="form-control form-control-name">
+														<input title="your-name" type="text" name="name" size="40"
+                                                               class="form-control form-control-name" required> {{!! $name !!}}
+                                                        @if($errors->has('name'))
+                                                            <span class="text-danger">{{ $errors->first('name') }} </span>
+                                                        @endif
 													</span>
                                             </p>
                                         </div>
@@ -399,8 +411,11 @@
 														Uw Email *
 													</span>
                                                 <span class="form-control-wrap your-email">
-														<input title="your-email" type="email" name="your-email" size="40"
-                                                               class="form-control form-control-email">
+														<input title="your-email" type="email" name="email" size="40"
+                                                               class="form-control form-control-email" required>
+                                                        @if ($errors->has('email'))
+                                                            <span class="text-danger">{{ $errors->first('email') }}</span>
+                                                        @endif
 													</span>
                                             </p>
                                         </div>
@@ -410,8 +425,11 @@
                                             <p>
                                                 <span class="form-label">Telefoon</span>
                                                 <span class="form-control-wrap your-phone">
-														<input title="your-phone" type="text" name="your-phone"
+														<input title="your-phone" type="text" name="phonenumber"
                                                                class="form-control form-control-phone">
+                                                        @if ($errors->has('phonenumber'))
+                                                            <span class="text-danger">{{ $errors->first('phonenumber') }}</span>
+                                                        @endif
 													</span>
                                             </p>
                                         </div>
@@ -421,7 +439,7 @@
                                                     Bedrijf
 													</span>
                                                 <span class="form-control-wrap your-company">
-														<input title="your-company" type="text" name="your-company"
+														<input title="your-company" type="text" name="company"
                                                                class="form-control your-company">
 													</span>
                                             </p>
@@ -432,8 +450,11 @@
                                               Uw bericht
 											</span>
                                         <span class="wpcf7-form-control-wrap your-message">
-												<textarea title="your-message" name="your-message" cols="40" rows="9"
+												<textarea title="your-message" name="message" cols="40" rows="9"
                                                           class="form-control your-textarea"></textarea>
+                                                @if ($errors->has('message'))
+                                                    <span class="text-danger">{{ $errors->first('message')}}</span>
+                                                @endif
 											</span>
                                     </p>
                                     <p>
